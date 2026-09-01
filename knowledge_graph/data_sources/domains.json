@@ -1,0 +1,104 @@
+[
+    {
+        "domain_name": "Animal",
+        "allowed_attributes": [
+            "color", "shape", "size", "weight", "texture", "temperature", "capability", "role", "location", "composition", "sound", "appearance", "origin", "relationship", "behavior", "biology", "cognition", "age", "habitat"
+        ]
+    },
+    {
+        "domain_name": "Plant",
+        "allowed_attributes": [
+            "color", "shape", "size", "weight", "texture", "affordance", "capability", "role", "location", "composition", "flavor", "appearance", "origin", "biology", "age", "habitat"
+        ]
+    },
+    {
+        "domain_name": "Tool",
+        "allowed_attributes": [
+            "material", "color", "shape", "size", "weight", "texture", "utility", "capability", "affordance", "role", "location", "composition", "sound", "value", "appearance", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Food",
+        "allowed_attributes": [
+            "material", "color", "shape", "size", "weight", "state", "texture", "temperature", "affordance", "location", "composition", "flavor", "value", "appearance", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Profession",
+        "allowed_attributes": [
+            "utility", "capability", "role", "location", "value", "behavior", "cognition", "age"
+        ]
+    },
+    {
+        "domain_name": "Vehicle",
+        "allowed_attributes": [
+            "material", "color", "shape", "size", "weight", "texture", "utility", "capability", "affordance", "role", "location", "composition", "sound", "value", "appearance", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Location",
+        "allowed_attributes": [
+            "size", "temperature", "role", "composition", "value", "appearance", "origin", "age", "habitat"
+        ]
+    },
+    {
+        "domain_name": "Compound",
+        "allowed_attributes": [
+            "color", "state", "texture", "temperature", "utility", "capability", "role", "composition", "flavor", "appearance", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Disease",
+        "allowed_attributes": [
+            "capability", "role", "location", "origin", "biology", "age", "appearance", "behavior"
+        ]
+    },
+    {
+        "domain_name": "Object",
+        "allowed_attributes": [
+            "material", "color", "shape", "size", "weight", "state", "texture", "temperature", "utility", "capability", "affordance", "role", "location", "composition", "sound", "value", "appearance", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Work",
+        "allowed_attributes": [
+            "utility", "affordance", "role", "location", "composition", "sound", "value", "appearance", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Language",
+        "allowed_attributes": [
+            "utility", "location", "sound", "value", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Discipline",
+        "allowed_attributes": [
+            "utility", "location", "composition", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Software",
+        "allowed_attributes": [
+            "size", "utility", "capability", "affordance", "role", "location", "composition", "value", "appearance", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Material",
+        "allowed_attributes": [
+            "color", "weight", "state", "texture", "temperature", "utility", "capability", "affordance", "role", "location", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Sport",
+        "allowed_attributes": [
+            "utility", "location", "origin", "behavior", "age", "affordance"
+        ]
+    },
+    {
+        "domain_name": "Anatomical Structure",
+        "allowed_attributes": [
+            "material", "color", "shape", "size", "weight", "state", "texture", "utility", "capability", "role", "location", "composition", "appearance", "biology"
+        ]
+    }
+]

@@ -1,0 +1,2830 @@
+{
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "data": {
+                "id": "Animal",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 0,
+                    "child_count": 2
+                },
+                "depth": 0,
+                "child_count": 2
+            },
+            "id": "Animal"
+        },
+        {
+            "data": {
+                "id": "Vertebrate",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 1,
+                    "child_count": 5
+                },
+                "depth": 1,
+                "child_count": 5
+            },
+            "id": "Vertebrate"
+        },
+        {
+            "data": {
+                "id": "Invertebrate",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 1,
+                    "child_count": 1
+                },
+                "depth": 1,
+                "child_count": 1
+            },
+            "id": "Invertebrate"
+        },
+        {
+            "data": {
+                "id": "Mammal",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 2,
+                    "child_count": 8
+                },
+                "depth": 2,
+                "child_count": 8
+            },
+            "id": "Mammal"
+        },
+        {
+            "data": {
+                "id": "Reptile",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 2,
+                    "child_count": 3
+                },
+                "depth": 2,
+                "child_count": 3
+            },
+            "id": "Reptile"
+        },
+        {
+            "data": {
+                "id": "Amphibian",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 2,
+                    "child_count": 2
+                },
+                "depth": 2,
+                "child_count": 2
+            },
+            "id": "Amphibian"
+        },
+        {
+            "data": {
+                "id": "Fish",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 2,
+                    "child_count": 3
+                },
+                "depth": 2,
+                "child_count": 3
+            },
+            "id": "Fish"
+        },
+        {
+            "data": {
+                "id": "Bird",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 2,
+                    "child_count": 4
+                },
+                "depth": 2,
+                "child_count": 4
+            },
+            "id": "Bird"
+        },
+        {
+            "data": {
+                "id": "Arthropod",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 2,
+                    "child_count": 3
+                },
+                "depth": 2,
+                "child_count": 3
+            },
+            "id": "Arthropod"
+        },
+        {
+            "data": {
+                "id": "Insect",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 3
+                },
+                "depth": 3,
+                "child_count": 3
+            },
+            "id": "Insect"
+        },
+        {
+            "data": {
+                "id": "Arachnid",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 2
+                },
+                "depth": 3,
+                "child_count": 2
+            },
+            "id": "Arachnid"
+        },
+        {
+            "data": {
+                "id": "Crustacean",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 2
+                },
+                "depth": 3,
+                "child_count": 2
+            },
+            "id": "Crustacean"
+        },
+        {
+            "data": {
+                "id": "Carnivore",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 4
+                },
+                "depth": 3,
+                "child_count": 4
+            },
+            "id": "Carnivore"
+        },
+        {
+            "data": {
+                "id": "Herbivore",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 3
+                },
+                "depth": 3,
+                "child_count": 3
+            },
+            "id": "Herbivore"
+        },
+        {
+            "data": {
+                "id": "Omnivore",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 0,
+                    "child_count": 0
+                },
+                "depth": 0,
+                "child_count": 0
+            },
+            "id": "Omnivore"
+        },
+        {
+            "data": {
+                "id": "Lion",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 4,
+                    "child_count": 0
+                },
+                "depth": 4,
+                "child_count": 0
+            },
+            "id": "Lion"
+        },
+        {
+            "data": {
+                "id": "Tiger",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 4,
+                    "child_count": 0
+                },
+                "depth": 4,
+                "child_count": 0
+            },
+            "id": "Tiger"
+        },
+        {
+            "data": {
+                "id": "Wolf",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 4,
+                    "child_count": 0
+                },
+                "depth": 4,
+                "child_count": 0
+            },
+            "id": "Wolf"
+        },
+        {
+            "data": {
+                "id": "Bear",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 4,
+                    "child_count": 0
+                },
+                "depth": 4,
+                "child_count": 0
+            },
+            "id": "Bear"
+        },
+        {
+            "data": {
+                "id": "Elephant",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 4,
+                    "child_count": 0
+                },
+                "depth": 4,
+                "child_count": 0
+            },
+            "id": "Elephant"
+        },
+        {
+            "data": {
+                "id": "Giraffe",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 4,
+                    "child_count": 0
+                },
+                "depth": 4,
+                "child_count": 0
+            },
+            "id": "Giraffe"
+        },
+        {
+            "data": {
+                "id": "Horse",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 4,
+                    "child_count": 0
+                },
+                "depth": 4,
+                "child_count": 0
+            },
+            "id": "Horse"
+        },
+        {
+            "data": {
+                "id": "Whale",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Whale"
+        },
+        {
+            "data": {
+                "id": "Dolphin",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Dolphin"
+        },
+        {
+            "data": {
+                "id": "Bat",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Bat"
+        },
+        {
+            "data": {
+                "id": "Platypus",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Platypus"
+        },
+        {
+            "data": {
+                "id": "Kangaroo",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Kangaroo"
+        },
+        {
+            "data": {
+                "id": "Koala",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Koala"
+        },
+        {
+            "data": {
+                "id": "Eagle",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Eagle"
+        },
+        {
+            "data": {
+                "id": "Penguin",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Penguin"
+        },
+        {
+            "data": {
+                "id": "Ostrich",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Ostrich"
+        },
+        {
+            "data": {
+                "id": "Parrot",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Parrot"
+        },
+        {
+            "data": {
+                "id": "Snake",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Snake"
+        },
+        {
+            "data": {
+                "id": "Lizard",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 0,
+                    "child_count": 0
+                },
+                "depth": 0,
+                "child_count": 0
+            },
+            "id": "Lizard"
+        },
+        {
+            "data": {
+                "id": "Turtle",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Turtle"
+        },
+        {
+            "data": {
+                "id": "Crocodile",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Crocodile"
+        },
+        {
+            "data": {
+                "id": "Frog",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Frog"
+        },
+        {
+            "data": {
+                "id": "Salamander",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Salamander"
+        },
+        {
+            "data": {
+                "id": "Shark",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Shark"
+        },
+        {
+            "data": {
+                "id": "Salmon",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Salmon"
+        },
+        {
+            "data": {
+                "id": "Clownfish",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 3,
+                    "child_count": 0
+                },
+                "depth": 3,
+                "child_count": 0
+            },
+            "id": "Clownfish"
+        },
+        {
+            "data": {
+                "id": "Bee",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 4,
+                    "child_count": 0
+                },
+                "depth": 4,
+                "child_count": 0
+            },
+            "id": "Bee"
+        },
+        {
+            "data": {
+                "id": "Ant",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 4,
+                    "child_count": 0
+                },
+                "depth": 4,
+                "child_count": 0
+            },
+            "id": "Ant"
+        },
+        {
+            "data": {
+                "id": "Butterfly",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 4,
+                    "child_count": 0
+                },
+                "depth": 4,
+                "child_count": 0
+            },
+            "id": "Butterfly"
+        },
+        {
+            "data": {
+                "id": "Spider",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 4,
+                    "child_count": 0
+                },
+                "depth": 4,
+                "child_count": 0
+            },
+            "id": "Spider"
+        },
+        {
+            "data": {
+                "id": "Scorpion",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 4,
+                    "child_count": 0
+                },
+                "depth": 4,
+                "child_count": 0
+            },
+            "id": "Scorpion"
+        },
+        {
+            "data": {
+                "id": "Crab",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 4,
+                    "child_count": 0
+                },
+                "depth": 4,
+                "child_count": 0
+            },
+            "id": "Crab"
+        },
+        {
+            "data": {
+                "id": "Lobster",
+                "node_type": "entity",
+                "metadata": {
+                    "depth": 4,
+                    "child_count": 0
+                },
+                "depth": 4,
+                "child_count": 0
+            },
+            "id": "Lobster"
+        },
+        {
+            "data": {
+                "id": "rank:kingdom",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "rank",
+                    "property_value": "kingdom"
+                },
+                "property_type": "rank",
+                "property_value": "kingdom"
+            },
+            "id": "rank:kingdom"
+        },
+        {
+            "data": {
+                "id": "rank:phylum",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "rank",
+                    "property_value": "phylum"
+                },
+                "property_type": "rank",
+                "property_value": "phylum"
+            },
+            "id": "rank:phylum"
+        },
+        {
+            "data": {
+                "id": "rank:class",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "rank",
+                    "property_value": "class"
+                },
+                "property_type": "rank",
+                "property_value": "class"
+            },
+            "id": "rank:class"
+        },
+        {
+            "data": {
+                "id": "anatomical:backbone",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "anatomical",
+                    "property_value": "backbone"
+                },
+                "property_type": "anatomical",
+                "property_value": "backbone"
+            },
+            "id": "anatomical:backbone"
+        },
+        {
+            "data": {
+                "id": "anatomical:exoskeleton",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "anatomical",
+                    "property_value": "exoskeleton"
+                },
+                "property_type": "anatomical",
+                "property_value": "exoskeleton"
+            },
+            "id": "anatomical:exoskeleton"
+        },
+        {
+            "data": {
+                "id": "anatomical:fur",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "anatomical",
+                    "property_value": "fur"
+                },
+                "property_type": "anatomical",
+                "property_value": "fur"
+            },
+            "id": "anatomical:fur"
+        },
+        {
+            "data": {
+                "id": "anatomical:scales",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "anatomical",
+                    "property_value": "scales"
+                },
+                "property_type": "anatomical",
+                "property_value": "scales"
+            },
+            "id": "anatomical:scales"
+        },
+        {
+            "data": {
+                "id": "anatomical:feathers",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "anatomical",
+                    "property_value": "feathers"
+                },
+                "property_type": "anatomical",
+                "property_value": "feathers"
+            },
+            "id": "anatomical:feathers"
+        },
+        {
+            "data": {
+                "id": "anatomical:gills",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "anatomical",
+                    "property_value": "gills"
+                },
+                "property_type": "anatomical",
+                "property_value": "gills"
+            },
+            "id": "anatomical:gills"
+        },
+        {
+            "data": {
+                "id": "anatomical:lungs",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "anatomical",
+                    "property_value": "lungs"
+                },
+                "property_type": "anatomical",
+                "property_value": "lungs"
+            },
+            "id": "anatomical:lungs"
+        },
+        {
+            "data": {
+                "id": "anatomical:wings",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "anatomical",
+                    "property_value": "wings"
+                },
+                "property_type": "anatomical",
+                "property_value": "wings"
+            },
+            "id": "anatomical:wings"
+        },
+        {
+            "data": {
+                "id": "anatomical:shell",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "anatomical",
+                    "property_value": "shell"
+                },
+                "property_type": "anatomical",
+                "property_value": "shell"
+            },
+            "id": "anatomical:shell"
+        },
+        {
+            "data": {
+                "id": "anatomical:trunk",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "anatomical",
+                    "property_value": "trunk"
+                },
+                "property_type": "anatomical",
+                "property_value": "trunk"
+            },
+            "id": "anatomical:trunk"
+        },
+        {
+            "data": {
+                "id": "anatomical:pouch",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "anatomical",
+                    "property_value": "pouch"
+                },
+                "property_type": "anatomical",
+                "property_value": "pouch"
+            },
+            "id": "anatomical:pouch"
+        },
+        {
+            "data": {
+                "id": "anatomical:fins",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "anatomical",
+                    "property_value": "fins"
+                },
+                "property_type": "anatomical",
+                "property_value": "fins"
+            },
+            "id": "anatomical:fins"
+        },
+        {
+            "data": {
+                "id": "anatomical:claws",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "anatomical",
+                    "property_value": "claws"
+                },
+                "property_type": "anatomical",
+                "property_value": "claws"
+            },
+            "id": "anatomical:claws"
+        },
+        {
+            "data": {
+                "id": "anatomical:legs",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "anatomical",
+                    "property_value": "legs"
+                },
+                "property_type": "anatomical",
+                "property_value": "legs"
+            },
+            "id": "anatomical:legs"
+        },
+        {
+            "data": {
+                "id": "metabolism:warm_blooded",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "metabolism",
+                    "property_value": "warm_blooded"
+                },
+                "property_type": "metabolism",
+                "property_value": "warm_blooded"
+            },
+            "id": "metabolism:warm_blooded"
+        },
+        {
+            "data": {
+                "id": "metabolism:cold_blooded",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "metabolism",
+                    "property_value": "cold_blooded"
+                },
+                "property_type": "metabolism",
+                "property_value": "cold_blooded"
+            },
+            "id": "metabolism:cold_blooded"
+        },
+        {
+            "data": {
+                "id": "reproduction:live_birth",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "reproduction",
+                    "property_value": "live_birth"
+                },
+                "property_type": "reproduction",
+                "property_value": "live_birth"
+            },
+            "id": "reproduction:live_birth"
+        },
+        {
+            "data": {
+                "id": "reproduction:eggs",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "reproduction",
+                    "property_value": "eggs"
+                },
+                "property_type": "reproduction",
+                "property_value": "eggs"
+            },
+            "id": "reproduction:eggs"
+        },
+        {
+            "data": {
+                "id": "substance:milk",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "substance",
+                    "property_value": "milk"
+                },
+                "property_type": "substance",
+                "property_value": "milk"
+            },
+            "id": "substance:milk"
+        },
+        {
+            "data": {
+                "id": "substance:venom",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "substance",
+                    "property_value": "venom"
+                },
+                "property_type": "substance",
+                "property_value": "venom"
+            },
+            "id": "substance:venom"
+        },
+        {
+            "data": {
+                "id": "substance:honey",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "substance",
+                    "property_value": "honey"
+                },
+                "property_type": "substance",
+                "property_value": "honey"
+            },
+            "id": "substance:honey"
+        },
+        {
+            "data": {
+                "id": "diet:meat",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "diet",
+                    "property_value": "meat"
+                },
+                "property_type": "diet",
+                "property_value": "meat"
+            },
+            "id": "diet:meat"
+        },
+        {
+            "data": {
+                "id": "diet:plants",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "diet",
+                    "property_value": "plants"
+                },
+                "property_type": "diet",
+                "property_value": "plants"
+            },
+            "id": "diet:plants"
+        },
+        {
+            "data": {
+                "id": "diet:insects",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "diet",
+                    "property_value": "insects"
+                },
+                "property_type": "diet",
+                "property_value": "insects"
+            },
+            "id": "diet:insects"
+        },
+        {
+            "data": {
+                "id": "diet:everything",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "diet",
+                    "property_value": "everything"
+                },
+                "property_type": "diet",
+                "property_value": "everything"
+            },
+            "id": "diet:everything"
+        },
+        {
+            "data": {
+                "id": "habitat:land",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "habitat",
+                    "property_value": "land"
+                },
+                "property_type": "habitat",
+                "property_value": "land"
+            },
+            "id": "habitat:land"
+        },
+        {
+            "data": {
+                "id": "habitat:water",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "habitat",
+                    "property_value": "water"
+                },
+                "property_type": "habitat",
+                "property_value": "water"
+            },
+            "id": "habitat:water"
+        },
+        {
+            "data": {
+                "id": "habitat:ocean",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "habitat",
+                    "property_value": "ocean"
+                },
+                "property_type": "habitat",
+                "property_value": "ocean"
+            },
+            "id": "habitat:ocean"
+        },
+        {
+            "data": {
+                "id": "habitat:sky",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "habitat",
+                    "property_value": "sky"
+                },
+                "property_type": "habitat",
+                "property_value": "sky"
+            },
+            "id": "habitat:sky"
+        },
+        {
+            "data": {
+                "id": "region:africa",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "region",
+                    "property_value": "africa"
+                },
+                "property_type": "region",
+                "property_value": "africa"
+            },
+            "id": "region:africa"
+        },
+        {
+            "data": {
+                "id": "region:asia",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "region",
+                    "property_value": "asia"
+                },
+                "property_type": "region",
+                "property_value": "asia"
+            },
+            "id": "region:asia"
+        },
+        {
+            "data": {
+                "id": "region:australia",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "region",
+                    "property_value": "australia"
+                },
+                "property_type": "region",
+                "property_value": "australia"
+            },
+            "id": "region:australia"
+        },
+        {
+            "data": {
+                "id": "region:antarctica",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "region",
+                    "property_value": "antarctica"
+                },
+                "property_type": "region",
+                "property_value": "antarctica"
+            },
+            "id": "region:antarctica"
+        },
+        {
+            "data": {
+                "id": "region:global",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "region",
+                    "property_value": "global"
+                },
+                "property_type": "region",
+                "property_value": "global"
+            },
+            "id": "region:global"
+        },
+        {
+            "data": {
+                "id": "size:tiny",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "size",
+                    "property_value": "tiny"
+                },
+                "property_type": "size",
+                "property_value": "tiny"
+            },
+            "id": "size:tiny"
+        },
+        {
+            "data": {
+                "id": "size:small",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "size",
+                    "property_value": "small"
+                },
+                "property_type": "size",
+                "property_value": "small"
+            },
+            "id": "size:small"
+        },
+        {
+            "data": {
+                "id": "size:medium",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "size",
+                    "property_value": "medium"
+                },
+                "property_type": "size",
+                "property_value": "medium"
+            },
+            "id": "size:medium"
+        },
+        {
+            "data": {
+                "id": "size:large",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "size",
+                    "property_value": "large"
+                },
+                "property_type": "size",
+                "property_value": "large"
+            },
+            "id": "size:large"
+        },
+        {
+            "data": {
+                "id": "size:huge",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "size",
+                    "property_value": "huge"
+                },
+                "property_type": "size",
+                "property_value": "huge"
+            },
+            "id": "size:huge"
+        },
+        {
+            "data": {
+                "id": "size:massive",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "size",
+                    "property_value": "massive"
+                },
+                "property_type": "size",
+                "property_value": "massive"
+            },
+            "id": "size:massive"
+        },
+        {
+            "data": {
+                "id": "social:solitary",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "social",
+                    "property_value": "solitary"
+                },
+                "property_type": "social",
+                "property_value": "solitary"
+            },
+            "id": "social:solitary"
+        },
+        {
+            "data": {
+                "id": "social:pack",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "social",
+                    "property_value": "pack"
+                },
+                "property_type": "social",
+                "property_value": "pack"
+            },
+            "id": "social:pack"
+        },
+        {
+            "data": {
+                "id": "social:herd",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "social",
+                    "property_value": "herd"
+                },
+                "property_type": "social",
+                "property_value": "herd"
+            },
+            "id": "social:herd"
+        },
+        {
+            "data": {
+                "id": "social:colony",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "social",
+                    "property_value": "colony"
+                },
+                "property_type": "social",
+                "property_value": "colony"
+            },
+            "id": "social:colony"
+        },
+        {
+            "data": {
+                "id": "ability:fly",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "ability",
+                    "property_value": "fly"
+                },
+                "property_type": "ability",
+                "property_value": "fly"
+            },
+            "id": "ability:fly"
+        },
+        {
+            "data": {
+                "id": "ability:swim",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "ability",
+                    "property_value": "swim"
+                },
+                "property_type": "ability",
+                "property_value": "swim"
+            },
+            "id": "ability:swim"
+        },
+        {
+            "data": {
+                "id": "ability:run_fast",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "ability",
+                    "property_value": "run_fast"
+                },
+                "property_type": "ability",
+                "property_value": "run_fast"
+            },
+            "id": "ability:run_fast"
+        },
+        {
+            "data": {
+                "id": "ability:jump",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "ability",
+                    "property_value": "jump"
+                },
+                "property_type": "ability",
+                "property_value": "jump"
+            },
+            "id": "ability:jump"
+        },
+        {
+            "data": {
+                "id": "ability:climb",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "ability",
+                    "property_value": "climb"
+                },
+                "property_type": "ability",
+                "property_value": "climb"
+            },
+            "id": "ability:climb"
+        },
+        {
+            "data": {
+                "id": "ability:sting",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "ability",
+                    "property_value": "sting"
+                },
+                "property_type": "ability",
+                "property_value": "sting"
+            },
+            "id": "ability:sting"
+        },
+        {
+            "data": {
+                "id": "ability:echolocation",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "ability",
+                    "property_value": "echolocation"
+                },
+                "property_type": "ability",
+                "property_value": "echolocation"
+            },
+            "id": "ability:echolocation"
+        },
+        {
+            "data": {
+                "id": "ability:web_spinning",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "ability",
+                    "property_value": "web_spinning"
+                },
+                "property_type": "ability",
+                "property_value": "web_spinning"
+            },
+            "id": "ability:web_spinning"
+        },
+        {
+            "data": {
+                "id": "ability:mimicry",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "ability",
+                    "property_value": "mimicry"
+                },
+                "property_type": "ability",
+                "property_value": "mimicry"
+            },
+            "id": "ability:mimicry"
+        },
+        {
+            "data": {
+                "id": "ability:walk",
+                "node_type": "property",
+                "metadata": {
+                    "property_type": "ability",
+                    "property_value": "walk"
+                },
+                "property_type": "ability",
+                "property_value": "walk"
+            },
+            "id": "ability:walk"
+        }
+    ],
+    "edges": [
+        {
+            "data": {
+                "source": "Animal",
+                "target": "rank:kingdom",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Animal",
+            "target": "rank:kingdom"
+        },
+        {
+            "data": {
+                "source": "Animal",
+                "target": "Vertebrate",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Animal",
+            "target": "Vertebrate"
+        },
+        {
+            "data": {
+                "source": "Animal",
+                "target": "Invertebrate",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Animal",
+            "target": "Invertebrate"
+        },
+        {
+            "data": {
+                "source": "Vertebrate",
+                "target": "rank:phylum",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Vertebrate",
+            "target": "rank:phylum"
+        },
+        {
+            "data": {
+                "source": "Vertebrate",
+                "target": "anatomical:backbone",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Vertebrate",
+            "target": "anatomical:backbone"
+        },
+        {
+            "data": {
+                "source": "Vertebrate",
+                "target": "Mammal",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Vertebrate",
+            "target": "Mammal"
+        },
+        {
+            "data": {
+                "source": "Vertebrate",
+                "target": "Bird",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Vertebrate",
+            "target": "Bird"
+        },
+        {
+            "data": {
+                "source": "Vertebrate",
+                "target": "Reptile",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Vertebrate",
+            "target": "Reptile"
+        },
+        {
+            "data": {
+                "source": "Vertebrate",
+                "target": "Amphibian",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Vertebrate",
+            "target": "Amphibian"
+        },
+        {
+            "data": {
+                "source": "Vertebrate",
+                "target": "Fish",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Vertebrate",
+            "target": "Fish"
+        },
+        {
+            "data": {
+                "source": "Invertebrate",
+                "target": "anatomical:backbone",
+                "relation_type": "lacks",
+                "metadata": {}
+            },
+            "source": "Invertebrate",
+            "target": "anatomical:backbone"
+        },
+        {
+            "data": {
+                "source": "Invertebrate",
+                "target": "Arthropod",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Invertebrate",
+            "target": "Arthropod"
+        },
+        {
+            "data": {
+                "source": "Mammal",
+                "target": "rank:class",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Mammal",
+            "target": "rank:class"
+        },
+        {
+            "data": {
+                "source": "Mammal",
+                "target": "anatomical:fur",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Mammal",
+            "target": "anatomical:fur"
+        },
+        {
+            "data": {
+                "source": "Mammal",
+                "target": "metabolism:warm_blooded",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Mammal",
+            "target": "metabolism:warm_blooded"
+        },
+        {
+            "data": {
+                "source": "Mammal",
+                "target": "substance:milk",
+                "relation_type": "has",
+                "metadata": {
+                    "verb": "produces"
+                }
+            },
+            "source": "Mammal",
+            "target": "substance:milk"
+        },
+        {
+            "data": {
+                "source": "Mammal",
+                "target": "reproduction:live_birth",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Mammal",
+            "target": "reproduction:live_birth"
+        },
+        {
+            "data": {
+                "source": "Mammal",
+                "target": "Carnivore",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Mammal",
+            "target": "Carnivore"
+        },
+        {
+            "data": {
+                "source": "Mammal",
+                "target": "Herbivore",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Mammal",
+            "target": "Herbivore"
+        },
+        {
+            "data": {
+                "source": "Mammal",
+                "target": "Whale",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Mammal",
+            "target": "Whale"
+        },
+        {
+            "data": {
+                "source": "Mammal",
+                "target": "Dolphin",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Mammal",
+            "target": "Dolphin"
+        },
+        {
+            "data": {
+                "source": "Mammal",
+                "target": "Bat",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Mammal",
+            "target": "Bat"
+        },
+        {
+            "data": {
+                "source": "Mammal",
+                "target": "Platypus",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Mammal",
+            "target": "Platypus"
+        },
+        {
+            "data": {
+                "source": "Mammal",
+                "target": "Kangaroo",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Mammal",
+            "target": "Kangaroo"
+        },
+        {
+            "data": {
+                "source": "Mammal",
+                "target": "Koala",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Mammal",
+            "target": "Koala"
+        },
+        {
+            "data": {
+                "source": "Reptile",
+                "target": "anatomical:scales",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Reptile",
+            "target": "anatomical:scales"
+        },
+        {
+            "data": {
+                "source": "Reptile",
+                "target": "metabolism:cold_blooded",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Reptile",
+            "target": "metabolism:cold_blooded"
+        },
+        {
+            "data": {
+                "source": "Reptile",
+                "target": "reproduction:eggs",
+                "relation_type": "has",
+                "metadata": {
+                    "verb": "lays"
+                }
+            },
+            "source": "Reptile",
+            "target": "reproduction:eggs"
+        },
+        {
+            "data": {
+                "source": "Reptile",
+                "target": "Snake",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Reptile",
+            "target": "Snake"
+        },
+        {
+            "data": {
+                "source": "Reptile",
+                "target": "Turtle",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Reptile",
+            "target": "Turtle"
+        },
+        {
+            "data": {
+                "source": "Reptile",
+                "target": "Crocodile",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Reptile",
+            "target": "Crocodile"
+        },
+        {
+            "data": {
+                "source": "Amphibian",
+                "target": "habitat:water",
+                "relation_type": "has",
+                "metadata": {
+                    "context": "larva"
+                }
+            },
+            "source": "Amphibian",
+            "target": "habitat:water"
+        },
+        {
+            "data": {
+                "source": "Amphibian",
+                "target": "habitat:land",
+                "relation_type": "has",
+                "metadata": {
+                    "context": "adult"
+                }
+            },
+            "source": "Amphibian",
+            "target": "habitat:land"
+        },
+        {
+            "data": {
+                "source": "Amphibian",
+                "target": "Frog",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Amphibian",
+            "target": "Frog"
+        },
+        {
+            "data": {
+                "source": "Amphibian",
+                "target": "Salamander",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Amphibian",
+            "target": "Salamander"
+        },
+        {
+            "data": {
+                "source": "Fish",
+                "target": "anatomical:gills",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Fish",
+            "target": "anatomical:gills"
+        },
+        {
+            "data": {
+                "source": "Fish",
+                "target": "habitat:water",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Fish",
+            "target": "habitat:water"
+        },
+        {
+            "data": {
+                "source": "Fish",
+                "target": "Shark",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Fish",
+            "target": "Shark"
+        },
+        {
+            "data": {
+                "source": "Fish",
+                "target": "Salmon",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Fish",
+            "target": "Salmon"
+        },
+        {
+            "data": {
+                "source": "Fish",
+                "target": "Clownfish",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Fish",
+            "target": "Clownfish"
+        },
+        {
+            "data": {
+                "source": "Bird",
+                "target": "anatomical:feathers",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Bird",
+            "target": "anatomical:feathers"
+        },
+        {
+            "data": {
+                "source": "Bird",
+                "target": "anatomical:wings",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Bird",
+            "target": "anatomical:wings"
+        },
+        {
+            "data": {
+                "source": "Bird",
+                "target": "reproduction:eggs",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Bird",
+            "target": "reproduction:eggs"
+        },
+        {
+            "data": {
+                "source": "Bird",
+                "target": "ability:fly",
+                "relation_type": "has",
+                "metadata": {
+                    "note": "General rule"
+                }
+            },
+            "source": "Bird",
+            "target": "ability:fly"
+        },
+        {
+            "data": {
+                "source": "Bird",
+                "target": "Eagle",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Bird",
+            "target": "Eagle"
+        },
+        {
+            "data": {
+                "source": "Bird",
+                "target": "Penguin",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Bird",
+            "target": "Penguin"
+        },
+        {
+            "data": {
+                "source": "Bird",
+                "target": "Ostrich",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Bird",
+            "target": "Ostrich"
+        },
+        {
+            "data": {
+                "source": "Bird",
+                "target": "Parrot",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Bird",
+            "target": "Parrot"
+        },
+        {
+            "data": {
+                "source": "Arthropod",
+                "target": "anatomical:exoskeleton",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Arthropod",
+            "target": "anatomical:exoskeleton"
+        },
+        {
+            "data": {
+                "source": "Arthropod",
+                "target": "Insect",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Arthropod",
+            "target": "Insect"
+        },
+        {
+            "data": {
+                "source": "Arthropod",
+                "target": "Arachnid",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Arthropod",
+            "target": "Arachnid"
+        },
+        {
+            "data": {
+                "source": "Arthropod",
+                "target": "Crustacean",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Arthropod",
+            "target": "Crustacean"
+        },
+        {
+            "data": {
+                "source": "Insect",
+                "target": "anatomical:legs",
+                "relation_type": "has",
+                "metadata": {
+                    "count": "6"
+                }
+            },
+            "source": "Insect",
+            "target": "anatomical:legs"
+        },
+        {
+            "data": {
+                "source": "Insect",
+                "target": "Bee",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Insect",
+            "target": "Bee"
+        },
+        {
+            "data": {
+                "source": "Insect",
+                "target": "Ant",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Insect",
+            "target": "Ant"
+        },
+        {
+            "data": {
+                "source": "Insect",
+                "target": "Butterfly",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Insect",
+            "target": "Butterfly"
+        },
+        {
+            "data": {
+                "source": "Arachnid",
+                "target": "anatomical:legs",
+                "relation_type": "has",
+                "metadata": {
+                    "count": "8"
+                }
+            },
+            "source": "Arachnid",
+            "target": "anatomical:legs"
+        },
+        {
+            "data": {
+                "source": "Arachnid",
+                "target": "Spider",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Arachnid",
+            "target": "Spider"
+        },
+        {
+            "data": {
+                "source": "Arachnid",
+                "target": "Scorpion",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Arachnid",
+            "target": "Scorpion"
+        },
+        {
+            "data": {
+                "source": "Crustacean",
+                "target": "Crab",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Crustacean",
+            "target": "Crab"
+        },
+        {
+            "data": {
+                "source": "Crustacean",
+                "target": "Lobster",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Crustacean",
+            "target": "Lobster"
+        },
+        {
+            "data": {
+                "source": "Carnivore",
+                "target": "diet:meat",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Carnivore",
+            "target": "diet:meat"
+        },
+        {
+            "data": {
+                "source": "Carnivore",
+                "target": "anatomical:claws",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Carnivore",
+            "target": "anatomical:claws"
+        },
+        {
+            "data": {
+                "source": "Carnivore",
+                "target": "Lion",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Carnivore",
+            "target": "Lion"
+        },
+        {
+            "data": {
+                "source": "Carnivore",
+                "target": "Tiger",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Carnivore",
+            "target": "Tiger"
+        },
+        {
+            "data": {
+                "source": "Carnivore",
+                "target": "Wolf",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Carnivore",
+            "target": "Wolf"
+        },
+        {
+            "data": {
+                "source": "Carnivore",
+                "target": "Bear",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Carnivore",
+            "target": "Bear"
+        },
+        {
+            "data": {
+                "source": "Herbivore",
+                "target": "diet:plants",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Herbivore",
+            "target": "diet:plants"
+        },
+        {
+            "data": {
+                "source": "Herbivore",
+                "target": "Elephant",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Herbivore",
+            "target": "Elephant"
+        },
+        {
+            "data": {
+                "source": "Herbivore",
+                "target": "Giraffe",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Herbivore",
+            "target": "Giraffe"
+        },
+        {
+            "data": {
+                "source": "Herbivore",
+                "target": "Horse",
+                "relation_type": "is_a",
+                "metadata": {}
+            },
+            "source": "Herbivore",
+            "target": "Horse"
+        },
+        {
+            "data": {
+                "source": "Lion",
+                "target": "region:africa",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Lion",
+            "target": "region:africa"
+        },
+        {
+            "data": {
+                "source": "Lion",
+                "target": "social:pack",
+                "relation_type": "has",
+                "metadata": {
+                    "term": "pride"
+                }
+            },
+            "source": "Lion",
+            "target": "social:pack"
+        },
+        {
+            "data": {
+                "source": "Tiger",
+                "target": "region:asia",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Tiger",
+            "target": "region:asia"
+        },
+        {
+            "data": {
+                "source": "Tiger",
+                "target": "social:solitary",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Tiger",
+            "target": "social:solitary"
+        },
+        {
+            "data": {
+                "source": "Wolf",
+                "target": "social:pack",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Wolf",
+            "target": "social:pack"
+        },
+        {
+            "data": {
+                "source": "Wolf",
+                "target": "habitat:land",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Wolf",
+            "target": "habitat:land"
+        },
+        {
+            "data": {
+                "source": "Bear",
+                "target": "diet:everything",
+                "relation_type": "has",
+                "metadata": {
+                    "note": "Omnivorous mostly"
+                }
+            },
+            "source": "Bear",
+            "target": "diet:everything"
+        },
+        {
+            "data": {
+                "source": "Bear",
+                "target": "size:large",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Bear",
+            "target": "size:large"
+        },
+        {
+            "data": {
+                "source": "Elephant",
+                "target": "size:huge",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Elephant",
+            "target": "size:huge"
+        },
+        {
+            "data": {
+                "source": "Elephant",
+                "target": "anatomical:trunk",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Elephant",
+            "target": "anatomical:trunk"
+        },
+        {
+            "data": {
+                "source": "Elephant",
+                "target": "region:africa",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Elephant",
+            "target": "region:africa"
+        },
+        {
+            "data": {
+                "source": "Elephant",
+                "target": "region:asia",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Elephant",
+            "target": "region:asia"
+        },
+        {
+            "data": {
+                "source": "Giraffe",
+                "target": "size:large",
+                "relation_type": "has",
+                "metadata": {
+                    "feature": "tall"
+                }
+            },
+            "source": "Giraffe",
+            "target": "size:large"
+        },
+        {
+            "data": {
+                "source": "Giraffe",
+                "target": "region:africa",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Giraffe",
+            "target": "region:africa"
+        },
+        {
+            "data": {
+                "source": "Horse",
+                "target": "ability:run_fast",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Horse",
+            "target": "ability:run_fast"
+        },
+        {
+            "data": {
+                "source": "Horse",
+                "target": "social:herd",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Horse",
+            "target": "social:herd"
+        },
+        {
+            "data": {
+                "source": "Whale",
+                "target": "habitat:ocean",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Whale",
+            "target": "habitat:ocean"
+        },
+        {
+            "data": {
+                "source": "Whale",
+                "target": "size:massive",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Whale",
+            "target": "size:massive"
+        },
+        {
+            "data": {
+                "source": "Whale",
+                "target": "anatomical:fur",
+                "relation_type": "lacks",
+                "metadata": {
+                    "note": "Exception"
+                }
+            },
+            "source": "Whale",
+            "target": "anatomical:fur"
+        },
+        {
+            "data": {
+                "source": "Dolphin",
+                "target": "habitat:ocean",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Dolphin",
+            "target": "habitat:ocean"
+        },
+        {
+            "data": {
+                "source": "Dolphin",
+                "target": "ability:swim",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Dolphin",
+            "target": "ability:swim"
+        },
+        {
+            "data": {
+                "source": "Dolphin",
+                "target": "social:pack",
+                "relation_type": "has",
+                "metadata": {
+                    "term": "pod"
+                }
+            },
+            "source": "Dolphin",
+            "target": "social:pack"
+        },
+        {
+            "data": {
+                "source": "Bat",
+                "target": "ability:fly",
+                "relation_type": "has",
+                "metadata": {
+                    "note": "True flight"
+                }
+            },
+            "source": "Bat",
+            "target": "ability:fly"
+        },
+        {
+            "data": {
+                "source": "Bat",
+                "target": "ability:echolocation",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Bat",
+            "target": "ability:echolocation"
+        },
+        {
+            "data": {
+                "source": "Bat",
+                "target": "habitat:sky",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Bat",
+            "target": "habitat:sky"
+        },
+        {
+            "data": {
+                "source": "Platypus",
+                "target": "reproduction:eggs",
+                "relation_type": "has",
+                "metadata": {
+                    "note": "Monotreme exception"
+                }
+            },
+            "source": "Platypus",
+            "target": "reproduction:eggs"
+        },
+        {
+            "data": {
+                "source": "Platypus",
+                "target": "reproduction:live_birth",
+                "relation_type": "lacks",
+                "metadata": {}
+            },
+            "source": "Platypus",
+            "target": "reproduction:live_birth"
+        },
+        {
+            "data": {
+                "source": "Platypus",
+                "target": "substance:venom",
+                "relation_type": "has",
+                "metadata": {
+                    "sex": "male"
+                }
+            },
+            "source": "Platypus",
+            "target": "substance:venom"
+        },
+        {
+            "data": {
+                "source": "Platypus",
+                "target": "region:australia",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Platypus",
+            "target": "region:australia"
+        },
+        {
+            "data": {
+                "source": "Kangaroo",
+                "target": "anatomical:pouch",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Kangaroo",
+            "target": "anatomical:pouch"
+        },
+        {
+            "data": {
+                "source": "Kangaroo",
+                "target": "ability:jump",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Kangaroo",
+            "target": "ability:jump"
+        },
+        {
+            "data": {
+                "source": "Kangaroo",
+                "target": "region:australia",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Kangaroo",
+            "target": "region:australia"
+        },
+        {
+            "data": {
+                "source": "Koala",
+                "target": "anatomical:pouch",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Koala",
+            "target": "anatomical:pouch"
+        },
+        {
+            "data": {
+                "source": "Koala",
+                "target": "diet:plants",
+                "relation_type": "has",
+                "metadata": {
+                    "specific": "Eucalyptus"
+                }
+            },
+            "source": "Koala",
+            "target": "diet:plants"
+        },
+        {
+            "data": {
+                "source": "Koala",
+                "target": "ability:climb",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Koala",
+            "target": "ability:climb"
+        },
+        {
+            "data": {
+                "source": "Eagle",
+                "target": "diet:meat",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Eagle",
+            "target": "diet:meat"
+        },
+        {
+            "data": {
+                "source": "Eagle",
+                "target": "anatomical:claws",
+                "relation_type": "has",
+                "metadata": {
+                    "term": "talons"
+                }
+            },
+            "source": "Eagle",
+            "target": "anatomical:claws"
+        },
+        {
+            "data": {
+                "source": "Penguin",
+                "target": "ability:fly",
+                "relation_type": "lacks",
+                "metadata": {}
+            },
+            "source": "Penguin",
+            "target": "ability:fly"
+        },
+        {
+            "data": {
+                "source": "Penguin",
+                "target": "ability:swim",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Penguin",
+            "target": "ability:swim"
+        },
+        {
+            "data": {
+                "source": "Penguin",
+                "target": "habitat:ocean",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Penguin",
+            "target": "habitat:ocean"
+        },
+        {
+            "data": {
+                "source": "Penguin",
+                "target": "region:antarctica",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Penguin",
+            "target": "region:antarctica"
+        },
+        {
+            "data": {
+                "source": "Ostrich",
+                "target": "ability:fly",
+                "relation_type": "lacks",
+                "metadata": {}
+            },
+            "source": "Ostrich",
+            "target": "ability:fly"
+        },
+        {
+            "data": {
+                "source": "Ostrich",
+                "target": "ability:run_fast",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Ostrich",
+            "target": "ability:run_fast"
+        },
+        {
+            "data": {
+                "source": "Ostrich",
+                "target": "size:large",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Ostrich",
+            "target": "size:large"
+        },
+        {
+            "data": {
+                "source": "Parrot",
+                "target": "ability:mimicry",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Parrot",
+            "target": "ability:mimicry"
+        },
+        {
+            "data": {
+                "source": "Parrot",
+                "target": "habitat:land",
+                "relation_type": "has",
+                "metadata": {
+                    "context": "jungle"
+                }
+            },
+            "source": "Parrot",
+            "target": "habitat:land"
+        },
+        {
+            "data": {
+                "source": "Snake",
+                "target": "substance:venom",
+                "relation_type": "has",
+                "metadata": {
+                    "note": "Some species"
+                }
+            },
+            "source": "Snake",
+            "target": "substance:venom"
+        },
+        {
+            "data": {
+                "source": "Snake",
+                "target": "ability:walk",
+                "relation_type": "lacks",
+                "metadata": {}
+            },
+            "source": "Snake",
+            "target": "ability:walk"
+        },
+        {
+            "data": {
+                "source": "Turtle",
+                "target": "anatomical:shell",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Turtle",
+            "target": "anatomical:shell"
+        },
+        {
+            "data": {
+                "source": "Turtle",
+                "target": "ability:swim",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Turtle",
+            "target": "ability:swim"
+        },
+        {
+            "data": {
+                "source": "Crocodile",
+                "target": "diet:meat",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Crocodile",
+            "target": "diet:meat"
+        },
+        {
+            "data": {
+                "source": "Crocodile",
+                "target": "habitat:water",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Crocodile",
+            "target": "habitat:water"
+        },
+        {
+            "data": {
+                "source": "Frog",
+                "target": "ability:jump",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Frog",
+            "target": "ability:jump"
+        },
+        {
+            "data": {
+                "source": "Salamander",
+                "target": "ability:climb",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Salamander",
+            "target": "ability:climb"
+        },
+        {
+            "data": {
+                "source": "Shark",
+                "target": "diet:meat",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Shark",
+            "target": "diet:meat"
+        },
+        {
+            "data": {
+                "source": "Shark",
+                "target": "size:large",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Shark",
+            "target": "size:large"
+        },
+        {
+            "data": {
+                "source": "Salmon",
+                "target": "habitat:water",
+                "relation_type": "has",
+                "metadata": {
+                    "note": "Salt and Fresh"
+                }
+            },
+            "source": "Salmon",
+            "target": "habitat:water"
+        },
+        {
+            "data": {
+                "source": "Bee",
+                "target": "ability:fly",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Bee",
+            "target": "ability:fly"
+        },
+        {
+            "data": {
+                "source": "Bee",
+                "target": "ability:sting",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Bee",
+            "target": "ability:sting"
+        },
+        {
+            "data": {
+                "source": "Bee",
+                "target": "substance:honey",
+                "relation_type": "has",
+                "metadata": {
+                    "verb": "produces"
+                }
+            },
+            "source": "Bee",
+            "target": "substance:honey"
+        },
+        {
+            "data": {
+                "source": "Bee",
+                "target": "social:colony",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Bee",
+            "target": "social:colony"
+        },
+        {
+            "data": {
+                "source": "Ant",
+                "target": "ability:fly",
+                "relation_type": "lacks",
+                "metadata": {
+                    "note": "Workers"
+                }
+            },
+            "source": "Ant",
+            "target": "ability:fly"
+        },
+        {
+            "data": {
+                "source": "Ant",
+                "target": "social:colony",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Ant",
+            "target": "social:colony"
+        },
+        {
+            "data": {
+                "source": "Butterfly",
+                "target": "ability:fly",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Butterfly",
+            "target": "ability:fly"
+        },
+        {
+            "data": {
+                "source": "Spider",
+                "target": "ability:web_spinning",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Spider",
+            "target": "ability:web_spinning"
+        },
+        {
+            "data": {
+                "source": "Spider",
+                "target": "substance:venom",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Spider",
+            "target": "substance:venom"
+        },
+        {
+            "data": {
+                "source": "Scorpion",
+                "target": "substance:venom",
+                "relation_type": "has",
+                "metadata": {
+                    "location": "tail"
+                }
+            },
+            "source": "Scorpion",
+            "target": "substance:venom"
+        },
+        {
+            "data": {
+                "source": "Crab",
+                "target": "anatomical:shell",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Crab",
+            "target": "anatomical:shell"
+        },
+        {
+            "data": {
+                "source": "Crab",
+                "target": "habitat:ocean",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Crab",
+            "target": "habitat:ocean"
+        },
+        {
+            "data": {
+                "source": "Lobster",
+                "target": "anatomical:claws",
+                "relation_type": "has",
+                "metadata": {}
+            },
+            "source": "Lobster",
+            "target": "anatomical:claws"
+        }
+    ]
+}

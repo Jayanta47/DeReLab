@@ -1,0 +1,138 @@
+[
+    {
+        "domain_name": "Animal",
+        "context": "Represents the taxonomic tree of the kingdom Animalia. To create this tree, use the biological classification hierarchy: Phylum -> Class -> Order -> Family -> Genus -> Species -> Subspecies. It branches into vertebrates and invertebrates (e.g., Animal -> Chordata -> Mammalia -> Carnivora -> Felidae -> Panthera -> Panthera leo / Lion). It tracks habitats, diets, conservation status, and evolutionary lineages.",
+        "source": "NCBI Taxonomy, Integrated Taxonomic Information System (ITIS), Animal Diversity Web (ADW), IUCN Red List",
+        "allowed_attributes": [
+            "color", "shape", "size", "weight", "texture", "temperature", "capability", "role", "location", "composition", "sound", "appearance", "origin", "relationship", "behavior", "biology", "cognition", "age", "habitat"
+        ]
+    },
+    {
+        "domain_name": "Plant",
+        "context": "Represents the taxonomic tree of the kingdom Plantae. To create this tree, categorize by division, class, order, family, genus, and species. It branches from broad groups like Tracheophytes (vascular plants) down to specific cultivars (e.g., Plant -> Angiosperm -> Rosales -> Rosaceae -> Rosa -> Rosa rubiginosa). It tracks biomes, medicinal/agricultural uses, and physical traits.",
+        "source": "World Flora Online (WFO), Tropicos, Plants of the World Online (POWO)",
+        "allowed_attributes": [
+            "color", "shape", "size", "weight", "texture", "affordance", "capability", "role", "location", "composition", "flavor", "appearance", "origin", "biology", "age", "habitat"
+        ]
+    },
+    {
+        "domain_name": "Tool",
+        "context": "Categorizes physical devices used to carry out specific functions. The hierarchy branches first by utility or industry (e.g., Hand Tools, Power Tools, Surgical Instruments, Agricultural Machinery), then by mechanism and specific use case (e.g., Hand Tool -> Cutting Tool -> Saw -> Hacksaw). It contains data on materials, power sources, and primary applications.",
+        "source": "Wikidata, Google Patents, McMaster-Carr Catalog, United Nations Standard Products and Services Code (UNSPSC)",
+        "allowed_attributes": [
+            "material", "color", "shape", "size", "weight", "texture", "utility", "capability", "affordance", "role", "location", "composition", "sound", "value", "appearance", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Food",
+        "context": "Covers all raw ingredients, edible items, and prepared dishes globally. The hierarchy branches into origin (Plant-based, Animal-based, Fungi) and preparation methods, branching down to regional cuisines and specific dish types (e.g., Prepared Food -> Liquid Food -> Soup -> Clear Soup -> Consommé). It tracks nutritional values, cultural origins, and ingredient relationships.",
+        "source": "USDA FoodData Central, Open Food Facts, TasteAtlas, Larousse Gastronomique",
+        "allowed_attributes": [
+            "material", "color", "shape", "size", "weight", "state", "texture", "temperature", "affordance", "location", "composition", "flavor", "value", "appearance", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Profession",
+        "context": "Categorizes human labor, careers, and jobs across all industries. The tree is structured by broad economic sectors, industry groups, and specific job roles. A path would be: Occupation -> Healthcare Practitioner -> Specialized Physician -> Surgeon -> Neurosurgeon. It includes details on required education, daily tasks, and economic sectors.",
+        "source": "O*NET OnLine, ILO International Standard Classification of Occupations (ISCO), BLS Standard Occupational Classification (SOC)",
+        "allowed_attributes": [
+            "utility", "capability", "role", "location", "value", "behavior", "cognition", "age"
+        ]
+    },
+    {
+        "domain_name": "Vehicle",
+        "context": "Encompasses all machines designed to transport people or cargo. To create the tree, divide first by operational environment (Land, Water, Air, Space). Then branch by propulsion method, purpose (commercial vs. private), and specific make/model. Example: Vehicle -> Land Vehicle -> Motor Vehicle -> Passenger Car -> Sedan -> Honda Accord.",
+        "source": "NHTSA databases, FAA Aircraft Registry, Jane's Information Group",
+        "allowed_attributes": [
+            "material", "color", "shape", "size", "weight", "texture", "utility", "capability", "affordance", "role", "location", "composition", "sound", "value", "appearance", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Location",
+        "context": "Encompasses all physical and political/administrative places on Earth. The tree can be split into two parallel hierarchies. Political: Continent -> Country -> State/Province -> County/District -> City -> Neighborhood. Physical: Continent -> Mountain Range -> Mountain -> Peak; or Ocean -> Sea -> Gulf -> Bay. It is about spatial hierarchy and coordinates.",
+        "source": "GeoNames, OpenStreetMap (OSM), Getty Thesaurus of Geographic Names (TGN), Wikidata",
+        "allowed_attributes": [
+            "size", "temperature", "role", "composition", "value", "appearance", "origin", "age", "habitat"
+        ]
+    },
+    {
+        "domain_name": "Compound",
+        "context": "Covers all known chemical substances, naturally occurring and synthetic. To create this tree, categorize by chemical structure, functional groups, and organic vs. inorganic classifications. A branch might look like: Chemical Entity -> Organic Compound -> Lipid -> Steroid -> Cholesterol. It contains data on molecular weight, toxicity, and chemical properties.",
+        "source": "PubChem, ChEMBL, ChemSpider, CAS Registry",
+        "allowed_attributes": [
+            "color", "state", "texture", "temperature", "utility", "capability", "role", "composition", "flavor", "appearance", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Disease",
+        "context": "Includes all human and animal diseases, disorders, syndromes, and injuries. The hierarchy is built by categorizing conditions by anatomical system (e.g., Cardiovascular), etiology/cause (e.g., Viral, Genetic), and specific subtypes (e.g., Infectious Disease -> Viral Infection -> RNA Virus -> Influenza).",
+        "source": "ICD-11 (World Health Organization), SNOMED CT, MeSH (Medical Subject Headings)",
+        "allowed_attributes": [
+            "capability", "role", "location", "origin", "biology", "age", "appearance", "behavior"
+        ]
+    },
+    {
+        "domain_name": "Object",
+        "context": "Encompasses all physical items, both natural and man-made, that can be perceived by the senses. The hierarchy branches into natural objects (e.g., rocks, water bodies, astronomical objects) and man-made objects (e.g., furniture, clothing). Each branch further categorizes by function, material, or cultural significance (e.g., Object -> Man-made Object -> Furniture -> Seating -> Chair -> Office Chair). It tracks physical properties, cultural contexts, and material compositions.",
+        "source": "Wikidata, Google Patents, McMaster-Carr Catalog, United Nations Standard Products and Services Code (UNSPSC)",
+        "allowed_attributes": [
+            "material", "color", "shape", "size", "weight", "state", "texture", "temperature", "utility", "capability", "affordance", "role", "location", "composition", "sound", "value", "appearance", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Work",
+        "context": "Categorizes all human media, art, and intellectual property. The hierarchy is first divided by medium (Literature, Music, Film, Fine Art, Software). Each medium branches into formats, genres, and sub-genres. For example: Creative Work -> Literature -> Book -> Fiction -> Science Fiction -> Cyberpunk. It tracks authorship, publication dates, and formats.",
+        "source": "MusicBrainz (Audio), IMDb (Film/TV), Open Library (Books), IGDB (Video Games), Wikidata",
+        "allowed_attributes": [
+            "utility", "affordance", "role", "location", "composition", "sound", "value", "appearance", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Language",
+        "context": "Maps all human languages, dialects, and language families. The hierarchy is structured by evolutionary linguistic relationships: Language Family -> Subfamily -> Branch -> Language -> Dialect (e.g., Indo-European -> Germanic -> West Germanic -> English -> American English). It tracks phonology, writing systems, and speaker demographics.",
+        "source": "Ethnologue, Glottolog, WALS (World Atlas of Language Structures)",
+        "allowed_attributes": [
+            "utility", "location", "sound", "value", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Discipline",
+        "context": "Categorizes all branches of human knowledge, education, and study. The hierarchy starts with broad domains and drills down: Broad Domain -> Discipline -> Sub-discipline -> Specialty (e.g., Science -> Natural Science -> Physics -> Quantum Mechanics). It tracks research methodologies, associated professions, and sub-fields.",
+        "source": "CIP (Classification of Instructional Programs), Wikipedia Outline of Academic Disciplines, Frascati Manual",
+        "allowed_attributes": [
+            "utility", "location", "composition", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Software",
+        "context": "Categorizes all computer programs, operating systems, and digital protocols. The tree branches by platform, license, or primary function (e.g., Software -> Application Software -> Productivity -> Word Processor -> Microsoft Word). It tracks dependencies, programming languages, operating environments, and versions.",
+        "source": "AlternativeTo, GitHub, PRONOM (National Archives software registry), Wikidata",
+        "allowed_attributes": [
+            "size", "utility", "capability", "affordance", "role", "location", "composition", "value", "appearance", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Material",
+        "context": "Classifies the physical matter from which objects are made. The hierarchy branches into natural and synthetic materials, states of matter, and material families (e.g., Material -> Solid -> Polymer -> Plastic -> Thermoplastic -> Polyethylene). It tracks physical properties, tensile strength, and manufacturing origins.",
+        "source": "MatWeb, Granta Design, PubChem",
+        "allowed_attributes": [
+            "color", "weight", "state", "texture", "temperature", "utility", "capability", "affordance", "role", "location", "origin", "age"
+        ]
+    },
+    {
+        "domain_name": "Sport",
+        "context": "Covers all competitive, recreational, and strategic games. The hierarchy divides into physical sports, board games, and video games, then categorizes by mechanics or team size (e.g., Sport -> Team Sport -> Invasion Game -> Association Football). It tracks rulesets, governing bodies, required equipment, and scoring systems.",
+        "source": "International Olympic Committee (IOC) databases, BoardGameGeek, Sports-Reference",
+        "allowed_attributes": [
+            "utility", "location", "origin", "behavior", "age", "affordance"
+        ]
+    },
+    {
+        "domain_name": "Anatomical Structure",
+        "context": "Maps the physical biological structures across lifeforms. The hierarchy divides by biological system, organ, tissue, and cellular component (e.g., Anatomy -> Cardiovascular System -> Heart -> Cardiac Muscle -> Myocardium). It tracks biological function, physical location, connected pathways, and spatial relationships.",
+        "source": "Foundational Model of Anatomy (FMA), Terminologia Anatomica, BTO (Brenda Tissue Ontology)",
+        "allowed_attributes": [
+            "material", "color", "shape", "size", "weight", "state", "texture", "utility", "capability", "role", "location", "composition", "appearance", "biology"
+        ]
+    }
+]

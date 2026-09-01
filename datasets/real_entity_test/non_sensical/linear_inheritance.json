@@ -1,0 +1,1844 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "topology": "linear_inheritance",
+    "difficulty": "easy",
+    "num_samples_generated": 8,
+    "num_conversations_generated": 8
+  },
+  "samples": [
+    {
+      "id": 0,
+      "graph_summary": {
+        "num_class_nodes": 11,
+        "num_nodes": 12,
+        "num_edges": 22,
+        "num_defeasible_edges": 11
+      },
+      "edge_sentences": {
+        "1": "A viatud is a kind of Animal.",
+        "2": "An aling is a kind of Viatud.",
+        "3": "A lacial is a kind of Aling.",
+        "4": "A teguth is a kind of Lacial.",
+        "5": "A romsan is a kind of Teguth.",
+        "6": "A bonent romsan is a kind of Beetle.",
+        "7": "A dising is a kind of Bonent.",
+        "8": "A laname is a kind of Dising.",
+        "9": "An enorse is a kind of Laname.",
+        "10": "A fisneast is a kind of Enorse.",
+        "11": "Can a fisneast fly?",
+        "12": "Lanames can fly.",
+        "13": "Animals cannot fly.",
+        "14": "Fisneasts cannot fly.",
+        "15": "Disings can fly.",
+        "16": "Alings can fly.",
+        "17": "Viatuds can fly.",
+        "18": "Lacials can fly.",
+        "19": "Bonent beetles can fly.",
+        "20": "Teguths can fly.",
+        "21": "Romsans can fly.",
+        "22": "Enorses cannot fly."
+      },
+      "conversations": [
+        {
+          "id": "linear_beetle_flight_H4_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Fisneast",
+            "hypothesis_target": "can fly",
+            "hypothesis_statement": "Fisneast can fly.",
+            "hypothesis_distance_from_root": 10
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext:\nA viatud is a kind of Animal. An aling is a kind of Viatud. A lacial is a kind of Aling. A teguth is a kind of Lacial. A romsan is a kind of Teguth. A bonent romsan is a kind of Beetle. A dising is a kind of Bonent. A laname is a kind of Dising. An enorse is a kind of Laname. A fisneast is a kind of Enorse.\n\nHypothesis: Fisneast can fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "unknown",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nLanames can fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                8,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nAnimals cannot fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                0,
+                10
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nFisneasts cannot fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                10,
+                0
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nDisings can fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                7,
+                3
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nAlings can fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 5,
+              "distance": [
+                2,
+                8
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nViatuds can fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 6,
+              "distance": [
+                1,
+                9
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nLacials can fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 7,
+              "distance": [
+                3,
+                7
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nBonent beetles can fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 8,
+              "distance": [
+                6,
+                4
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nTeguths can fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 9,
+              "distance": [
+                4,
+                6
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nRomsans can fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 10,
+              "distance": [
+                5,
+                5
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nEnorses cannot fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 11,
+              "distance": [
+                9,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "graph_summary": {
+        "num_class_nodes": 11,
+        "num_nodes": 12,
+        "num_edges": 22,
+        "num_defeasible_edges": 11
+      },
+      "edge_sentences": {
+        "1": "A viant is a kind of Animal.",
+        "2": "A drufru is a kind of Viant.",
+        "3": "A gracity is a kind of Drufru.",
+        "4": "A maling is a kind of Gracity.",
+        "5": "A chieg is a kind of Maling.",
+        "6": "A hemaing is a kind of Chieg.",
+        "7": "An autoory is a kind of Hemaing.",
+        "8": "A nupbest is a kind of Autoory.",
+        "9": "A chiep is a kind of Nupbest.",
+        "10": "A badans is a kind of Chiep.",
+        "11": "Does a badans live in the sea?",
+        "12": "Animals do not live in the sea.",
+        "13": "Viants do not live in the sea.",
+        "14": "Drufrus live in the sea.",
+        "15": "Gracities live in the sea.",
+        "16": "Malings live in the sea.",
+        "17": "Chiegs do not live in the sea.",
+        "18": "Hemaings do not live in the sea.",
+        "19": "Autoories do not live in the sea.",
+        "20": "Nupbests do not live in the sea.",
+        "21": "Chieps do not live in the sea.",
+        "22": "Badanses live in the sea."
+      },
+      "conversations": [
+        {
+          "id": "linear_chordate_marine_H4_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Badans",
+            "hypothesis_target": "lives in the sea",
+            "hypothesis_statement": "Badans lives in the sea.",
+            "hypothesis_distance_from_root": 10
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext:\nA viant is a kind of Animal. A drufru is a kind of Viant. A gracity is a kind of Drufru. A maling is a kind of Gracity. A chieg is a kind of Maling. A hemaing is a kind of Chieg. An autoory is a kind of Hemaing. A nupbest is a kind of Autoory. A chiep is a kind of Nupbest. A badans is a kind of Chiep.\n\nHypothesis: Badans lives in the sea.\n\nQuestion: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "unknown",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nAnimals do not live in the sea.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                0,
+                10
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nViants do not live in the sea.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                1,
+                9
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nDrufrus live in the sea.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                2,
+                8
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nGracities live in the sea.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                3,
+                7
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nMalings live in the sea.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 5,
+              "distance": [
+                4,
+                6
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nChiegs do not live in the sea.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 6,
+              "distance": [
+                5,
+                5
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nHemaings do not live in the sea.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 7,
+              "distance": [
+                6,
+                4
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nAutoories do not live in the sea.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 8,
+              "distance": [
+                7,
+                3
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nNupbests do not live in the sea.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 9,
+              "distance": [
+                8,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nChieps do not live in the sea.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 10,
+              "distance": [
+                9,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nBadanses live in the sea.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 11,
+              "distance": [
+                10,
+                0
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "graph_summary": {
+        "num_class_nodes": 11,
+        "num_nodes": 12,
+        "num_edges": 22,
+        "num_defeasible_edges": 11
+      },
+      "edge_sentences": {
+        "1": "A dinty is a kind of Plant.",
+        "2": "A bounte is a kind of Dinty.",
+        "3": "A quidat is a kind of Bounte.",
+        "4": "An ensit is a kind of Quidat.",
+        "5": "An anate is a kind of Ensit.",
+        "6": "An animant is a kind of Anate.",
+        "7": "A grass is a kind of Animant.",
+        "8": "A rophyte is a kind of Equaleg.",
+        "9": "An eejech is a kind of Rophyte.",
+        "10": "A riezith is a kind of Eejech.",
+        "11": "Does a riezith have woody stems?",
+        "12": "Dinties do not have woody stems.",
+        "13": "Rieziths have woody stems.",
+        "14": "Bountes have woody stems.",
+        "15": "Plants do not have woody stems.",
+        "16": "Equalegs do not have woody stems.",
+        "17": "Quidats do not have woody stems.",
+        "18": "Animants do not have woody stems.",
+        "19": "Anates do not have woody stems.",
+        "20": "Ensits do not have woody stems.",
+        "21": "Eejeches have woody stems.",
+        "22": "Rophytes have woody stems."
+      },
+      "conversations": [
+        {
+          "id": "linear_bamboo_woody_H4_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Riezith",
+            "hypothesis_target": "has woody stems",
+            "hypothesis_statement": "Riezith has woody stems.",
+            "hypothesis_distance_from_root": 10
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext:\nA dinty is a kind of Plant. A bounte is a kind of Dinty. A quidat is a kind of Bounte. An ensit is a kind of Quidat. An anate is a kind of Ensit. An animant is a kind of Anate. A grass is a kind of Animant. A rophyte is a kind of Equaleg. An eejech is a kind of Rophyte. A riezith is a kind of Eejech.\n\nHypothesis: Riezith has woody stems.\n\nQuestion: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "unknown",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nDinties do not have woody stems.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                1,
+                9
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nRieziths have woody stems.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                10,
+                0
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nBountes have woody stems.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                2,
+                8
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nPlants do not have woody stems.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                0,
+                10
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nEqualegs do not have woody stems.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 5,
+              "distance": [
+                7,
+                3
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nQuidats do not have woody stems.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 6,
+              "distance": [
+                3,
+                7
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nAnimants do not have woody stems.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 7,
+              "distance": [
+                6,
+                4
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nAnates do not have woody stems.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 8,
+              "distance": [
+                5,
+                5
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nEnsits do not have woody stems.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 9,
+              "distance": [
+                4,
+                6
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nEejeches have woody stems.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 10,
+              "distance": [
+                9,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nRophytes have woody stems.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 11,
+              "distance": [
+                8,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "graph_summary": {
+        "num_class_nodes": 11,
+        "num_nodes": 12,
+        "num_edges": 17,
+        "num_defeasible_edges": 6
+      },
+      "edge_sentences": {
+        "1": "An ornat is a kind of Animal.",
+        "2": "An ealimer is a kind of Ornat.",
+        "3": "An avent is a kind of Ealimer.",
+        "4": "A zoodeer is a kind of Avent.",
+        "5": "A wealit is a kind of Zoodeer.",
+        "6": "A dinal is a kind of Wealit.",
+        "7": "A dission is a kind of Dinal.",
+        "8": "An adenin is a kind of Dission.",
+        "9": "A safeadd is a kind of Adenin.",
+        "10": "A graem is a kind of Safeadd.",
+        "11": "Does a Graem hunt in a pack?",
+        "12": "Animals do not hunt in a pack.",
+        "13": "Ealimers do not hunt in a pack.",
+        "14": "Wealits hunt in a pack.",
+        "15": "Dinals hunt in a pack.",
+        "16": "Dissions hunt in a pack.",
+        "17": "Adenins do not hunt in a pack."
+      },
+      "conversations": [
+        {
+          "id": "linear_canid_pack_H4_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Graem",
+            "hypothesis_target": "hunts in a pack",
+            "hypothesis_statement": "Graem hunts in a pack.",
+            "hypothesis_distance_from_root": 10
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext:\nAn ornat is a kind of Animal. An ealimer is a kind of Ornat. An avent is a kind of Ealimer. A zoodeer is a kind of Avent. A wealit is a kind of Zoodeer. A dinal is a kind of Wealit. A dission is a kind of Dinal. An adenin is a kind of Dission. A safeadd is a kind of Adenin. A graem is a kind of Safeadd.\n\nHypothesis: Graem hunts in a pack.\n\nQuestion: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "unknown",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nAnimals do not hunt in a pack.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                0,
+                10
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nEalimers do not hunt in a pack.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                2,
+                8
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nWealits hunt in a pack.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                5,
+                5
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nDinals hunt in a pack.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                6,
+                4
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nDissions hunt in a pack.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 5,
+              "distance": [
+                7,
+                3
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nAdenins do not hunt in a pack.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 6,
+              "distance": [
+                8,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "graph_summary": {
+        "num_class_nodes": 12,
+        "num_nodes": 13,
+        "num_edges": 24,
+        "num_defeasible_edges": 12
+      },
+      "edge_sentences": {
+        "1": "A platuyo is a kind of Plant.",
+        "2": "A dishet is a kind of Platuyo.",
+        "3": "A derect is a kind of Dishet.",
+        "4": "A crect is a kind of Derect.",
+        "5": "A mootmid is a kind of Crect.",
+        "6": "A punce is a kind of Mootmid.",
+        "7": "A dical is a kind of Punce.",
+        "8": "A plant in the nomane is a kind of Dical.",
+        "9": "A plant in the modee is a kind of Nomane.",
+        "10": "A torge plant is a kind of Modee.",
+        "11": "A mudzun is a kind of Torge.",
+        "12": "Is a mudzun safe to eat?",
+        "13": "Mudzuns are safe to eat.",
+        "14": "Torge plants are safe to eat.",
+        "15": "Plants in the modees are not safe to eat.",
+        "16": "Plants in the nomanes are not safe to eat.",
+        "17": "Dicals are safe to eat.",
+        "18": "Punces are safe to eat.",
+        "19": "Mootmids are safe to eat.",
+        "20": "Crects are safe to eat.",
+        "21": "Derects are safe to eat.",
+        "22": "Dishets are not safe to eat.",
+        "23": "Platuyos are not safe to eat.",
+        "24": "Plants are not safe to eat."
+      },
+      "conversations": [
+        {
+          "id": "linear_nightshade_edible_H4_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Mudzun",
+            "hypothesis_target": "is safe to eat",
+            "hypothesis_statement": "Mudzun is safe to eat.",
+            "hypothesis_distance_from_root": 11
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext:\nA platuyo is a kind of Plant. A dishet is a kind of Platuyo. A derect is a kind of Dishet. A crect is a kind of Derect. A mootmid is a kind of Crect. A punce is a kind of Mootmid. A dical is a kind of Punce. A plant in the nomane is a kind of Dical. A plant in the modee is a kind of Nomane. A torge plant is a kind of Modee. A mudzun is a kind of Torge.\n\nHypothesis: Mudzun is safe to eat.\n\nQuestion: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "unknown",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nMudzuns are safe to eat.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                11,
+                0
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nTorge plants are safe to eat.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                10,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nPlants in the modees are not safe to eat.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                9,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nPlants in the nomanes are not safe to eat.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                8,
+                3
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nDicals are safe to eat.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 5,
+              "distance": [
+                7,
+                4
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nPunces are safe to eat.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 6,
+              "distance": [
+                6,
+                5
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nMootmids are safe to eat.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 7,
+              "distance": [
+                5,
+                6
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nCrects are safe to eat.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 8,
+              "distance": [
+                4,
+                7
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nDerects are safe to eat.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 9,
+              "distance": [
+                3,
+                8
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nDishets are not safe to eat.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 10,
+              "distance": [
+                2,
+                9
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nPlatuyos are not safe to eat.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 11,
+              "distance": [
+                1,
+                10
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nPlants are not safe to eat.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 12,
+              "distance": [
+                0,
+                11
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "graph_summary": {
+        "num_class_nodes": 11,
+        "num_nodes": 12,
+        "num_edges": 22,
+        "num_defeasible_edges": 11
+      },
+      "edge_sentences": {
+        "1": "An aperial is a kind of Animal.",
+        "2": "A matint is a kind of Aperial.",
+        "3": "A steale is a kind of Matint.",
+        "4": "A narion is a kind of Steale.",
+        "5": "A washut is a kind of Narion.",
+        "6": "An emohant is a kind of Washut.",
+        "7": "A treag is a kind of Emohant.",
+        "8": "An anere is a kind of Treag.",
+        "9": "A croving is a kind of Anere.",
+        "10": "A faefist is a kind of Croving.",
+        "11": "Does a faefist live in trees?",
+        "12": "Aneres live in trees.",
+        "13": "Matints do not live in trees.",
+        "14": "Treags live in trees.",
+        "15": "Aperials do not live in trees.",
+        "16": "Steales live in trees.",
+        "17": "Faefists do not live in trees.",
+        "18": "Crovings do not live in trees.",
+        "19": "Emohants live in trees.",
+        "20": "Animals do not live in trees.",
+        "21": "Narions live in trees.",
+        "22": "Washuts live in trees."
+      },
+      "conversations": [
+        {
+          "id": "linear_primate_arboreal_H4_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Faefist",
+            "hypothesis_target": "lives in trees",
+            "hypothesis_statement": "Faefist lives in trees.",
+            "hypothesis_distance_from_root": 10
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext:\nAn aperial is a kind of Animal. A matint is a kind of Aperial. A steale is a kind of Matint. A narion is a kind of Steale. A washut is a kind of Narion. An emohant is a kind of Washut. A treag is a kind of Emohant. An anere is a kind of Treag. A croving is a kind of Anere. A faefist is a kind of Croving.\n\nHypothesis: Faefist lives in trees.\n\nQuestion: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "unknown",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nAneres live in trees.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                8,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nMatints do not live in trees.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                2,
+                8
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nTreags live in trees.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                7,
+                3
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nAperials do not live in trees.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                1,
+                9
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nSteales live in trees.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 5,
+              "distance": [
+                3,
+                7
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nFaefists do not live in trees.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 6,
+              "distance": [
+                10,
+                0
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nCrovings do not live in trees.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 7,
+              "distance": [
+                9,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nEmohants live in trees.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 8,
+              "distance": [
+                6,
+                4
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nAnimals do not live in trees.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 9,
+              "distance": [
+                0,
+                10
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nNarions live in trees.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 10,
+              "distance": [
+                4,
+                6
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nWashuts live in trees.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 11,
+              "distance": [
+                5,
+                5
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "no effect",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "graph_summary": {
+        "num_class_nodes": 11,
+        "num_nodes": 12,
+        "num_edges": 22,
+        "num_defeasible_edges": 11
+      },
+      "edge_sentences": {
+        "1": "A hummal is a kind of Organism.",
+        "2": "A leatina is a kind of Hummal.",
+        "3": "A wornate is a kind of Leatina.",
+        "4": "A livick is a kind of Wornate.",
+        "5": "A koochant is a kind of Livick.",
+        "6": "A booll is a kind of Koochant.",
+        "7": "A tametio is a kind of Booll.",
+        "8": "An exuals is a kind of Tametio.",
+        "9": "A vertive is a kind of Exuals.",
+        "10": "A guille is a kind of Vertive.",
+        "11": "Does a guille have a bony skeleton?",
+        "12": "Organisms do not have a bony skeleton.",
+        "13": "Hummals do not have a bony skeleton.",
+        "14": "Leatinas do not have a bony skeleton.",
+        "15": "Wornates have a bony skeleton.",
+        "16": "Livicks have a bony skeleton.",
+        "17": "Koochants do not have a bony skeleton.",
+        "18": "Boolls do not have a bony skeleton.",
+        "19": "Tametios do not have a bony skeleton.",
+        "20": "Exualses do not have a bony skeleton.",
+        "21": "Vertives do not have a bony skeleton.",
+        "22": "Guilles do not have a bony skeleton."
+      },
+      "conversations": [
+        {
+          "id": "linear_shark_skeleton_H4_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Guille",
+            "hypothesis_target": "has a bony skeleton",
+            "hypothesis_statement": "Guille has a bony skeleton.",
+            "hypothesis_distance_from_root": 10
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext:\nA hummal is a kind of Organism. A leatina is a kind of Hummal. A wornate is a kind of Leatina. A livick is a kind of Wornate. A koochant is a kind of Livick. A booll is a kind of Koochant. A tametio is a kind of Booll. An exuals is a kind of Tametio. A vertive is a kind of Exuals. A guille is a kind of Vertive.\n\nHypothesis: Guille has a bony skeleton.\n\nQuestion: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "unknown",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nOrganisms do not have a bony skeleton.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                0,
+                10
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nHummals do not have a bony skeleton.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                1,
+                9
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nLeatinas do not have a bony skeleton.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                2,
+                8
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nWornates have a bony skeleton.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                3,
+                7
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nLivicks have a bony skeleton.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 5,
+              "distance": [
+                4,
+                6
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nKoochants do not have a bony skeleton.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 6,
+              "distance": [
+                5,
+                5
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nBoolls do not have a bony skeleton.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 7,
+              "distance": [
+                6,
+                4
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nTametios do not have a bony skeleton.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 8,
+              "distance": [
+                7,
+                3
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nExualses do not have a bony skeleton.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 9,
+              "distance": [
+                8,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nVertives do not have a bony skeleton.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 10,
+              "distance": [
+                9,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nGuilles do not have a bony skeleton.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 11,
+              "distance": [
+                10,
+                0
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "graph_summary": {
+        "num_class_nodes": 13,
+        "num_nodes": 14,
+        "num_edges": 26,
+        "num_defeasible_edges": 13
+      },
+      "edge_sentences": {
+        "1": "A raegaen is a kind of Animal.",
+        "2": "A modang is a kind of Raegaen.",
+        "3": "A shoust is a kind of Modang.",
+        "4": "A predat is a kind of Shoust.",
+        "5": "A carge is a kind of Predat.",
+        "6": "A subjunt is a kind of Carge.",
+        "7": "A goble is a kind of Subjunt.",
+        "8": "A fefor is a kind of Goble.",
+        "9": "A ramboo is a kind of Fefor.",
+        "10": "A grient is a kind of Ramboo.",
+        "11": "A griel is a kind of Grient.",
+        "12": "An equad is a kind of Griel.",
+        "13": "Can an equad fly?",
+        "14": "Animals cannot fly.",
+        "15": "Raegaens cannot fly.",
+        "16": "Modangs cannot fly.",
+        "17": "Shousts cannot fly.",
+        "18": "Predats cannot fly.",
+        "19": "Carges cannot fly.",
+        "20": "Subjunts cannot fly.",
+        "21": "Gobles cannot fly.",
+        "22": "Fefors cannot fly.",
+        "23": "Ramboos can fly.",
+        "24": "Grients cannot fly.",
+        "25": "Griels can fly.",
+        "26": "Equads can fly."
+      },
+      "conversations": [
+        {
+          "id": "linear_tinamou_flight_H4_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Equad",
+            "hypothesis_target": "can fly",
+            "hypothesis_statement": "Equad can fly.",
+            "hypothesis_distance_from_root": 12
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext:\nA raegaen is a kind of Animal. A modang is a kind of Raegaen. A shoust is a kind of Modang. A predat is a kind of Shoust. A carge is a kind of Predat. A subjunt is a kind of Carge. A goble is a kind of Subjunt. A fefor is a kind of Goble. A ramboo is a kind of Fefor. A grient is a kind of Ramboo. A griel is a kind of Grient. An equad is a kind of Griel.\n\nHypothesis: Equad can fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "unknown",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nAnimals cannot fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                0,
+                12
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nRaegaens cannot fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                1,
+                11
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nModangs cannot fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                2,
+                10
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nShousts cannot fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                3,
+                9
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nPredats cannot fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 5,
+              "distance": [
+                4,
+                8
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nCarges cannot fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 6,
+              "distance": [
+                5,
+                7
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nSubjunts cannot fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 7,
+              "distance": [
+                6,
+                6
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nGobles cannot fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 8,
+              "distance": [
+                7,
+                5
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nFefors cannot fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 9,
+              "distance": [
+                8,
+                4
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nRamboos can fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 10,
+              "distance": [
+                9,
+                3
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nGrients cannot fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 11,
+              "distance": [
+                10,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nGriels can fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 12,
+              "distance": [
+                11,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update:\nEquads can fly.\n\nQuestion: Given all the information so far, does the information support the hypothesis?",
+              "serial": 13,
+              "distance": [
+                12,
+                0
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

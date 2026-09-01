@@ -1,0 +1,3442 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "topology": "linear_inheritance",
+    "difficulty": "easy",
+    "num_samples_requested": 30,
+    "num_samples_generated": 30,
+    "total_attempts": 30,
+    "saturated": false,
+    "seed": 71239,
+    "root_concept_weights": {
+      "animal": 0.2,
+      "mammal": 0.15,
+      "vertebrate": 0.15,
+      "plant": 0.15,
+      "insect": 0.15,
+      "microorganism": 0.1,
+      "bird": 0.1
+    },
+    "dedup_enabled": true,
+    "max_consecutive_duplicates": 10,
+    "difficulty_config": {
+      "serial_random": true,
+      "sparsity_factor_range": [
+        0.2,
+        0.4
+      ],
+      "chain_length_configs": [
+        {
+          "chain_length": 4,
+          "num_defeasible_fraction_range": [
+            0.8,
+            1
+          ]
+        },
+        {
+          "chain_length": 5,
+          "num_defeasible_fraction_range": [
+            0.6,
+            0.8
+          ]
+        },
+        {
+          "chain_length": 6,
+          "num_defeasible_fraction_range": [
+            0.5,
+            0.75
+          ]
+        }
+      ]
+    },
+    "dedup_stats": {
+      "total_checked": 30,
+      "total_duplicates": 0,
+      "unique_count": 30,
+      "duplicate_rate": 0.0
+    }
+  },
+  "samples": [
+    {
+      "id": 0,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Mammal",
+        "root_concept": "mammal",
+        "chain_length": 6,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 11,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "75a856b9": "Mammals have a woolly covering.",
+        "edb56c01": "Gisbeb is a kind of mammal.",
+        "3f8d6b04": "Gisbeb has a woolly covering.",
+        "fc88e96f": "Chent is a kind of Gisbeb.",
+        "c03e3726": "Trint is a kind of Chent.",
+        "20212298": "Trint does not have a woolly covering.",
+        "3cb0ae83": "Drupaed is a kind of Trint.",
+        "535c683d": "Brurveas is a kind of Drupaed.",
+        "5e598c95": "Brurveas does not have a woolly covering.",
+        "1cfe3fbf": "Mareap is a kind of Brurveas.",
+        "7cf5eb3a": "Does Mareap have a woolly covering?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Mareap",
+            "hypothesis_target": "woolly",
+            "hypothesis_statement": "Mareap has a woolly covering.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Mammals have a woolly covering. Gisbeb is a kind of mammal. Chent is a kind of Gisbeb. Trint is a kind of Chent. Drupaed is a kind of Trint. Brurveas is a kind of Drupaed. Mareap is a kind of Brurveas. Hypothesis: Mareap has a woolly covering. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Trint does not have a woolly covering. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Gisbeb has a woolly covering. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Brurveas does not have a woolly covering. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                5,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Insect",
+        "root_concept": "insect",
+        "chain_length": 4,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.8,
+          1
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 6,
+        "num_edges": 9,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "6702bb70": "Insects undergo paurometabolous development.",
+        "eda5239d": "Scuel is a kind of insect.",
+        "a856d282": "Scuel does not undergoes paurometabolous development.",
+        "97f97d87": "Akmale is a kind of Scuel.",
+        "bc7398cc": "Akmale does not undergoes paurometabolous development.",
+        "0d3d26a0": "Goote is a kind of Akmale.",
+        "848f4005": "Goote does not undergoes paurometabolous development.",
+        "b799022a": "Einal is a kind of Goote.",
+        "bf472213": "Does Einal undergoes paurometabolous development?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_4_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Einal",
+            "hypothesis_target": "paurometabolous",
+            "hypothesis_statement": "Einal undergoes paurometabolous development.",
+            "hypothesis_distance_from_root": 4
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Insects undergo paurometabolous development. Scuel is a kind of insect. Akmale is a kind of Scuel. Goote is a kind of Akmale. Einal is a kind of Goote. Hypothesis: Einal undergoes paurometabolous development. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Scuel does not undergoes paurometabolous development. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Akmale does not undergoes paurometabolous development. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Goote does not undergoes paurometabolous development. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                3,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Vertebrate",
+        "root_concept": "vertebrate",
+        "chain_length": 6,
+        "num_defeasible_edges": 4,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 12,
+        "num_defeasible_edges": 4
+      },
+      "edge_sentences": {
+        "dabffe49": "Vertebrates exhibit bilateral anatomical traits.",
+        "c9967226": "Agrine is a kind of vertebrate.",
+        "a7c5fdb6": "Agrine does not exhibits bilateral anatomical traits.",
+        "66bcd1c2": "Lares is a kind of Agrine.",
+        "9a31b334": "Lient is a kind of Lares.",
+        "bca724f3": "Lient does not exhibits bilateral anatomical traits.",
+        "cdf94af2": "Rovic is a kind of Lient.",
+        "85978a11": "Rovic does not exhibits bilateral anatomical traits.",
+        "07db72de": "Nomery is a kind of Rovic.",
+        "a0f1cf7b": "Nomery exhibits bilateral anatomical traits.",
+        "2e34c423": "Eation is a kind of Nomery.",
+        "5a5282a3": "Does Eation exhibits bilateral anatomical traits?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Eation",
+            "hypothesis_target": "bilateral",
+            "hypothesis_statement": "Eation exhibits bilateral anatomical traits.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Vertebrates exhibit bilateral anatomical traits. Agrine is a kind of vertebrate. Lares is a kind of Agrine. Lient is a kind of Lares. Rovic is a kind of Lient. Nomery is a kind of Rovic. Eation is a kind of Nomery. Hypothesis: Eation exhibits bilateral anatomical traits. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Nomery exhibits bilateral anatomical traits. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                5,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Rovic does not exhibits bilateral anatomical traits. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                4,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Lient does not exhibits bilateral anatomical traits. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Agrine does not exhibits bilateral anatomical traits. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Insect",
+        "root_concept": "insect",
+        "chain_length": 6,
+        "num_defeasible_edges": 4,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 12,
+        "num_defeasible_edges": 4
+      },
+      "edge_sentences": {
+        "91b10f3d": "Insects feature six-legged anatomy.",
+        "b44939cc": "Icabody is a kind of insect.",
+        "c5f9bff7": "Icabody does not features six-legged anatomy.",
+        "c5c88d1c": "Fineo is a kind of Icabody.",
+        "c062b663": "Vience is a kind of Fineo.",
+        "ae1589d6": "Vience does not features six-legged anatomy.",
+        "3183ee1b": "Hemure is a kind of Vience.",
+        "d798e22a": "Hemure features six-legged anatomy.",
+        "0182af4f": "Objekt is a kind of Hemure.",
+        "97f011d6": "Objekt features six-legged anatomy.",
+        "7f961733": "Pasca is a kind of Objekt.",
+        "428c7247": "Does Pasca features six-legged anatomy?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Pasca",
+            "hypothesis_target": "six-legged",
+            "hypothesis_statement": "Pasca features six-legged anatomy.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Insects feature six-legged anatomy. Icabody is a kind of insect. Fineo is a kind of Icabody. Vience is a kind of Fineo. Hemure is a kind of Vience. Objekt is a kind of Hemure. Pasca is a kind of Objekt. Hypothesis: Pasca features six-legged anatomy. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Vience does not features six-legged anatomy. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Objekt features six-legged anatomy. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                5,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Icabody does not features six-legged anatomy. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Hemure features six-legged anatomy. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                4,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Mammal",
+        "root_concept": "mammal",
+        "chain_length": 5,
+        "num_defeasible_edges": 4,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.6,
+          0.8
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 7,
+        "num_edges": 11,
+        "num_defeasible_edges": 4
+      },
+      "edge_sentences": {
+        "c35c1470": "Mammals are omnivorous in diet.",
+        "7d1e8ee1": "Enabart is a kind of mammal.",
+        "2233b93d": "Enabart is not omnivorous in diet.",
+        "3e88d510": "Uttale is a kind of Enabart.",
+        "def16fde": "Uttale is omnivorous in diet.",
+        "dd84f895": "Ressoft is a kind of Uttale.",
+        "35315e1d": "Ressoft is not omnivorous in diet.",
+        "f9ed3253": "Otooger is a kind of Ressoft.",
+        "392c82c9": "Otooger is omnivorous in diet.",
+        "aa1eb0f4": "Reanit is a kind of Otooger.",
+        "98f101be": "Is Reanit omnivorous in diet?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_5_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Reanit",
+            "hypothesis_target": "omnivorous",
+            "hypothesis_statement": "Reanit is omnivorous in diet.",
+            "hypothesis_distance_from_root": 5
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Mammals are omnivorous in diet. Enabart is a kind of mammal. Uttale is a kind of Enabart. Ressoft is a kind of Uttale. Otooger is a kind of Ressoft. Reanit is a kind of Otooger. Hypothesis: Reanit is omnivorous in diet. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Otooger is omnivorous in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                4,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Ressoft is not omnivorous in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Enabart is not omnivorous in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Uttale is omnivorous in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Animal",
+        "root_concept": "animal",
+        "chain_length": 4,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.8,
+          1
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 6,
+        "num_edges": 9,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "05e737bc": "Animals are obedient by nature.",
+        "1b2a9464": "Tiont is a kind of animal.",
+        "29f54897": "Tiont is not obedient by nature.",
+        "605775ad": "Untint is a kind of Tiont.",
+        "7d4f56a4": "Untint is not obedient by nature.",
+        "07faa8f5": "Beinal is a kind of Untint.",
+        "86608f5a": "Beinal is not obedient by nature.",
+        "86eb49bf": "Prodogs is a kind of Beinal.",
+        "d3f7e587": "Is Prodogs obedient by nature?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_4_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Prodogs",
+            "hypothesis_target": "obedient",
+            "hypothesis_statement": "Prodogs is obedient by nature.",
+            "hypothesis_distance_from_root": 4
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Animals are obedient by nature. Tiont is a kind of animal. Untint is a kind of Tiont. Beinal is a kind of Untint. Prodogs is a kind of Beinal. Hypothesis: Prodogs is obedient by nature. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Tiont is not obedient by nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Untint is not obedient by nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Beinal is not obedient by nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                3,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Vertebrate",
+        "root_concept": "vertebrate",
+        "chain_length": 6,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 11,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "f7d55ba6": "Vertebrates exhibit spined anatomical traits.",
+        "65a6ff62": "Jaces is a kind of vertebrate.",
+        "602299aa": "Jaces exhibits spined anatomical traits.",
+        "6cbeccf6": "Ratuo is a kind of Jaces.",
+        "c1f25518": "Otoiler is a kind of Ratuo.",
+        "269a1f06": "Nerake is a kind of Otoiler.",
+        "45447a88": "Nerake exhibits spined anatomical traits.",
+        "3e37ffb1": "Plicle is a kind of Nerake.",
+        "3caaa79d": "Plicle exhibits spined anatomical traits.",
+        "4b278e94": "Touhy is a kind of Plicle.",
+        "9d4cb9a3": "Does Touhy exhibits spined anatomical traits?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Touhy",
+            "hypothesis_target": "spined",
+            "hypothesis_statement": "Touhy exhibits spined anatomical traits.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Vertebrates exhibit spined anatomical traits. Jaces is a kind of vertebrate. Ratuo is a kind of Jaces. Otoiler is a kind of Ratuo. Nerake is a kind of Otoiler. Plicle is a kind of Nerake. Touhy is a kind of Plicle. Hypothesis: Touhy exhibits spined anatomical traits. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Plicle exhibits spined anatomical traits. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                5,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Nerake exhibits spined anatomical traits. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                4,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Jaces exhibits spined anatomical traits. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Microorganism",
+        "root_concept": "microorganism",
+        "chain_length": 4,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.8,
+          1
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 6,
+        "num_edges": 9,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "c29f95fb": "Microorganisms exhibit a filamentous morphology.",
+        "653e9739": "Flots is a kind of microorganism.",
+        "fad38f20": "Flots exhibits a filamentous morphology.",
+        "e1b10269": "Lanned is a kind of Flots.",
+        "224d7ea7": "Lanned exhibits a filamentous morphology.",
+        "53ebbbec": "Hereds is a kind of Lanned.",
+        "9aefd223": "Hereds does not exhibits a filamentous morphology.",
+        "6f9b8d4c": "Cented is a kind of Hereds.",
+        "1bcd035e": "Does Cented exhibits a filamentous morphology?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_4_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Cented",
+            "hypothesis_target": "filamentous",
+            "hypothesis_statement": "Cented exhibits a filamentous morphology.",
+            "hypothesis_distance_from_root": 4
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Microorganisms exhibit a filamentous morphology. Flots is a kind of microorganism. Lanned is a kind of Flots. Hereds is a kind of Lanned. Cented is a kind of Hereds. Hypothesis: Cented exhibits a filamentous morphology. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Flots exhibits a filamentous morphology. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Hereds does not exhibits a filamentous morphology. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                3,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Lanned exhibits a filamentous morphology. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Microorganism",
+        "root_concept": "microorganism",
+        "chain_length": 5,
+        "num_defeasible_edges": 4,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.6,
+          0.8
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 7,
+        "num_edges": 11,
+        "num_defeasible_edges": 4
+      },
+      "edge_sentences": {
+        "001fa8e7": "Microorganisms have a eukaryotic cellular structure.",
+        "d80e4cd0": "Ganne is a kind of microorganism.",
+        "81da557f": "Ganne does not have a eukaryotic cellular structure.",
+        "c02917f5": "Troolk is a kind of Ganne.",
+        "c69feb18": "Troolk has a eukaryotic cellular structure.",
+        "45f14189": "Saraink is a kind of Troolk.",
+        "4338009f": "Saraink does not have a eukaryotic cellular structure.",
+        "6f58218e": "Tritems is a kind of Saraink.",
+        "052f60f0": "Tritems does not have a eukaryotic cellular structure.",
+        "2ab27a97": "Foote is a kind of Tritems.",
+        "b1d19449": "Does Foote have a eukaryotic cellular structure?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_5_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Foote",
+            "hypothesis_target": "eukaryotic",
+            "hypothesis_statement": "Foote has a eukaryotic cellular structure.",
+            "hypothesis_distance_from_root": 5
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Microorganisms have a eukaryotic cellular structure. Ganne is a kind of microorganism. Troolk is a kind of Ganne. Saraink is a kind of Troolk. Tritems is a kind of Saraink. Foote is a kind of Tritems. Hypothesis: Foote has a eukaryotic cellular structure. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Troolk has a eukaryotic cellular structure. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Ganne does not have a eukaryotic cellular structure. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Tritems does not have a eukaryotic cellular structure. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                4,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Saraink does not have a eukaryotic cellular structure. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Insect",
+        "root_concept": "insect",
+        "chain_length": 6,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 11,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "08a10361": "Insects exhibit gregarious behaviors.",
+        "f528e60b": "Graffor is a kind of insect.",
+        "3919401d": "Graffor does not exhibits gregarious behaviors.",
+        "111d60c5": "Plenne is a kind of Graffor.",
+        "a9c8ea81": "Plenne does not exhibits gregarious behaviors.",
+        "6f3926f8": "Bropic is a kind of Plenne.",
+        "6523d28f": "Bropic exhibits gregarious behaviors.",
+        "a0d5ed9a": "Werop is a kind of Bropic.",
+        "fcd8872d": "Flogam is a kind of Werop.",
+        "dfb97b90": "Devir is a kind of Flogam.",
+        "0dd01413": "Does Devir exhibits gregarious behaviors?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Devir",
+            "hypothesis_target": "gregarious",
+            "hypothesis_statement": "Devir exhibits gregarious behaviors.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Insects exhibit gregarious behaviors. Graffor is a kind of insect. Plenne is a kind of Graffor. Bropic is a kind of Plenne. Werop is a kind of Bropic. Flogam is a kind of Werop. Devir is a kind of Flogam. Hypothesis: Devir exhibits gregarious behaviors. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Bropic exhibits gregarious behaviors. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Graffor does not exhibits gregarious behaviors. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Plenne does not exhibits gregarious behaviors. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Mammal",
+        "root_concept": "mammal",
+        "chain_length": 6,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 11,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "aa39f3ad": "Mammals are viviparous.",
+        "b401c88f": "Inatill is a kind of mammal.",
+        "341971de": "Macit is a kind of Inatill.",
+        "c728b524": "Macit is not viviparous.",
+        "7a87007f": "Epoiner is a kind of Macit.",
+        "71dba156": "Epoiner is viviparous.",
+        "0363f9cc": "Nucleaf is a kind of Epoiner.",
+        "b6ee9ee6": "Nucleaf is not viviparous.",
+        "6ec5b56f": "Nocar is a kind of Nucleaf.",
+        "36c6aaaa": "Appod is a kind of Nocar.",
+        "ea8c8b65": "Is Appod viviparous?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Appod",
+            "hypothesis_target": "viviparous",
+            "hypothesis_statement": "Appod is viviparous.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Mammals are viviparous. Inatill is a kind of mammal. Macit is a kind of Inatill. Epoiner is a kind of Macit. Nucleaf is a kind of Epoiner. Nocar is a kind of Nucleaf. Appod is a kind of Nocar. Hypothesis: Appod is viviparous. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Epoiner is viviparous. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Nucleaf is not viviparous. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                4,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Macit is not viviparous. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Bird",
+        "root_concept": "bird",
+        "chain_length": 6,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 11,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "90229b7a": "Birds have the feature of being straight-billed.",
+        "ffa33ca0": "Emora is a kind of bird.",
+        "530d2f6e": "Emora has the feature of being straight-billed.",
+        "c4aa23df": "Crect is a kind of Emora.",
+        "99b7bc54": "Forial is a kind of Crect.",
+        "f87516e5": "Forial has the feature of being straight-billed.",
+        "ab29c562": "Herince is a kind of Forial.",
+        "f1660989": "Reptive is a kind of Herince.",
+        "ebb8f118": "Reptive does not have the feature of being straight-billed.",
+        "10b256a0": "Morty is a kind of Reptive.",
+        "69c824a0": "Does Morty have the feature of being straight-billed?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Morty",
+            "hypothesis_target": "straight-billed",
+            "hypothesis_statement": "Morty has the feature of being straight-billed.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Birds have the feature of being straight-billed. Emora is a kind of bird. Crect is a kind of Emora. Forial is a kind of Crect. Herince is a kind of Forial. Reptive is a kind of Herince. Morty is a kind of Reptive. Hypothesis: Morty has the feature of being straight-billed. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Forial has the feature of being straight-billed. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Reptive does not have the feature of being straight-billed. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                5,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Emora has the feature of being straight-billed. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Animal",
+        "root_concept": "animal",
+        "chain_length": 4,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.8,
+          1
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 6,
+        "num_edges": 9,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "175710ba": "Animals are nectarivore in diet.",
+        "f4281e2d": "Tering is a kind of animal.",
+        "8ba3f599": "Tering is not nectarivore in diet.",
+        "0199e8c8": "Liant is a kind of Tering.",
+        "c0aceb83": "Liant is not nectarivore in diet.",
+        "72b7e0c5": "Goote is a kind of Liant.",
+        "834296ee": "Goote is not nectarivore in diet.",
+        "aec6ff7c": "Molood is a kind of Goote.",
+        "ba71cf73": "Is Molood nectarivore in diet?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_4_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Molood",
+            "hypothesis_target": "nectarivore",
+            "hypothesis_statement": "Molood is nectarivore in diet.",
+            "hypothesis_distance_from_root": 4
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Animals are nectarivore in diet. Tering is a kind of animal. Liant is a kind of Tering. Goote is a kind of Liant. Molood is a kind of Goote. Hypothesis: Molood is nectarivore in diet. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Liant is not nectarivore in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Goote is not nectarivore in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                3,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Tering is not nectarivore in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Plant",
+        "root_concept": "plant",
+        "chain_length": 6,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 11,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "5f123a2d": "Plants are extinct in the wild.",
+        "0e906849": "Botatem is a kind of plant.",
+        "3e9bd79b": "Botab is a kind of Botatem.",
+        "caceea37": "Botrall is a kind of Botab.",
+        "a5977270": "Botrall is extinct in the wild.",
+        "83ae41a7": "Facton is a kind of Botrall.",
+        "be530613": "Facton is not extinct in the wild.",
+        "a527340f": "Batity is a kind of Facton.",
+        "2e6c4c97": "Batity is extinct in the wild.",
+        "25f8f2d0": "Mentab is a kind of Batity.",
+        "46f974e5": "Is Mentab extinct in the wild?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Mentab",
+            "hypothesis_target": "extinct",
+            "hypothesis_statement": "Mentab is extinct in the wild.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Plants are extinct in the wild. Botatem is a kind of plant. Botab is a kind of Botatem. Botrall is a kind of Botab. Facton is a kind of Botrall. Batity is a kind of Facton. Mentab is a kind of Batity. Hypothesis: Mentab is extinct in the wild. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Batity is extinct in the wild. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                5,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Facton is not extinct in the wild. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                4,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Botrall is extinct in the wild. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Bird",
+        "root_concept": "bird",
+        "chain_length": 6,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 11,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "ed9c89b5": "Birds are scarce in nature.",
+        "f9fb58fb": "Achey is a kind of bird.",
+        "ad387b3f": "Kitylem is a kind of Achey.",
+        "c5aa8a8d": "Kitylem is not scarce in nature.",
+        "23596efe": "Jachey is a kind of Kitylem.",
+        "29d9b62d": "Jachey is scarce in nature.",
+        "c1668b09": "Ptify is a kind of Jachey.",
+        "98181682": "Fealit is a kind of Ptify.",
+        "33442efa": "Fealit is not scarce in nature.",
+        "3087990a": "Rapne is a kind of Fealit.",
+        "65217e50": "Is Rapne scarce in nature?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Rapne",
+            "hypothesis_target": "scarce",
+            "hypothesis_statement": "Rapne is scarce in nature.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Birds are scarce in nature. Achey is a kind of bird. Kitylem is a kind of Achey. Jachey is a kind of Kitylem. Ptify is a kind of Jachey. Fealit is a kind of Ptify. Rapne is a kind of Fealit. Hypothesis: Rapne is scarce in nature. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Jachey is scarce in nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Fealit is not scarce in nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                5,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Kitylem is not scarce in nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Animal",
+        "root_concept": "animal",
+        "chain_length": 6,
+        "num_defeasible_edges": 4,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 12,
+        "num_defeasible_edges": 4
+      },
+      "edge_sentences": {
+        "f5744298": "Animals can glide.",
+        "88aa6768": "Heleur is a kind of animal.",
+        "59a29415": "Heleur cannot glide.",
+        "d4d0e96d": "Crets is a kind of Heleur.",
+        "5383bba3": "Crets can glide.",
+        "595b8944": "Wolic is a kind of Crets.",
+        "d39c4efd": "Wolic cannot glide.",
+        "bb5f1251": "Humam is a kind of Wolic.",
+        "44720f1e": "Cavet is a kind of Humam.",
+        "8a26fbd5": "Cavet cannot glide.",
+        "c80f1b79": "Omanmo is a kind of Cavet.",
+        "117e6623": "Can Omanmo glide?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Omanmo",
+            "hypothesis_target": "glide",
+            "hypothesis_statement": "Omanmo can glide.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Animals can glide. Heleur is a kind of animal. Crets is a kind of Heleur. Wolic is a kind of Crets. Humam is a kind of Wolic. Cavet is a kind of Humam. Omanmo is a kind of Cavet. Hypothesis: Omanmo can glide. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Cavet cannot glide. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                5,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Wolic cannot glide. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Crets can glide. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Heleur cannot glide. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Bird",
+        "root_concept": "bird",
+        "chain_length": 6,
+        "num_defeasible_edges": 4,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 12,
+        "num_defeasible_edges": 4
+      },
+      "edge_sentences": {
+        "8b07c40d": "Birds are frugivore in diet.",
+        "922133c7": "Dission is a kind of bird.",
+        "d2b6dfa9": "Dission is not frugivore in diet.",
+        "10730043": "Agrods is a kind of Dission.",
+        "41588b1b": "Faitte is a kind of Agrods.",
+        "3b59b68a": "Faitte is not frugivore in diet.",
+        "837bc05e": "Oueds is a kind of Faitte.",
+        "b8a11b9c": "Oueds is not frugivore in diet.",
+        "27126046": "Driesh is a kind of Oueds.",
+        "f8f22248": "Driesh is frugivore in diet.",
+        "d75dd5b9": "Nomesh is a kind of Driesh.",
+        "efafc0c8": "Is Nomesh frugivore in diet?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Nomesh",
+            "hypothesis_target": "frugivore",
+            "hypothesis_statement": "Nomesh is frugivore in diet.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Birds are frugivore in diet. Dission is a kind of bird. Agrods is a kind of Dission. Faitte is a kind of Agrods. Oueds is a kind of Faitte. Driesh is a kind of Oueds. Nomesh is a kind of Driesh. Hypothesis: Nomesh is frugivore in diet. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Dission is not frugivore in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Faitte is not frugivore in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Driesh is frugivore in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                5,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Oueds is not frugivore in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                4,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Vertebrate",
+        "root_concept": "vertebrate",
+        "chain_length": 6,
+        "num_defeasible_edges": 4,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 12,
+        "num_defeasible_edges": 4
+      },
+      "edge_sentences": {
+        "28d6572b": "Vertebrates exhibit cranial anatomical traits.",
+        "2e4eeb3e": "Fisneast is a kind of vertebrate.",
+        "2a2f4015": "Fisneast does not exhibits cranial anatomical traits.",
+        "5443a558": "Droul is a kind of Fisneast.",
+        "0c6c6f66": "Droul does not exhibits cranial anatomical traits.",
+        "4377eb4e": "Zouth is a kind of Droul.",
+        "6bf32dcb": "Zouth does not exhibits cranial anatomical traits.",
+        "5601dab4": "Thear is a kind of Zouth.",
+        "6bcdeecf": "Thear does not exhibits cranial anatomical traits.",
+        "9e98880f": "Meath is a kind of Thear.",
+        "36cda18e": "Soopkun is a kind of Meath.",
+        "cbf5151d": "Does Soopkun exhibits cranial anatomical traits?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Soopkun",
+            "hypothesis_target": "cranial",
+            "hypothesis_statement": "Soopkun exhibits cranial anatomical traits.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Vertebrates exhibit cranial anatomical traits. Fisneast is a kind of vertebrate. Droul is a kind of Fisneast. Zouth is a kind of Droul. Thear is a kind of Zouth. Meath is a kind of Thear. Soopkun is a kind of Meath. Hypothesis: Soopkun exhibits cranial anatomical traits. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Droul does not exhibits cranial anatomical traits. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Fisneast does not exhibits cranial anatomical traits. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Thear does not exhibits cranial anatomical traits. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                4,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Zouth does not exhibits cranial anatomical traits. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Plant",
+        "root_concept": "plant",
+        "chain_length": 6,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 11,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "b2347e90": "Plants are heavy in weight.",
+        "0c7b3aa3": "Varing is a kind of plant.",
+        "e95b3b9d": "Actup is a kind of Varing.",
+        "49e4a154": "Venne is a kind of Actup.",
+        "e41803c0": "Venne is heavy in weight.",
+        "f7c5d7cb": "Ureed is a kind of Venne.",
+        "f8171920": "Ureed is heavy in weight.",
+        "15b00ee5": "Trall is a kind of Ureed.",
+        "aaa08710": "Trall is heavy in weight.",
+        "ce4bc125": "Anked is a kind of Trall.",
+        "fef9422d": "Is Anked heavy in weight?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Anked",
+            "hypothesis_target": "heavy",
+            "hypothesis_statement": "Anked is heavy in weight.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Plants are heavy in weight. Varing is a kind of plant. Actup is a kind of Varing. Venne is a kind of Actup. Ureed is a kind of Venne. Trall is a kind of Ureed. Anked is a kind of Trall. Hypothesis: Anked is heavy in weight. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Venne is heavy in weight. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Ureed is heavy in weight. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                4,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Trall is heavy in weight. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                5,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Mammal",
+        "root_concept": "mammal",
+        "chain_length": 4,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.8,
+          1
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 6,
+        "num_edges": 9,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "c66914eb": "Mammals are carnivorous in diet.",
+        "b52c80ba": "Veget is a kind of mammal.",
+        "bc5a1f96": "Veget is carnivorous in diet.",
+        "7e9a2e8d": "Gente is a kind of Veget.",
+        "ec8001dc": "Gente is carnivorous in diet.",
+        "4ad5b4ad": "Rescal is a kind of Gente.",
+        "f76db3d6": "Rescal is carnivorous in diet.",
+        "f18b020d": "Playte is a kind of Rescal.",
+        "1a4b7fac": "Is Playte carnivorous in diet?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_4_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Playte",
+            "hypothesis_target": "carnivorous",
+            "hypothesis_statement": "Playte is carnivorous in diet.",
+            "hypothesis_distance_from_root": 4
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Mammals are carnivorous in diet. Veget is a kind of mammal. Gente is a kind of Veget. Rescal is a kind of Gente. Playte is a kind of Rescal. Hypothesis: Playte is carnivorous in diet. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Rescal is carnivorous in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                3,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Veget is carnivorous in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Gente is carnivorous in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Microorganism",
+        "root_concept": "microorganism",
+        "chain_length": 5,
+        "num_defeasible_edges": 4,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.6,
+          0.8
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 7,
+        "num_edges": 11,
+        "num_defeasible_edges": 4
+      },
+      "edge_sentences": {
+        "701cb3fc": "Microorganisms have a acellular cellular structure.",
+        "e29a8f0d": "Diette is a kind of microorganism.",
+        "a3b0ee56": "Diette has a acellular cellular structure.",
+        "8c53a20f": "Foole is a kind of Diette.",
+        "dc921d41": "Foole has a acellular cellular structure.",
+        "b4d874bf": "Kinint is a kind of Foole.",
+        "e86fd048": "Kinint does not have a acellular cellular structure.",
+        "22a811a9": "Trition is a kind of Kinint.",
+        "c4eef897": "Trition has a acellular cellular structure.",
+        "360ab39e": "Trate is a kind of Trition.",
+        "fdaef36f": "Does Trate have a acellular cellular structure?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_5_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Trate",
+            "hypothesis_target": "acellular",
+            "hypothesis_statement": "Trate has a acellular cellular structure.",
+            "hypothesis_distance_from_root": 5
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Microorganisms have a acellular cellular structure. Diette is a kind of microorganism. Foole is a kind of Diette. Kinint is a kind of Foole. Trition is a kind of Kinint. Trate is a kind of Trition. Hypothesis: Trate has a acellular cellular structure. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Foole has a acellular cellular structure. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Kinint does not have a acellular cellular structure. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Diette has a acellular cellular structure. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Trition has a acellular cellular structure. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                4,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Animal",
+        "root_concept": "animal",
+        "chain_length": 6,
+        "num_defeasible_edges": 4,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 12,
+        "num_defeasible_edges": 4
+      },
+      "edge_sentences": {
+        "d4eb3a8a": "Animals are scarce in nature.",
+        "1f9cb894": "Mutrie is a kind of animal.",
+        "9de25efa": "Mutrie is scarce in nature.",
+        "b095e57e": "Amale is a kind of Mutrie.",
+        "2d66ff3a": "Fureer is a kind of Amale.",
+        "36a9232a": "Fureer is not scarce in nature.",
+        "ae400842": "Omnimal is a kind of Fureer.",
+        "20b95b86": "Omnimal is not scarce in nature.",
+        "ed6a1880": "Reing is a kind of Omnimal.",
+        "f21218c7": "Reing is scarce in nature.",
+        "378acd39": "Prodogs is a kind of Reing.",
+        "53f97e7d": "Is Prodogs scarce in nature?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Prodogs",
+            "hypothesis_target": "scarce",
+            "hypothesis_statement": "Prodogs is scarce in nature.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Animals are scarce in nature. Mutrie is a kind of animal. Amale is a kind of Mutrie. Fureer is a kind of Amale. Omnimal is a kind of Fureer. Reing is a kind of Omnimal. Prodogs is a kind of Reing. Hypothesis: Prodogs is scarce in nature. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Reing is scarce in nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                5,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Omnimal is not scarce in nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                4,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Fureer is not scarce in nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Mutrie is scarce in nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Bird",
+        "root_concept": "bird",
+        "chain_length": 5,
+        "num_defeasible_edges": 4,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.6,
+          0.8
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 7,
+        "num_edges": 11,
+        "num_defeasible_edges": 4
+      },
+      "edge_sentences": {
+        "6641315b": "Birds are abundant in nature.",
+        "827d4289": "Washe is a kind of bird.",
+        "85ddb074": "Washe is abundant in nature.",
+        "7ff10ce9": "Gereed is a kind of Washe.",
+        "6b640b62": "Gereed is abundant in nature.",
+        "c9a98cf4": "Aqual is a kind of Gereed.",
+        "f47e4d5a": "Aqual is not abundant in nature.",
+        "1da807bf": "Mactury is a kind of Aqual.",
+        "c9ab6b83": "Mactury is not abundant in nature.",
+        "163a65df": "Gengus is a kind of Mactury.",
+        "70c66160": "Is Gengus abundant in nature?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_5_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Gengus",
+            "hypothesis_target": "abundant",
+            "hypothesis_statement": "Gengus is abundant in nature.",
+            "hypothesis_distance_from_root": 5
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Birds are abundant in nature. Washe is a kind of bird. Gereed is a kind of Washe. Aqual is a kind of Gereed. Mactury is a kind of Aqual. Gengus is a kind of Mactury. Hypothesis: Gengus is abundant in nature. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Gereed is abundant in nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Mactury is not abundant in nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                4,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Aqual is not abundant in nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Washe is abundant in nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Animal",
+        "root_concept": "animal",
+        "chain_length": 5,
+        "num_defeasible_edges": 4,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.6,
+          0.8
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 7,
+        "num_edges": 11,
+        "num_defeasible_edges": 4
+      },
+      "edge_sentences": {
+        "add393dd": "Animals are piscivore in diet.",
+        "360b8987": "Animelt is a kind of animal.",
+        "e2fe9b90": "Animelt is piscivore in diet.",
+        "f56c76b0": "Furebry is a kind of Animelt.",
+        "b1b5ef14": "Furebry is not piscivore in diet.",
+        "d3738052": "Inant is a kind of Furebry.",
+        "7c4e6edd": "Inant is not piscivore in diet.",
+        "eb3186b0": "Beltens is a kind of Inant.",
+        "035d49ed": "Beltens is not piscivore in diet.",
+        "09984270": "Donte is a kind of Beltens.",
+        "a7cbd293": "Is Donte piscivore in diet?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_5_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Donte",
+            "hypothesis_target": "piscivore",
+            "hypothesis_statement": "Donte is piscivore in diet.",
+            "hypothesis_distance_from_root": 5
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Animals are piscivore in diet. Animelt is a kind of animal. Furebry is a kind of Animelt. Inant is a kind of Furebry. Beltens is a kind of Inant. Donte is a kind of Beltens. Hypothesis: Donte is piscivore in diet. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Inant is not piscivore in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Beltens is not piscivore in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                4,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Animelt is piscivore in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Furebry is not piscivore in diet. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Insect",
+        "root_concept": "insect",
+        "chain_length": 4,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.8,
+          1
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 6,
+        "num_edges": 9,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "32b4113c": "Insects undergo ametabolous development.",
+        "59e7e5b6": "Stoille is a kind of insect.",
+        "220a24b5": "Stoille does not undergoes ametabolous development.",
+        "b1e3b0da": "Plithuy is a kind of Stoille.",
+        "746d87a7": "Plithuy does not undergoes ametabolous development.",
+        "9f6a8f62": "Datus is a kind of Plithuy.",
+        "1f58b2b4": "Datus undergoes ametabolous development.",
+        "3adb0401": "Manux is a kind of Datus.",
+        "e9773d4e": "Does Manux undergoes ametabolous development?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_4_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Manux",
+            "hypothesis_target": "ametabolous",
+            "hypothesis_statement": "Manux undergoes ametabolous development.",
+            "hypothesis_distance_from_root": 4
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Insects undergo ametabolous development. Stoille is a kind of insect. Plithuy is a kind of Stoille. Datus is a kind of Plithuy. Manux is a kind of Datus. Hypothesis: Manux undergoes ametabolous development. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Plithuy does not undergoes ametabolous development. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Stoille does not undergoes ametabolous development. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Datus undergoes ametabolous development. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                3,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Mammal",
+        "root_concept": "mammal",
+        "chain_length": 5,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.6,
+          0.8
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 7,
+        "num_edges": 10,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "e75d29d3": "Mammals are endothermic.",
+        "b0404226": "Heriond is a kind of mammal.",
+        "a32a36bf": "Heriond is not endothermic.",
+        "e7c7f55c": "Khant is a kind of Heriond.",
+        "7a803050": "Adeiral is a kind of Khant.",
+        "4ebda133": "Adeiral is not endothermic.",
+        "51175799": "Gooduct is a kind of Adeiral.",
+        "4effc9a5": "Gooduct is not endothermic.",
+        "0beb7824": "Insion is a kind of Gooduct.",
+        "3768d6c3": "Is Insion endothermic?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_5_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Insion",
+            "hypothesis_target": "endothermic",
+            "hypothesis_statement": "Insion is endothermic.",
+            "hypothesis_distance_from_root": 5
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Mammals are endothermic. Heriond is a kind of mammal. Khant is a kind of Heriond. Adeiral is a kind of Khant. Gooduct is a kind of Adeiral. Insion is a kind of Gooduct. Hypothesis: Insion is endothermic. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Heriond is not endothermic. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Gooduct is not endothermic. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                4,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Adeiral is not endothermic. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Animal",
+        "root_concept": "animal",
+        "chain_length": 6,
+        "num_defeasible_edges": 4,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 12,
+        "num_defeasible_edges": 4
+      },
+      "edge_sentences": {
+        "ad071a40": "Animals are feral in nature.",
+        "6e45e225": "Sechory is a kind of animal.",
+        "f3dc64ad": "Sechory is not feral in nature.",
+        "afb698dc": "Sterm is a kind of Sechory.",
+        "74f8eeb2": "Sterm is feral in nature.",
+        "798f9d76": "Orseat is a kind of Sterm.",
+        "7bff9a3b": "Orseat is feral in nature.",
+        "1bab04c2": "Reing is a kind of Orseat.",
+        "b4aad42b": "Zooplat is a kind of Reing.",
+        "2e47e752": "Zooplat is feral in nature.",
+        "fe7a16cf": "Reble is a kind of Zooplat.",
+        "97e30ebf": "Is Reble feral in nature?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Reble",
+            "hypothesis_target": "feral",
+            "hypothesis_statement": "Reble is feral in nature.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Animals are feral in nature. Sechory is a kind of animal. Sterm is a kind of Sechory. Orseat is a kind of Sterm. Reing is a kind of Orseat. Zooplat is a kind of Reing. Reble is a kind of Zooplat. Hypothesis: Reble is feral in nature. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Sechory is not feral in nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Zooplat is feral in nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                5,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Orseat is feral in nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                3,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Sterm is feral in nature. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Animal",
+        "root_concept": "animal",
+        "chain_length": 6,
+        "num_defeasible_edges": 4,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 12,
+        "num_defeasible_edges": 4
+      },
+      "edge_sentences": {
+        "80250219": "Animals have tail.",
+        "97eb0aaf": "Quideng is a kind of animal.",
+        "4e1dc94b": "Quideng has tail.",
+        "dc59b931": "Modol is a kind of Quideng.",
+        "c14f18f6": "Modol does not have tail.",
+        "9b27fd66": "Crupig is a kind of Modol.",
+        "36d2b4ff": "Lamolor is a kind of Crupig.",
+        "6edfb09f": "Lamolor does not have tail.",
+        "63545350": "Zoopla is a kind of Lamolor.",
+        "f17b5609": "Zoopla has tail.",
+        "a47261bd": "Bermale is a kind of Zoopla.",
+        "27746615": "Does Bermale have tail?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Bermale",
+            "hypothesis_target": "tail",
+            "hypothesis_statement": "Bermale has tail.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Animals have tail. Quideng is a kind of animal. Modol is a kind of Quideng. Crupig is a kind of Modol. Lamolor is a kind of Crupig. Zoopla is a kind of Lamolor. Bermale is a kind of Zoopla. Hypothesis: Bermale has tail. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Quideng has tail. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Lamolor does not have tail. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                4,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Zoopla has tail. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                5,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Modol does not have tail. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 4,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Microorganism",
+        "root_concept": "microorganism",
+        "chain_length": 6,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.5,
+          0.75
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 8,
+        "num_edges": 11,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "0cf2b64b": "Microorganisms rely on aerobic metabolism.",
+        "f6547578": "Tabeed is a kind of microorganism.",
+        "23e0eeca": "Anomats is a kind of Tabeed.",
+        "9f0f304e": "Anomats relies on aerobic metabolism.",
+        "c846a112": "Pring is a kind of Anomats.",
+        "88f6ca18": "Actimal is a kind of Pring.",
+        "5bf0fed5": "Actimal does not relies on aerobic metabolism.",
+        "d531b933": "Faryo is a kind of Actimal.",
+        "16696c03": "Faryo relies on aerobic metabolism.",
+        "cf3d2231": "Inaemal is a kind of Faryo.",
+        "9fdbccf4": "Does Inaemal relies on aerobic metabolism?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_6_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Inaemal",
+            "hypothesis_target": "aerobic",
+            "hypothesis_statement": "Inaemal relies on aerobic metabolism.",
+            "hypothesis_distance_from_root": 6
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Microorganisms rely on aerobic metabolism. Tabeed is a kind of microorganism. Anomats is a kind of Tabeed. Pring is a kind of Anomats. Actimal is a kind of Pring. Faryo is a kind of Actimal. Inaemal is a kind of Faryo. Hypothesis: Inaemal relies on aerobic metabolism. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Actimal does not relies on aerobic metabolism. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                4,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Anomats relies on aerobic metabolism. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Faryo relies on aerobic metabolism. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                5,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "config": {
+        "topology": "linear_inheritance",
+        "root_name": "Mammal",
+        "root_concept": "mammal",
+        "chain_length": 4,
+        "num_defeasible_edges": 3,
+        "difficulty": "easy",
+        "serial_random": true,
+        "num_defeasible_fraction_range": [
+          0.8,
+          1
+        ]
+      },
+      "graph_summary": {
+        "num_nodes": 6,
+        "num_edges": 9,
+        "num_defeasible_edges": 3
+      },
+      "edge_sentences": {
+        "c8e82b89": "Mammals utilize arboreal locomotion.",
+        "6d886d54": "Trate is a kind of mammal.",
+        "4fc34cde": "Trate does not utilizes arboreal locomotion.",
+        "a0f6f0d3": "Focuse is a kind of Trate.",
+        "d9dedc63": "Focuse does not utilizes arboreal locomotion.",
+        "29746c81": "Relatt is a kind of Focuse.",
+        "63c9bcda": "Relatt utilizes arboreal locomotion.",
+        "e910dea1": "Fileng is a kind of Relatt.",
+        "ccba91d3": "Does Fileng utilizes arboreal locomotion?"
+      },
+      "conversations": [
+        {
+          "id": "Subclass_4_property_node_conversation",
+          "topology": "linear_inheritance",
+          "metadata": {
+            "subject": "Fileng",
+            "hypothesis_target": "arboreal",
+            "hypothesis_statement": "Fileng utilizes arboreal locomotion.",
+            "hypothesis_distance_from_root": 4
+          },
+          "turns": [
+            {
+              "role": "user",
+              "content": "Pretext: Mammals utilize arboreal locomotion. Trate is a kind of mammal. Focuse is a kind of Trate. Relatt is a kind of Focuse. Fileng is a kind of Relatt. Hypothesis: Fileng utilizes arboreal locomotion. Question: Given all the information so far, does the information support the hypothesis?"
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "task_type": "initial_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Trate does not utilizes arboreal locomotion. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 1,
+              "distance": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "no",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Relatt utilizes arboreal locomotion. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 2,
+              "distance": [
+                3,
+                1
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "strengthen",
+              "task_type": "update_answer"
+            },
+            {
+              "role": "user",
+              "content": "Information update: Focuse does not utilizes arboreal locomotion. Question: Given all the information so far, does the information support the hypothesis?",
+              "serial": 3,
+              "distance": [
+                2,
+                2
+              ]
+            },
+            {
+              "role": "assistant",
+              "content": "",
+              "ground_truth": "yes",
+              "effect": "weaken",
+              "task_type": "update_answer"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2355 @@
+[
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "fly",
+        "positive_realization": "can fly",
+        "negative_realization": "cannot fly",
+        "positive_plural_realization": "can fly",
+        "negative_plural_realization": "cannot fly",
+        "allowed_subject_types": [
+            "bird",
+            "insect",
+            "bat"
+        ],
+        "domain": "Animal"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "breathe",
+        "positive_realization": "breathes",
+        "negative_realization": "does not breathe",
+        "positive_plural_realization": "breathe",
+        "negative_plural_realization": "do not breathe",
+        "allowed_subject_types": [
+            "mammal",
+            "reptile",
+            "amphibian",
+            "fish",
+            "bird"
+        ],
+        "domain": "Animal"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "fur",
+        "positive_realization": "has fur",
+        "negative_realization": "does not have fur",
+        "positive_plural_realization": "have fur",
+        "negative_plural_realization": "do not have fur",
+        "allowed_subject_types": [
+            "mammal"
+        ],
+        "domain": "Animal"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "swim",
+        "positive_realization": "can swim",
+        "negative_realization": "cannot swim",
+        "positive_plural_realization": "can swim",
+        "negative_plural_realization": "cannot swim",
+        "allowed_subject_types": [
+            "fish",
+            "whale",
+            "dolphin",
+            "penguin",
+            "shark"
+        ],
+        "domain": "Animal"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "lay eggs",
+        "positive_realization": "lays eggs",
+        "negative_realization": "does not lay eggs",
+        "positive_plural_realization": "lay eggs",
+        "negative_plural_realization": "do not lay eggs",
+        "allowed_subject_types": [
+            "bird",
+            "reptile",
+            "insect",
+            "amphibian",
+            "fish"
+        ],
+        "domain": "Animal"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "vertebrate",
+        "positive_realization": "is a vertebrate",
+        "negative_realization": "is not a vertebrate",
+        "positive_plural_realization": "are vertebrates",
+        "negative_plural_realization": "are not vertebrates",
+        "allowed_subject_types": [
+            "mammal",
+            "bird",
+            "reptile",
+            "amphibian",
+            "fish"
+        ],
+        "domain": "Animal"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "warm-blooded",
+        "positive_realization": "is warm-blooded",
+        "negative_realization": "is not warm-blooded",
+        "positive_plural_realization": "are warm-blooded",
+        "negative_plural_realization": "are not warm-blooded",
+        "allowed_subject_types": [
+            "mammal",
+            "bird"
+        ],
+        "domain": "Animal"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "gills",
+        "positive_realization": "has gills",
+        "negative_realization": "does not have gills",
+        "positive_plural_realization": "have gills",
+        "negative_plural_realization": "do not have gills",
+        "allowed_subject_types": [
+            "fish",
+            "shark",
+            "tadpole"
+        ],
+        "domain": "Animal"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "hibernate",
+        "positive_realization": "hibernates",
+        "negative_realization": "does not hibernate",
+        "positive_plural_realization": "hibernate",
+        "negative_plural_realization": "do not hibernate",
+        "allowed_subject_types": [
+            "bear",
+            "hedgehog",
+            "bat",
+            "groundhog"
+        ],
+        "domain": "Animal"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "migrate",
+        "positive_realization": "migrates",
+        "negative_realization": "does not migrate",
+        "positive_plural_realization": "migrate",
+        "negative_plural_realization": "do not migrate",
+        "allowed_subject_types": [
+            "bird",
+            "whale",
+            "butterfly",
+            "salmon"
+        ],
+        "domain": "Animal"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "photosynthesize",
+        "positive_realization": "can photosynthesize",
+        "negative_realization": "cannot photosynthesize",
+        "positive_plural_realization": "can photosynthesize",
+        "negative_plural_realization": "cannot photosynthesize",
+        "allowed_subject_types": [
+            "plant",
+            "tree",
+            "flower",
+            "shrub",
+            "moss",
+            "alga"
+        ],
+        "domain": "Plant"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "flower",
+        "positive_realization": "flowers",
+        "negative_realization": "does not flower",
+        "positive_plural_realization": "flower",
+        "negative_plural_realization": "do not flower",
+        "allowed_subject_types": [
+            "angiosperm",
+            "rose",
+            "lily",
+            "sunflower"
+        ],
+        "domain": "Plant"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "leaf",
+        "positive_realization": "has leaves",
+        "negative_realization": "does not have leaves",
+        "positive_plural_realization": "have leaves",
+        "negative_plural_realization": "do not have leaves",
+        "allowed_subject_types": [
+            "tree",
+            "shrub",
+            "herb",
+            "fern"
+        ],
+        "domain": "Plant"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "produce fruit",
+        "positive_realization": "produces fruit",
+        "negative_realization": "does not produce fruit",
+        "positive_plural_realization": "produce fruit",
+        "negative_plural_realization": "do not produce fruit",
+        "allowed_subject_types": [
+            "fruit tree",
+            "berry bush",
+            "vine"
+        ],
+        "domain": "Plant"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "absorb water",
+        "positive_realization": "absorbs water",
+        "negative_realization": "does not absorb water",
+        "positive_plural_realization": "absorb water",
+        "negative_plural_realization": "do not absorb water",
+        "allowed_subject_types": [
+            "root",
+            "plant",
+            "moss"
+        ],
+        "domain": "Plant"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "vascular",
+        "positive_realization": "is vascular",
+        "negative_realization": "is not vascular",
+        "positive_plural_realization": "are vascular",
+        "negative_plural_realization": "are not vascular",
+        "allowed_subject_types": [
+            "fern",
+            "conifer",
+            "flowering plant"
+        ],
+        "domain": "Plant"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "grow",
+        "positive_realization": "grows",
+        "negative_realization": "does not grow",
+        "positive_plural_realization": "grow",
+        "negative_plural_realization": "do not grow",
+        "allowed_subject_types": [
+            "seedling",
+            "sapling",
+            "weed"
+        ],
+        "domain": "Plant"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "require sunlight",
+        "positive_realization": "requires sunlight",
+        "negative_realization": "does not require sunlight",
+        "positive_plural_realization": "require sunlight",
+        "negative_plural_realization": "do not require sunlight",
+        "allowed_subject_types": [
+            "sunflower",
+            "cactus",
+            "succulent"
+        ],
+        "domain": "Plant"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "produce oxygen",
+        "positive_realization": "produces oxygen",
+        "negative_realization": "does not produce oxygen",
+        "positive_plural_realization": "produce oxygen",
+        "negative_plural_realization": "do not produce oxygen",
+        "allowed_subject_types": [
+            "plant",
+            "tree",
+            "alga"
+        ],
+        "domain": "Plant"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "root",
+        "positive_realization": "has roots",
+        "negative_realization": "does not have roots",
+        "positive_plural_realization": "have roots",
+        "negative_plural_realization": "do not have roots",
+        "allowed_subject_types": [
+            "tree",
+            "shrub",
+            "grass"
+        ],
+        "domain": "Plant"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "cut",
+        "positive_realization": "can cut",
+        "negative_realization": "cannot cut",
+        "positive_plural_realization": "can cut",
+        "negative_plural_realization": "cannot cut",
+        "allowed_subject_types": [
+            "saw",
+            "knife",
+            "scissors",
+            "axe"
+        ],
+        "domain": "Tool"
+    },
+    {
+        "property_family": "function",
+        "frame_type": "is_used_to",
+        "predicate_lemma": "fasten",
+        "positive_realization": "is used to fasten",
+        "negative_realization": "is not used to fasten",
+        "positive_plural_realization": "are used to fasten",
+        "negative_plural_realization": "are not used to fasten",
+        "allowed_subject_types": [
+            "screwdriver",
+            "wrench",
+            "hammer",
+            "stapler"
+        ],
+        "domain": "Tool"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "sharp",
+        "positive_realization": "is sharp",
+        "negative_realization": "is not sharp",
+        "positive_plural_realization": "are sharp",
+        "negative_plural_realization": "are not sharp",
+        "allowed_subject_types": [
+            "chisel",
+            "plane",
+            "saw",
+            "knife"
+        ],
+        "domain": "Tool"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "dig",
+        "positive_realization": "digs",
+        "negative_realization": "does not dig",
+        "positive_plural_realization": "dig",
+        "negative_plural_realization": "do not dig",
+        "allowed_subject_types": [
+            "shovel",
+            "spade",
+            "trowel",
+            "pickaxe"
+        ],
+        "domain": "Tool"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "measure",
+        "positive_realization": "can measure",
+        "negative_realization": "cannot measure",
+        "positive_plural_realization": "can measure",
+        "negative_plural_realization": "cannot measure",
+        "allowed_subject_types": [
+            "ruler",
+            "caliper",
+            "tape measure",
+            "level"
+        ],
+        "domain": "Tool"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "electric",
+        "positive_realization": "is electric",
+        "negative_realization": "is not electric",
+        "positive_plural_realization": "are electric",
+        "negative_plural_realization": "are not electric",
+        "allowed_subject_types": [
+            "drill",
+            "sander",
+            "saw",
+            "grinder"
+        ],
+        "domain": "Tool"
+    },
+    {
+        "property_family": "function",
+        "frame_type": "is_used_to",
+        "predicate_lemma": "grip",
+        "positive_realization": "is used to grip",
+        "negative_realization": "is not used to grip",
+        "positive_plural_realization": "are used to grip",
+        "negative_plural_realization": "are not used to grip",
+        "allowed_subject_types": [
+            "pliers",
+            "wrench",
+            "clamp",
+            "vice"
+        ],
+        "domain": "Tool"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "strike",
+        "positive_realization": "strikes",
+        "negative_realization": "does not strike",
+        "positive_plural_realization": "strike",
+        "negative_plural_realization": "do not strike",
+        "allowed_subject_types": [
+            "hammer",
+            "mallet",
+            "sledgehammer"
+        ],
+        "domain": "Tool"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "portable",
+        "positive_realization": "is portable",
+        "negative_realization": "is not portable",
+        "positive_plural_realization": "are portable",
+        "negative_plural_realization": "are not portable",
+        "allowed_subject_types": [
+            "hand tool",
+            "power tool",
+            "screwdriver",
+            "wrench"
+        ],
+        "domain": "Tool"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "tighten",
+        "positive_realization": "can tighten",
+        "negative_realization": "cannot tighten",
+        "positive_plural_realization": "can tighten",
+        "negative_plural_realization": "cannot tighten",
+        "allowed_subject_types": [
+            "wrench",
+            "screwdriver",
+            "hex key",
+            "spanner"
+        ],
+        "domain": "Tool"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "edible",
+        "positive_realization": "is edible",
+        "negative_realization": "is not edible",
+        "positive_plural_realization": "are edible",
+        "negative_plural_realization": "are not edible",
+        "allowed_subject_types": [
+            "fruit",
+            "vegetable",
+            "meat",
+            "grain",
+            "dairy"
+        ],
+        "domain": "Food"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "can_verb",
+        "predicate_lemma": "cook",
+        "positive_realization": "can be cooked",
+        "negative_realization": "cannot be cooked",
+        "positive_plural_realization": "can be cooked",
+        "negative_plural_realization": "cannot be cooked",
+        "allowed_subject_types": [
+            "meat",
+            "vegetable",
+            "pasta",
+            "egg"
+        ],
+        "domain": "Food"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "sweet",
+        "positive_realization": "is sweet",
+        "negative_realization": "is not sweet",
+        "positive_plural_realization": "are sweet",
+        "negative_plural_realization": "are not sweet",
+        "allowed_subject_types": [
+            "fruit",
+            "dessert",
+            "candy"
+        ],
+        "domain": "Food"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "does_action",
+        "predicate_lemma": "provide",
+        "positive_realization": "provides nutrients",
+        "negative_realization": "does not provide nutrients",
+        "positive_plural_realization": "provide nutrients",
+        "negative_plural_realization": "do not provide nutrients",
+        "allowed_subject_types": [
+            "vegetable",
+            "fruit",
+            "protein",
+            "grain"
+        ],
+        "domain": "Food"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "perishable",
+        "positive_realization": "is perishable",
+        "negative_realization": "is not perishable",
+        "positive_plural_realization": "are perishable",
+        "negative_plural_realization": "are not perishable",
+        "allowed_subject_types": [
+            "dairy",
+            "meat",
+            "produce",
+            "seafood"
+        ],
+        "domain": "Food"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "can_verb",
+        "predicate_lemma": "eat",
+        "positive_realization": "can be eaten",
+        "negative_realization": "cannot be eaten",
+        "positive_plural_realization": "can be eaten",
+        "negative_plural_realization": "cannot be eaten",
+        "allowed_subject_types": [
+            "snack",
+            "meal",
+            "ingredient"
+        ],
+        "domain": "Food"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "caloric",
+        "positive_realization": "contains calories",
+        "negative_realization": "does not contain calories",
+        "positive_plural_realization": "contain calories",
+        "negative_plural_realization": "do not contain calories",
+        "allowed_subject_types": [
+            "beverage",
+            "snack",
+            "meal"
+        ],
+        "domain": "Food"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "organic",
+        "positive_realization": "is organic",
+        "negative_realization": "is not organic",
+        "positive_plural_realization": "are organic",
+        "negative_plural_realization": "are not organic",
+        "allowed_subject_types": [
+            "produce",
+            "meat",
+            "grain"
+        ],
+        "domain": "Food"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "degree",
+        "positive_realization": "requires a degree",
+        "negative_realization": "does not require a degree",
+        "positive_plural_realization": "require a degree",
+        "negative_plural_realization": "do not require a degree",
+        "allowed_subject_types": [
+            "doctor",
+            "lawyer",
+            "engineer",
+            "teacher"
+        ],
+        "domain": "Profession"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "earn",
+        "positive_realization": "earns a salary",
+        "negative_realization": "does not earn a salary",
+        "positive_plural_realization": "earn a salary",
+        "negative_plural_realization": "do not earn a salary",
+        "allowed_subject_types": [
+            "accountant",
+            "manager",
+            "analyst",
+            "clerk"
+        ],
+        "domain": "Profession"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "uniform",
+        "positive_realization": "wears a uniform",
+        "negative_realization": "does not wear a uniform",
+        "positive_plural_realization": "wear a uniform",
+        "negative_plural_realization": "do not wear a uniform",
+        "allowed_subject_types": [
+            "police officer",
+            "firefighter",
+            "nurse",
+            "pilot"
+        ],
+        "domain": "Profession"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "treat",
+        "positive_realization": "treats patients",
+        "negative_realization": "does not treat patients",
+        "positive_plural_realization": "treat patients",
+        "negative_plural_realization": "do not treat patients",
+        "allowed_subject_types": [
+            "doctor",
+            "dentist",
+            "nurse",
+            "therapist"
+        ],
+        "domain": "Profession"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "teach",
+        "positive_realization": "teaches students",
+        "negative_realization": "does not teach students",
+        "positive_plural_realization": "teach students",
+        "negative_plural_realization": "do not teach students",
+        "allowed_subject_types": [
+            "teacher",
+            "professor",
+            "lecturer",
+            "instructor"
+        ],
+        "domain": "Profession"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "code",
+        "positive_realization": "can write code",
+        "negative_realization": "cannot write code",
+        "positive_plural_realization": "can write code",
+        "negative_plural_realization": "cannot write code",
+        "allowed_subject_types": [
+            "software developer",
+            "programmer",
+            "web developer",
+            "data scientist"
+        ],
+        "domain": "Profession"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "design",
+        "positive_realization": "designs buildings",
+        "negative_realization": "does not design buildings",
+        "positive_plural_realization": "design buildings",
+        "negative_plural_realization": "do not design buildings",
+        "allowed_subject_types": [
+            "architect",
+            "civil engineer",
+            "structural engineer"
+        ],
+        "domain": "Profession"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "license",
+        "positive_realization": "requires a professional license",
+        "negative_realization": "does not require a professional license",
+        "positive_plural_realization": "require a professional license",
+        "negative_plural_realization": "do not require a professional license",
+        "allowed_subject_types": [
+            "electrician",
+            "plumber",
+            "pilot",
+            "pharmacist"
+        ],
+        "domain": "Profession"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "cook",
+        "positive_realization": "prepares food",
+        "negative_realization": "does not prepare food",
+        "positive_plural_realization": "prepare food",
+        "negative_plural_realization": "do not prepare food",
+        "allowed_subject_types": [
+            "chef",
+            "cook",
+            "baker"
+        ],
+        "domain": "Profession"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "fly",
+        "positive_realization": "flies aircraft",
+        "negative_realization": "does not fly aircraft",
+        "positive_plural_realization": "fly aircraft",
+        "negative_plural_realization": "do not fly aircraft",
+        "allowed_subject_types": [
+            "pilot",
+            "aviator"
+        ],
+        "domain": "Profession"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "move",
+        "positive_realization": "can move",
+        "negative_realization": "cannot move",
+        "positive_plural_realization": "can move",
+        "negative_plural_realization": "cannot move",
+        "allowed_subject_types": [
+            "car",
+            "truck",
+            "bicycle",
+            "boat",
+            "airplane"
+        ],
+        "domain": "Vehicle"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "transport",
+        "positive_realization": "transports passengers",
+        "negative_realization": "does not transport passengers",
+        "positive_plural_realization": "transport passengers",
+        "negative_plural_realization": "do not transport passengers",
+        "allowed_subject_types": [
+            "bus",
+            "car",
+            "train",
+            "airplane"
+        ],
+        "domain": "Vehicle"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "motorized",
+        "positive_realization": "is motorized",
+        "negative_realization": "is not motorized",
+        "positive_plural_realization": "are motorized",
+        "negative_plural_realization": "are not motorized",
+        "allowed_subject_types": [
+            "car",
+            "motorcycle",
+            "truck",
+            "bus"
+        ],
+        "domain": "Vehicle"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "fly",
+        "positive_realization": "can fly",
+        "negative_realization": "cannot fly",
+        "positive_plural_realization": "can fly",
+        "negative_plural_realization": "cannot fly",
+        "allowed_subject_types": [
+            "airplane",
+            "helicopter",
+            "glider"
+        ],
+        "domain": "Vehicle"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "float",
+        "positive_realization": "can float",
+        "negative_realization": "cannot float",
+        "positive_plural_realization": "can float",
+        "negative_plural_realization": "cannot float",
+        "allowed_subject_types": [
+            "boat",
+            "ship",
+            "ferry",
+            "yacht"
+        ],
+        "domain": "Vehicle"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "consume",
+        "positive_realization": "consumes fuel",
+        "negative_realization": "does not consume fuel",
+        "positive_plural_realization": "consume fuel",
+        "negative_plural_realization": "do not consume fuel",
+        "allowed_subject_types": [
+            "car",
+            "truck",
+            "airplane",
+            "ship"
+        ],
+        "domain": "Vehicle"
+    },
+    {
+        "property_family": "function",
+        "frame_type": "is_used_to",
+        "predicate_lemma": "carry",
+        "positive_realization": "is used to carry cargo",
+        "negative_realization": "is not used to carry cargo",
+        "positive_plural_realization": "are used to carry cargo",
+        "negative_plural_realization": "are not used to carry cargo",
+        "allowed_subject_types": [
+            "truck",
+            "van",
+            "freighter",
+            "cargo plane"
+        ],
+        "domain": "Vehicle"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "accelerate",
+        "positive_realization": "can accelerate",
+        "negative_realization": "cannot accelerate",
+        "positive_plural_realization": "can accelerate",
+        "negative_plural_realization": "cannot accelerate",
+        "allowed_subject_types": [
+            "car",
+            "motorcycle",
+            "train",
+            "bicycle"
+        ],
+        "domain": "Vehicle"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "brake",
+        "positive_realization": "can brake",
+        "negative_realization": "cannot brake",
+        "positive_plural_realization": "can brake",
+        "negative_plural_realization": "cannot brake",
+        "allowed_subject_types": [
+            "car",
+            "bicycle",
+            "truck",
+            "bus"
+        ],
+        "domain": "Vehicle"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "autonomous",
+        "positive_realization": "is autonomous",
+        "negative_realization": "is not autonomous",
+        "positive_plural_realization": "are autonomous",
+        "negative_plural_realization": "are not autonomous",
+        "allowed_subject_types": [
+            "self-driving car",
+            "drone",
+            "autonomous underwater vehicle"
+        ],
+        "domain": "Vehicle"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "accessible",
+        "positive_realization": "is accessible",
+        "negative_realization": "is not accessible",
+        "positive_plural_realization": "are accessible",
+        "negative_plural_realization": "are not accessible",
+        "allowed_subject_types": [
+            "park",
+            "building",
+            "city",
+            "museum",
+            "beach"
+        ],
+        "domain": "Location"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "host",
+        "positive_realization": "can host events",
+        "negative_realization": "cannot host events",
+        "positive_plural_realization": "can host events",
+        "negative_plural_realization": "cannot host events",
+        "allowed_subject_types": [
+            "stadium",
+            "park",
+            "convention center",
+            "hall",
+            "theater"
+        ],
+        "domain": "Location"
+    },
+    {
+        "property_family": "function",
+        "frame_type": "is_used_to",
+        "predicate_lemma": "shelter",
+        "positive_realization": "is used to provide shelter",
+        "negative_realization": "is not used to provide shelter",
+        "positive_plural_realization": "are used to provide shelter",
+        "negative_plural_realization": "are not used to provide shelter",
+        "allowed_subject_types": [
+            "building",
+            "house",
+            "cabin",
+            "cave",
+            "tent"
+        ],
+        "domain": "Location"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "populated",
+        "positive_realization": "is populated",
+        "negative_realization": "is not populated",
+        "positive_plural_realization": "are populated",
+        "negative_plural_realization": "are not populated",
+        "allowed_subject_types": [
+            "city",
+            "town",
+            "village",
+            "settlement",
+            "metropolis"
+        ],
+        "domain": "Location"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "bordered",
+        "positive_realization": "is bordered",
+        "negative_realization": "is not bordered",
+        "positive_plural_realization": "are bordered",
+        "negative_plural_realization": "are not bordered",
+        "allowed_subject_types": [
+            "country",
+            "state",
+            "province",
+            "territory",
+            "district"
+        ],
+        "domain": "Location"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "attract",
+        "positive_realization": "attracts tourists",
+        "negative_realization": "does not attract tourists",
+        "positive_plural_realization": "attract tourists",
+        "negative_plural_realization": "do not attract tourists",
+        "allowed_subject_types": [
+            "monument",
+            "landmark",
+            "beach",
+            "museum",
+            "national park"
+        ],
+        "domain": "Location"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "navigate",
+        "positive_realization": "can be navigated",
+        "negative_realization": "cannot be navigated",
+        "positive_plural_realization": "can be navigated",
+        "negative_plural_realization": "cannot be navigated",
+        "allowed_subject_types": [
+            "river",
+            "forest",
+            "city",
+            "ocean",
+            "mountain range"
+        ],
+        "domain": "Location"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "dissolve",
+        "positive_realization": "can dissolve in water",
+        "negative_realization": "cannot dissolve in water",
+        "positive_plural_realization": "can dissolve in water",
+        "negative_plural_realization": "cannot dissolve in water",
+        "allowed_subject_types": [
+            "salt",
+            "sugar",
+            "polar compound"
+        ],
+        "domain": "Compound"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "conduct",
+        "positive_realization": "can conduct electricity",
+        "negative_realization": "cannot conduct electricity",
+        "positive_plural_realization": "can conduct electricity",
+        "negative_plural_realization": "cannot conduct electricity",
+        "allowed_subject_types": [
+            "electrolyte",
+            "ionic compound",
+            "acid"
+        ],
+        "domain": "Compound"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "flammable",
+        "positive_realization": "is flammable",
+        "negative_realization": "is not flammable",
+        "positive_plural_realization": "are flammable",
+        "negative_plural_realization": "are not flammable",
+        "allowed_subject_types": [
+            "hydrocarbon",
+            "organic compound",
+            "alcohol"
+        ],
+        "domain": "Compound"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "acidic",
+        "positive_realization": "is acidic",
+        "negative_realization": "is not acidic",
+        "positive_plural_realization": "are acidic",
+        "negative_plural_realization": "are not acidic",
+        "allowed_subject_types": [
+            "acid",
+            "carboxylic acid",
+            "inorganic acid"
+        ],
+        "domain": "Compound"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "react",
+        "positive_realization": "reacts with water",
+        "negative_realization": "does not react with water",
+        "positive_plural_realization": "react with water",
+        "negative_plural_realization": "do not react with water",
+        "allowed_subject_types": [
+            "alkali metal compound",
+            "anhydride",
+            "peroxide"
+        ],
+        "domain": "Compound"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "toxic",
+        "positive_realization": "is toxic",
+        "negative_realization": "is non-toxic",
+        "positive_plural_realization": "are toxic",
+        "negative_plural_realization": "are non-toxic",
+        "allowed_subject_types": [
+            "heavy metal compound",
+            "cyanide",
+            "alkaloid"
+        ],
+        "domain": "Compound"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "volatile",
+        "positive_realization": "is volatile",
+        "negative_realization": "is non-volatile",
+        "positive_plural_realization": "are volatile",
+        "negative_plural_realization": "are non-volatile",
+        "allowed_subject_types": [
+            "ether",
+            "organic solvent",
+            "hydrocarbon"
+        ],
+        "domain": "Compound"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "decompose",
+        "positive_realization": "decomposes when heated",
+        "negative_realization": "does not decompose when heated",
+        "positive_plural_realization": "decompose when heated",
+        "negative_plural_realization": "do not decompose when heated",
+        "allowed_subject_types": [
+            "carbonate",
+            "nitrate",
+            "unstable compound"
+        ],
+        "domain": "Compound"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "basic",
+        "positive_realization": "is basic",
+        "negative_realization": "is not basic",
+        "positive_plural_realization": "are basic",
+        "negative_plural_realization": "are not basic",
+        "allowed_subject_types": [
+            "base",
+            "alkali",
+            "amine"
+        ],
+        "domain": "Compound"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "sublime",
+        "positive_realization": "can sublime at room temperature",
+        "negative_realization": "cannot sublime at room temperature",
+        "positive_plural_realization": "can sublime at room temperature",
+        "negative_plural_realization": "cannot sublime at room temperature",
+        "allowed_subject_types": [
+            "iodine compound",
+            "volatile solid",
+            "naphthalene"
+        ],
+        "domain": "Compound"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "contagious",
+        "positive_realization": "is contagious",
+        "negative_realization": "is not contagious",
+        "positive_plural_realization": "are contagious",
+        "negative_plural_realization": "are not contagious",
+        "allowed_subject_types": [
+            "infectious disease",
+            "viral infection",
+            "bacterial infection"
+        ],
+        "domain": "Disease"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "curable",
+        "positive_realization": "is curable",
+        "negative_realization": "is incurable",
+        "positive_plural_realization": "are curable",
+        "negative_plural_realization": "are incurable",
+        "allowed_subject_types": [
+            "bacterial infection",
+            "cancer",
+            "chronic disease"
+        ],
+        "domain": "Disease"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "spread",
+        "positive_realization": "spreads",
+        "negative_realization": "does not spread",
+        "positive_plural_realization": "spread",
+        "negative_plural_realization": "do not spread",
+        "allowed_subject_types": [
+            "communicable disease",
+            "virus",
+            "pathogen"
+        ],
+        "domain": "Disease"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "cause",
+        "positive_realization": "causes symptoms",
+        "negative_realization": "does not cause symptoms",
+        "positive_plural_realization": "cause symptoms",
+        "negative_plural_realization": "do not cause symptoms",
+        "allowed_subject_types": [
+            "symptomatic disease",
+            "acute illness",
+            "infection"
+        ],
+        "domain": "Disease"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "prevent",
+        "positive_realization": "can be prevented",
+        "negative_realization": "cannot be prevented",
+        "positive_plural_realization": "can be prevented",
+        "negative_plural_realization": "cannot be prevented",
+        "allowed_subject_types": [
+            "vaccine-preventable disease",
+            "lifestyle disease",
+            "deficiency"
+        ],
+        "domain": "Disease"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "fatal",
+        "positive_realization": "is fatal",
+        "negative_realization": "is not fatal",
+        "positive_plural_realization": "are fatal",
+        "negative_plural_realization": "are not fatal",
+        "allowed_subject_types": [
+            "terminal illness",
+            "severe infection",
+            "genetic disorder"
+        ],
+        "domain": "Disease"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "does_action",
+        "predicate_lemma": "emit",
+        "positive_realization": "emits light",
+        "negative_realization": "does not emit light",
+        "positive_plural_realization": "emit light",
+        "negative_plural_realization": "do not emit light",
+        "allowed_subject_types": [
+            "star",
+            "galaxy",
+            "quasar"
+        ],
+        "domain": "Astronomical Object"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "orbit",
+        "positive_realization": "orbits a star",
+        "negative_realization": "does not orbit a star",
+        "positive_plural_realization": "orbit a star",
+        "negative_plural_realization": "do not orbit a star",
+        "allowed_subject_types": [
+            "planet",
+            "asteroid",
+            "comet"
+        ],
+        "domain": "Astronomical Object"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "solid",
+        "positive_realization": "has a solid surface",
+        "negative_realization": "does not have a solid surface",
+        "positive_plural_realization": "have a solid surface",
+        "negative_plural_realization": "do not have a solid surface",
+        "allowed_subject_types": [
+            "terrestrial planet",
+            "moon",
+            "asteroid"
+        ],
+        "domain": "Astronomical Object"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "fuse",
+        "positive_realization": "undergoes nuclear fusion",
+        "negative_realization": "does not undergo nuclear fusion",
+        "positive_plural_realization": "undergo nuclear fusion",
+        "negative_plural_realization": "do not undergo nuclear fusion",
+        "allowed_subject_types": [
+            "star"
+        ],
+        "domain": "Astronomical Object"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "magnetic",
+        "positive_realization": "possesses a magnetic field",
+        "negative_realization": "does not possess a magnetic field",
+        "positive_plural_realization": "possess a magnetic field",
+        "negative_plural_realization": "do not possess a magnetic field",
+        "allowed_subject_types": [
+            "planet",
+            "star",
+            "pulsar"
+        ],
+        "domain": "Astronomical Object"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "reflect",
+        "positive_realization": "can reflect light",
+        "negative_realization": "cannot reflect light",
+        "positive_plural_realization": "can reflect light",
+        "negative_plural_realization": "cannot reflect light",
+        "allowed_subject_types": [
+            "planet",
+            "moon",
+            "asteroid",
+            "comet"
+        ],
+        "domain": "Astronomical Object"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "does_action",
+        "predicate_lemma": "support",
+        "positive_realization": "supports life",
+        "negative_realization": "does not support life",
+        "positive_plural_realization": "support life",
+        "negative_plural_realization": "do not support life",
+        "allowed_subject_types": [
+            "planet",
+            "moon"
+        ],
+        "domain": "Astronomical Object"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "exert",
+        "positive_realization": "can exert gravity",
+        "negative_realization": "cannot exert gravity",
+        "positive_plural_realization": "can exert gravity",
+        "negative_plural_realization": "cannot exert gravity",
+        "allowed_subject_types": [
+            "star",
+            "planet",
+            "black hole",
+            "galaxy"
+        ],
+        "domain": "Astronomical Object"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "collapse",
+        "positive_realization": "collapses under its own gravity",
+        "negative_realization": "does not collapse under its own gravity",
+        "positive_plural_realization": "collapse under their own gravity",
+        "negative_plural_realization": "do not collapse under their own gravity",
+        "allowed_subject_types": [
+            "nebula",
+            "star"
+        ],
+        "domain": "Astronomical Object"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "rotate",
+        "positive_realization": "rotates on its axis",
+        "negative_realization": "does not rotate on its axis",
+        "positive_plural_realization": "rotate on their axes",
+        "negative_plural_realization": "do not rotate on their axes",
+        "allowed_subject_types": [
+            "planet",
+            "star",
+            "moon",
+            "asteroid"
+        ],
+        "domain": "Astronomical Object"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "perform",
+        "positive_realization": "can perform tasks",
+        "negative_realization": "cannot perform tasks",
+        "positive_plural_realization": "can perform tasks",
+        "negative_plural_realization": "cannot perform tasks",
+        "allowed_subject_types": [
+            "employee",
+            "worker",
+            "professional"
+        ],
+        "domain": "Work"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "earn",
+        "positive_realization": "earns a salary",
+        "negative_realization": "does not earn a salary",
+        "positive_plural_realization": "earn a salary",
+        "negative_plural_realization": "do not earn a salary",
+        "allowed_subject_types": [
+            "employee",
+            "freelancer",
+            "consultant"
+        ],
+        "domain": "Work"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "remote",
+        "positive_realization": "is remote",
+        "negative_realization": "is not remote",
+        "positive_plural_realization": "are remote",
+        "negative_plural_realization": "are not remote",
+        "allowed_subject_types": [
+            "job",
+            "position",
+            "role"
+        ],
+        "domain": "Work"
+    },
+    {
+        "property_family": "function",
+        "frame_type": "does_action",
+        "predicate_lemma": "provide",
+        "positive_realization": "provides income",
+        "negative_realization": "does not provide income",
+        "positive_plural_realization": "provide income",
+        "negative_plural_realization": "do not provide income",
+        "allowed_subject_types": [
+            "occupation",
+            "career",
+            "employment"
+        ],
+        "domain": "Work"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "require",
+        "positive_realization": "requires specialized skills",
+        "negative_realization": "does not require specialized skills",
+        "positive_plural_realization": "require specialized skills",
+        "negative_plural_realization": "do not require specialized skills",
+        "allowed_subject_types": [
+            "profession",
+            "trade",
+            "craft"
+        ],
+        "domain": "Work"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "attend",
+        "positive_realization": "attends meetings",
+        "negative_realization": "does not attend meetings",
+        "positive_plural_realization": "attend meetings",
+        "negative_plural_realization": "do not attend meetings",
+        "allowed_subject_types": [
+            "manager",
+            "executive",
+            "team member"
+        ],
+        "domain": "Work"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "stressful",
+        "positive_realization": "is stressful",
+        "negative_realization": "is not stressful",
+        "positive_plural_realization": "are stressful",
+        "negative_plural_realization": "are not stressful",
+        "allowed_subject_types": [
+            "assignment",
+            "project",
+            "deadline"
+        ],
+        "domain": "Work"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "collaborate",
+        "positive_realization": "can collaborate with others",
+        "negative_realization": "cannot collaborate with others",
+        "positive_plural_realization": "can collaborate with others",
+        "negative_plural_realization": "cannot collaborate with others",
+        "allowed_subject_types": [
+            "colleague",
+            "teammate",
+            "partner"
+        ],
+        "domain": "Work"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "use",
+        "positive_realization": "uses professional tools",
+        "negative_realization": "does not use professional tools",
+        "positive_plural_realization": "use professional tools",
+        "negative_plural_realization": "do not use professional tools",
+        "allowed_subject_types": [
+            "artisan",
+            "technician",
+            "developer"
+        ],
+        "domain": "Work"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "schedule",
+        "positive_realization": "has a fixed schedule",
+        "negative_realization": "does not have a fixed schedule",
+        "positive_plural_realization": "have a fixed schedule",
+        "negative_plural_realization": "do not have a fixed schedule",
+        "allowed_subject_types": [
+            "shift",
+            "workday",
+            "roster"
+        ],
+        "domain": "Work"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "speak",
+        "positive_realization": "can be spoken",
+        "negative_realization": "cannot be spoken",
+        "positive_plural_realization": "can be spoken",
+        "negative_plural_realization": "cannot be spoken",
+        "allowed_subject_types": [
+            "natural language",
+            "dialect",
+            "vernacular"
+        ],
+        "domain": "Language"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "convey",
+        "positive_realization": "conveys meaning",
+        "negative_realization": "does not convey meaning",
+        "positive_plural_realization": "convey meaning",
+        "negative_plural_realization": "do not convey meaning",
+        "allowed_subject_types": [
+            "language",
+            "sign language",
+            "symbol"
+        ],
+        "domain": "Language"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "tonal",
+        "positive_realization": "is tonal",
+        "negative_realization": "is not tonal",
+        "positive_plural_realization": "are tonal",
+        "negative_plural_realization": "are not tonal",
+        "allowed_subject_types": [
+            "language",
+            "dialect"
+        ],
+        "domain": "Language"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "write",
+        "positive_realization": "can be written",
+        "negative_realization": "cannot be written",
+        "positive_plural_realization": "can be written",
+        "negative_plural_realization": "cannot be written",
+        "allowed_subject_types": [
+            "language",
+            "script",
+            "formal language"
+        ],
+        "domain": "Language"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "use",
+        "positive_realization": "uses grammar",
+        "negative_realization": "does not use grammar",
+        "positive_plural_realization": "use grammar",
+        "negative_plural_realization": "do not use grammar",
+        "allowed_subject_types": [
+            "language",
+            "programming language",
+            "artificial language"
+        ],
+        "domain": "Language"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "extinct",
+        "positive_realization": "is extinct",
+        "negative_realization": "is not extinct",
+        "positive_plural_realization": "are extinct",
+        "negative_plural_realization": "are not extinct",
+        "allowed_subject_types": [
+            "language",
+            "dead language"
+        ],
+        "domain": "Language"
+    },
+    {
+        "property_family": "function",
+        "frame_type": "does_action",
+        "predicate_lemma": "facilitate",
+        "positive_realization": "facilitates communication",
+        "negative_realization": "does not facilitate communication",
+        "positive_plural_realization": "facilitate communication",
+        "negative_plural_realization": "do not facilitate communication",
+        "allowed_subject_types": [
+            "language",
+            "lingua franca",
+            "pidgin"
+        ],
+        "domain": "Language"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "evolve",
+        "positive_realization": "can evolve",
+        "negative_realization": "cannot evolve",
+        "positive_plural_realization": "can evolve",
+        "negative_plural_realization": "cannot evolve",
+        "allowed_subject_types": [
+            "living language",
+            "slang",
+            "dialect"
+        ],
+        "domain": "Language"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "methodology",
+        "positive_realization": "has a methodology",
+        "negative_realization": "does not have a methodology",
+        "positive_plural_realization": "have methodologies",
+        "negative_plural_realization": "do not have methodologies",
+        "allowed_subject_types": [
+            "academic discipline",
+            "scientific field",
+            "humanistic study"
+        ],
+        "domain": "Discipline"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "research",
+        "positive_realization": "conducts research",
+        "negative_realization": "does not conduct research",
+        "positive_plural_realization": "conduct research",
+        "negative_plural_realization": "do not conduct research",
+        "allowed_subject_types": [
+            "scientific discipline",
+            "social science",
+            "applied science"
+        ],
+        "domain": "Discipline"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "evolve",
+        "positive_realization": "can evolve",
+        "negative_realization": "cannot evolve",
+        "positive_plural_realization": "can evolve",
+        "negative_plural_realization": "cannot evolve",
+        "allowed_subject_types": [
+            "academic field",
+            "theoretical framework",
+            "branch of knowledge"
+        ],
+        "domain": "Discipline"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "terminology",
+        "positive_realization": "has specialized terminology",
+        "negative_realization": "does not have specialized terminology",
+        "positive_plural_realization": "have specialized terminology",
+        "negative_plural_realization": "do not have specialized terminology",
+        "allowed_subject_types": [
+            "technical discipline",
+            "scholarly field",
+            "professional area"
+        ],
+        "domain": "Discipline"
+    },
+    {
+        "property_family": "function",
+        "frame_type": "is_verb",
+        "predicate_lemma": "teach",
+        "positive_realization": "is taught in universities",
+        "negative_realization": "is not taught in universities",
+        "positive_plural_realization": "are taught in universities",
+        "negative_plural_realization": "are not taught in universities",
+        "allowed_subject_types": [
+            "academic subject",
+            "curriculum area",
+            "field of study"
+        ],
+        "domain": "Discipline"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "ethics",
+        "positive_realization": "has a code of ethics",
+        "negative_realization": "does not have a code of ethics",
+        "positive_plural_realization": "have codes of ethics",
+        "negative_plural_realization": "do not have codes of ethics",
+        "allowed_subject_types": [
+            "professional discipline",
+            "scientific field",
+            "medical branch"
+        ],
+        "domain": "Discipline"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "run",
+        "positive_realization": "can run",
+        "negative_realization": "cannot run",
+        "positive_plural_realization": "can run",
+        "negative_plural_realization": "cannot run",
+        "allowed_subject_types": [
+            "application",
+            "program",
+            "operating system"
+        ],
+        "domain": "Software"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "open-source",
+        "positive_realization": "is open-source",
+        "negative_realization": "is not open-source",
+        "positive_plural_realization": "are open-source",
+        "negative_plural_realization": "are not open-source",
+        "allowed_subject_types": [
+            "library",
+            "framework",
+            "application"
+        ],
+        "domain": "Software"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "process",
+        "positive_realization": "processes data",
+        "negative_realization": "does not process data",
+        "positive_plural_realization": "process data",
+        "negative_plural_realization": "do not process data",
+        "allowed_subject_types": [
+            "database",
+            "algorithm",
+            "script"
+        ],
+        "domain": "Software"
+    },
+    {
+        "property_family": "function",
+        "frame_type": "is_used_to",
+        "predicate_lemma": "edit",
+        "positive_realization": "is used to edit text",
+        "negative_realization": "is not used to edit text",
+        "positive_plural_realization": "are used to edit text",
+        "negative_plural_realization": "are not used to edit text",
+        "allowed_subject_types": [
+            "text editor",
+            "word processor"
+        ],
+        "domain": "Software"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "buggy",
+        "positive_realization": "is buggy",
+        "negative_realization": "is not buggy",
+        "positive_plural_realization": "are buggy",
+        "negative_plural_realization": "are not buggy",
+        "allowed_subject_types": [
+            "beta version",
+            "prototype",
+            "release"
+        ],
+        "domain": "Software"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "connect",
+        "positive_realization": "can connect to the internet",
+        "negative_realization": "cannot connect to the internet",
+        "positive_plural_realization": "can connect to the internet",
+        "negative_plural_realization": "cannot connect to the internet",
+        "allowed_subject_types": [
+            "browser",
+            "web app",
+            "client"
+        ],
+        "domain": "Software"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "require",
+        "positive_realization": "requires installation",
+        "negative_realization": "does not require installation",
+        "positive_plural_realization": "require installation",
+        "negative_plural_realization": "do not require installation",
+        "allowed_subject_types": [
+            "desktop application",
+            "driver",
+            "suite"
+        ],
+        "domain": "Software"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "proprietary",
+        "positive_realization": "is proprietary",
+        "negative_realization": "is not proprietary",
+        "positive_plural_realization": "are proprietary",
+        "negative_plural_realization": "are not proprietary",
+        "allowed_subject_types": [
+            "commercial software",
+            "enterprise application"
+        ],
+        "domain": "Software"
+    },
+    {
+        "property_family": "function",
+        "frame_type": "is_used_to",
+        "predicate_lemma": "compile",
+        "positive_realization": "is used to compile code",
+        "negative_realization": "is not used to compile code",
+        "positive_plural_realization": "are used to compile code",
+        "negative_plural_realization": "are not used to compile code",
+        "allowed_subject_types": [
+            "compiler",
+            "toolchain"
+        ],
+        "domain": "Software"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "compatible",
+        "positive_realization": "is compatible with Windows",
+        "negative_realization": "is not compatible with Windows",
+        "positive_plural_realization": "are compatible with Windows",
+        "negative_plural_realization": "are not compatible with Windows",
+        "allowed_subject_types": [
+            "executable",
+            "driver",
+            "game"
+        ],
+        "domain": "Software"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "conductive",
+        "positive_realization": "is conductive",
+        "negative_realization": "is not conductive",
+        "positive_plural_realization": "are conductive",
+        "negative_plural_realization": "are not conductive",
+        "allowed_subject_types": [
+            "metal",
+            "copper",
+            "silver",
+            "material"
+        ],
+        "domain": "Material"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "transparent",
+        "positive_realization": "is transparent",
+        "negative_realization": "is not transparent",
+        "positive_plural_realization": "are transparent",
+        "negative_plural_realization": "are not transparent",
+        "allowed_subject_types": [
+            "glass",
+            "plastic",
+            "water",
+            "material"
+        ],
+        "domain": "Material"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "hard",
+        "positive_realization": "is hard",
+        "negative_realization": "is not hard",
+        "positive_plural_realization": "are hard",
+        "negative_plural_realization": "are not hard",
+        "allowed_subject_types": [
+            "diamond",
+            "stone",
+            "metal",
+            "material"
+        ],
+        "domain": "Material"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "flexible",
+        "positive_realization": "is flexible",
+        "negative_realization": "is not flexible",
+        "positive_plural_realization": "are flexible",
+        "negative_plural_realization": "are not flexible",
+        "allowed_subject_types": [
+            "rubber",
+            "fabric",
+            "plastic",
+            "material"
+        ],
+        "domain": "Material"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "flammable",
+        "positive_realization": "is flammable",
+        "negative_realization": "is not flammable",
+        "positive_plural_realization": "are flammable",
+        "negative_plural_realization": "are not flammable",
+        "allowed_subject_types": [
+            "wood",
+            "paper",
+            "fuel",
+            "material"
+        ],
+        "domain": "Material"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "magnetic",
+        "positive_realization": "is magnetic",
+        "negative_realization": "is not magnetic",
+        "positive_plural_realization": "are magnetic",
+        "negative_plural_realization": "are not magnetic",
+        "allowed_subject_types": [
+            "iron",
+            "steel",
+            "nickel",
+            "material"
+        ],
+        "domain": "Material"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "melt",
+        "positive_realization": "melts",
+        "negative_realization": "does not melt",
+        "positive_plural_realization": "melt",
+        "negative_plural_realization": "do not melt",
+        "allowed_subject_types": [
+            "ice",
+            "wax",
+            "metal",
+            "material"
+        ],
+        "domain": "Material"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "rust",
+        "positive_realization": "rusts",
+        "negative_realization": "does not rust",
+        "positive_plural_realization": "rust",
+        "negative_plural_realization": "do not rust",
+        "allowed_subject_types": [
+            "iron",
+            "steel",
+            "metal",
+            "material"
+        ],
+        "domain": "Material"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "soluble",
+        "positive_realization": "is soluble",
+        "negative_realization": "is not soluble",
+        "positive_plural_realization": "are soluble",
+        "negative_plural_realization": "are not soluble",
+        "allowed_subject_types": [
+            "salt",
+            "sugar",
+            "powder",
+            "material"
+        ],
+        "domain": "Material"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "fragile",
+        "positive_realization": "is fragile",
+        "negative_realization": "is not fragile",
+        "positive_plural_realization": "are fragile",
+        "negative_plural_realization": "are not fragile",
+        "allowed_subject_types": [
+            "ceramic",
+            "glass",
+            "crystal",
+            "material"
+        ],
+        "domain": "Material"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "competitive",
+        "positive_realization": "is competitive",
+        "negative_realization": "is not competitive",
+        "positive_plural_realization": "are competitive",
+        "negative_plural_realization": "are not competitive",
+        "allowed_subject_types": [
+            "sport",
+            "team sport",
+            "individual sport"
+        ],
+        "domain": "Sport"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "require equipment",
+        "positive_realization": "requires equipment",
+        "negative_realization": "does not require equipment",
+        "positive_plural_realization": "require equipment",
+        "negative_plural_realization": "do not require equipment",
+        "allowed_subject_types": [
+            "sport",
+            "ball game",
+            "water sport"
+        ],
+        "domain": "Sport"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "play professionally",
+        "positive_realization": "can be played professionally",
+        "negative_realization": "cannot be played professionally",
+        "positive_plural_realization": "can be played professionally",
+        "negative_plural_realization": "cannot be played professionally",
+        "allowed_subject_types": [
+            "sport",
+            "team sport",
+            "individual sport"
+        ],
+        "domain": "Sport"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "team-based",
+        "positive_realization": "is team-based",
+        "negative_realization": "is not team-based",
+        "positive_plural_realization": "are team-based",
+        "negative_plural_realization": "are not team-based",
+        "allowed_subject_types": [
+            "sport",
+            "team sport",
+            "ball game"
+        ],
+        "domain": "Sport"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "involve physical exertion",
+        "positive_realization": "involves physical exertion",
+        "negative_realization": "does not involve physical exertion",
+        "positive_plural_realization": "involve physical exertion",
+        "negative_plural_realization": "do not involve physical exertion",
+        "allowed_subject_types": [
+            "sport",
+            "athletic event",
+            "combat sport"
+        ],
+        "domain": "Sport"
+    },
+    {
+        "property_family": "function",
+        "frame_type": "does_action",
+        "predicate_lemma": "provide entertainment",
+        "positive_realization": "provides entertainment",
+        "negative_realization": "does not provide entertainment",
+        "positive_plural_realization": "provide entertainment",
+        "negative_plural_realization": "do not provide entertainment",
+        "allowed_subject_types": [
+            "sport",
+            "ball game",
+            "athletic event"
+        ],
+        "domain": "Sport"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "Olympic",
+        "positive_realization": "is an Olympic event",
+        "negative_realization": "is not an Olympic event",
+        "positive_plural_realization": "are Olympic events",
+        "negative_plural_realization": "are not Olympic events",
+        "allowed_subject_types": [
+            "sport",
+            "athletic event",
+            "water sport"
+        ],
+        "domain": "Sport"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "follow rules",
+        "positive_realization": "follows specific rules",
+        "negative_realization": "does not follow specific rules",
+        "positive_plural_realization": "follow specific rules",
+        "negative_plural_realization": "do not follow specific rules",
+        "allowed_subject_types": [
+            "sport",
+            "team sport",
+            "combat sport"
+        ],
+        "domain": "Sport"
+    },
+    {
+        "property_family": "function",
+        "frame_type": "does_action",
+        "predicate_lemma": "pump",
+        "positive_realization": "pumps blood",
+        "negative_realization": "does not pump blood",
+        "positive_plural_realization": "pump blood",
+        "negative_plural_realization": "do not pump blood",
+        "allowed_subject_types": [
+            "heart"
+        ],
+        "domain": "Anatomical Structure"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "regenerate",
+        "positive_realization": "can regenerate",
+        "negative_realization": "cannot regenerate",
+        "positive_plural_realization": "can regenerate",
+        "negative_plural_realization": "cannot regenerate",
+        "allowed_subject_types": [
+            "liver",
+            "skin",
+            "tissue"
+        ],
+        "domain": "Anatomical Structure"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "oxygenated",
+        "positive_realization": "is oxygenated",
+        "negative_realization": "is not oxygenated",
+        "positive_plural_realization": "are oxygenated",
+        "negative_plural_realization": "are not oxygenated",
+        "allowed_subject_types": [
+            "blood",
+            "artery",
+            "vein"
+        ],
+        "domain": "Anatomical Structure"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "contract",
+        "positive_realization": "contracts",
+        "negative_realization": "does not contract",
+        "positive_plural_realization": "contract",
+        "negative_plural_realization": "do not contract",
+        "allowed_subject_types": [
+            "muscle",
+            "heart",
+            "diaphragm"
+        ],
+        "domain": "Anatomical Structure"
+    },
+    {
+        "property_family": "function",
+        "frame_type": "does_action",
+        "predicate_lemma": "filter",
+        "positive_realization": "filters waste",
+        "negative_realization": "does not filter waste",
+        "positive_plural_realization": "filter waste",
+        "negative_plural_realization": "do not filter waste",
+        "allowed_subject_types": [
+            "kidney",
+            "liver",
+            "lymph node"
+        ],
+        "domain": "Anatomical Structure"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "symmetrical",
+        "positive_realization": "is symmetrical",
+        "negative_realization": "is not symmetrical",
+        "positive_plural_realization": "are symmetrical",
+        "negative_plural_realization": "are not symmetrical",
+        "allowed_subject_types": [
+            "lung",
+            "kidney",
+            "eye",
+            "limb"
+        ],
+        "domain": "Anatomical Structure"
+    },
+    {
+        "property_family": "capability",
+        "frame_type": "can_verb",
+        "predicate_lemma": "sense",
+        "positive_realization": "can sense stimuli",
+        "negative_realization": "cannot sense stimuli",
+        "positive_plural_realization": "can sense stimuli",
+        "negative_plural_realization": "cannot sense stimuli",
+        "allowed_subject_types": [
+            "nerve",
+            "receptor",
+            "skin"
+        ],
+        "domain": "Anatomical Structure"
+    },
+    {
+        "property_family": "action",
+        "frame_type": "does_action",
+        "predicate_lemma": "secrete",
+        "positive_realization": "secretes hormones",
+        "negative_realization": "does not secrete hormones",
+        "positive_plural_realization": "secrete hormones",
+        "negative_plural_realization": "do not secrete hormones",
+        "allowed_subject_types": [
+            "gland",
+            "pancreas",
+            "thyroid"
+        ],
+        "domain": "Anatomical Structure"
+    },
+    {
+        "property_family": "state",
+        "frame_type": "has_property",
+        "predicate_lemma": "vascularized",
+        "positive_realization": "is vascularized",
+        "negative_realization": "is not vascularized",
+        "positive_plural_realization": "are vascularized",
+        "negative_plural_realization": "are not vascularized",
+        "allowed_subject_types": [
+            "organ",
+            "tissue",
+            "bone"
+        ],
+        "domain": "Anatomical Structure"
+    },
+    {
+        "property_family": "function",
+        "frame_type": "does_action",
+        "predicate_lemma": "protect",
+        "positive_realization": "protects internal organs",
+        "negative_realization": "does not protect internal organs",
+        "positive_plural_realization": "protect internal organs",
+        "negative_plural_realization": "do not protect internal organs",
+        "allowed_subject_types": [
+            "skin",
+            "rib",
+            "skull"
+        ],
+        "domain": "Anatomical Structure"
+    }
+]

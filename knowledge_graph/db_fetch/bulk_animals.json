@@ -1,0 +1,317 @@
+{
+  "entities": [
+    { "name": "Animal", "metadata": {} },
+    { "name": "Vertebrate", "metadata": {} },
+    { "name": "Invertebrate", "metadata": {} },
+    { "name": "Mammal", "metadata": {} },
+    { "name": "Reptile", "metadata": {} },
+    { "name": "Amphibian", "metadata": {} },
+    { "name": "Fish", "metadata": {} },
+    { "name": "Bird", "metadata": {} },
+    { "name": "Arthropod", "metadata": {} },
+    { "name": "Insect", "metadata": {} },
+    { "name": "Arachnid", "metadata": {} },
+    { "name": "Crustacean", "metadata": {} },
+
+    { "name": "Carnivore", "metadata": {} },
+    { "name": "Herbivore", "metadata": {} },
+    { "name": "Omnivore", "metadata": {} },
+
+    { "name": "Lion", "metadata": {} },
+    { "name": "Tiger", "metadata": {} },
+    { "name": "Wolf", "metadata": {} },
+    { "name": "Bear", "metadata": {} },
+    { "name": "Elephant", "metadata": {} },
+    { "name": "Giraffe", "metadata": {} },
+    { "name": "Horse", "metadata": {} },
+    { "name": "Whale", "metadata": {} },
+    { "name": "Dolphin", "metadata": {} },
+    { "name": "Bat", "metadata": {} },
+    { "name": "Platypus", "metadata": {} },
+    { "name": "Kangaroo", "metadata": {} },
+    { "name": "Koala", "metadata": {} },
+
+    { "name": "Eagle", "metadata": {} },
+    { "name": "Penguin", "metadata": {} },
+    { "name": "Ostrich", "metadata": {} },
+    { "name": "Parrot", "metadata": {} },
+
+    { "name": "Snake", "metadata": {} },
+    { "name": "Lizard", "metadata": {} },
+    { "name": "Turtle", "metadata": {} },
+    { "name": "Crocodile", "metadata": {} },
+
+    { "name": "Frog", "metadata": {} },
+    { "name": "Salamander", "metadata": {} },
+
+    { "name": "Shark", "metadata": {} },
+    { "name": "Salmon", "metadata": {} },
+    { "name": "Clownfish", "metadata": {} },
+
+    { "name": "Bee", "metadata": {} },
+    { "name": "Ant", "metadata": {} },
+    { "name": "Butterfly", "metadata": {} },
+    { "name": "Spider", "metadata": {} },
+    { "name": "Scorpion", "metadata": {} },
+    { "name": "Crab", "metadata": {} },
+    { "name": "Lobster", "metadata": {} }
+  ],
+
+  "properties": [
+    { "type": "rank", "value": "kingdom" },
+    { "type": "rank", "value": "phylum" },
+    { "type": "rank", "value": "class" },
+    
+    { "type": "anatomical", "value": "backbone" },
+    { "type": "anatomical", "value": "exoskeleton" },
+    { "type": "anatomical", "value": "fur" },
+    { "type": "anatomical", "value": "scales" },
+    { "type": "anatomical", "value": "feathers" },
+    { "type": "anatomical", "value": "gills" },
+    { "type": "anatomical", "value": "lungs" },
+    { "type": "anatomical", "value": "wings" },
+    { "type": "anatomical", "value": "shell" },
+    { "type": "anatomical", "value": "trunk" },
+    { "type": "anatomical", "value": "pouch" },
+    { "type": "anatomical", "value": "fins" },
+    { "type": "anatomical", "value": "claws" },
+    { "type": "anatomical", "value": "legs" },
+    
+    { "type": "metabolism", "value": "warm_blooded" },
+    { "type": "metabolism", "value": "cold_blooded" },
+    
+    { "type": "reproduction", "value": "live_birth" },
+    { "type": "reproduction", "value": "eggs" },
+    { "type": "substance", "value": "milk" },
+    { "type": "substance", "value": "venom" },
+    { "type": "substance", "value": "honey" },
+    
+    { "type": "diet", "value": "meat" },
+    { "type": "diet", "value": "plants" },
+    { "type": "diet", "value": "insects" },
+    { "type": "diet", "value": "everything" },
+    
+    { "type": "habitat", "value": "land" },
+    { "type": "habitat", "value": "water" },
+    { "type": "habitat", "value": "ocean" },
+    { "type": "habitat", "value": "sky" },
+    
+    { "type": "region", "value": "africa" },
+    { "type": "region", "value": "asia" },
+    { "type": "region", "value": "australia" },
+    { "type": "region", "value": "antarctica" },
+    { "type": "region", "value": "global" },
+
+    { "type": "size", "value": "tiny" },
+    { "type": "size", "value": "small" },
+    { "type": "size", "value": "medium" },
+    { "type": "size", "value": "large" },
+    { "type": "size", "value": "huge" },
+    { "type": "size", "value": "massive" },
+
+    { "type": "social", "value": "solitary" },
+    { "type": "social", "value": "pack" },
+    { "type": "social", "value": "herd" },
+    { "type": "social", "value": "colony" },
+
+    { "type": "ability", "value": "fly" },
+    { "type": "ability", "value": "swim" },
+    { "type": "ability", "value": "run_fast" },
+    { "type": "ability", "value": "jump" },
+    { "type": "ability", "value": "climb" },
+    { "type": "ability", "value": "sting" },
+    { "type": "ability", "value": "echolocation" },
+    { "type": "ability", "value": "web_spinning" },
+    { "type": "ability", "value": "mimicry" },
+    { "type": "ability", "value": "walk" }
+  ],
+
+  "edges": [
+    { "source": "Animal", "target": "rank:kingdom", "relation": "has" },
+
+    { "source": "Animal", "target": "Vertebrate", "relation": "is_a" },
+    { "source": "Vertebrate", "target": "rank:phylum", "relation": "has" },
+    { "source": "Vertebrate", "target": "anatomical:backbone", "relation": "has" },
+    
+    { "source": "Animal", "target": "Invertebrate", "relation": "is_a" },
+    { "source": "Invertebrate", "target": "anatomical:backbone", "relation": "lacks" },
+
+    { "source": "Vertebrate", "target": "Mammal", "relation": "is_a" },
+    { "source": "Mammal", "target": "rank:class", "relation": "has" },
+    { "source": "Mammal", "target": "anatomical:fur", "relation": "has" },
+    { "source": "Mammal", "target": "metabolism:warm_blooded", "relation": "has" },
+    { "source": "Mammal", "target": "substance:milk", "relation": "has", "metadata": {"verb": "produces"} },
+    { "source": "Mammal", "target": "reproduction:live_birth", "relation": "has" },
+
+    { "source": "Vertebrate", "target": "Bird", "relation": "is_a" },
+    { "source": "Bird", "target": "anatomical:feathers", "relation": "has" },
+    { "source": "Bird", "target": "anatomical:wings", "relation": "has" },
+    { "source": "Bird", "target": "reproduction:eggs", "relation": "has" },
+    { "source": "Bird", "target": "ability:fly", "relation": "has", "metadata": {"note": "General rule"} },
+
+    { "source": "Vertebrate", "target": "Reptile", "relation": "is_a" },
+    { "source": "Reptile", "target": "anatomical:scales", "relation": "has" },
+    { "source": "Reptile", "target": "metabolism:cold_blooded", "relation": "has" },
+    { "source": "Reptile", "target": "reproduction:eggs", "relation": "has", "metadata": {"verb": "lays"} },
+
+    { "source": "Vertebrate", "target": "Amphibian", "relation": "is_a" },
+    { "source": "Amphibian", "target": "habitat:water", "relation": "has", "metadata": {"context": "larva"} },
+    { "source": "Amphibian", "target": "habitat:land", "relation": "has", "metadata": {"context": "adult"} },
+
+    { "source": "Vertebrate", "target": "Fish", "relation": "is_a" },
+    { "source": "Fish", "target": "anatomical:gills", "relation": "has" },
+    { "source": "Fish", "target": "habitat:water", "relation": "has" },
+
+    { "source": "Invertebrate", "target": "Arthropod", "relation": "is_a" },
+    { "source": "Arthropod", "target": "anatomical:exoskeleton", "relation": "has" },
+
+    { "source": "Arthropod", "target": "Insect", "relation": "is_a" },
+    { "source": "Insect", "target": "anatomical:legs", "relation": "has", "metadata": {"count": "6"} },
+
+    { "source": "Arthropod", "target": "Arachnid", "relation": "is_a" },
+    { "source": "Arachnid", "target": "anatomical:legs", "relation": "has", "metadata": {"count": "8"} },
+    
+    { "source": "Arthropod", "target": "Crustacean", "relation": "is_a" },
+
+    { "source": "Mammal", "target": "Carnivore", "relation": "is_a" },
+    { "source": "Carnivore", "target": "diet:meat", "relation": "has" },
+    { "source": "Carnivore", "target": "anatomical:claws", "relation": "has" },
+
+    { "source": "Mammal", "target": "Herbivore", "relation": "is_a" },
+    { "source": "Herbivore", "target": "diet:plants", "relation": "has" },
+
+    { "source": "Carnivore", "target": "Lion", "relation": "is_a" },
+    { "source": "Lion", "target": "region:africa", "relation": "has" },
+    { "source": "Lion", "target": "social:pack", "relation": "has", "metadata": {"term": "pride"} },
+    
+    { "source": "Carnivore", "target": "Tiger", "relation": "is_a" },
+    { "source": "Tiger", "target": "region:asia", "relation": "has" },
+    { "source": "Tiger", "target": "social:solitary", "relation": "has" },
+
+    { "source": "Carnivore", "target": "Wolf", "relation": "is_a" },
+    { "source": "Wolf", "target": "social:pack", "relation": "has" },
+    { "source": "Wolf", "target": "habitat:land", "relation": "has" },
+
+    { "source": "Carnivore", "target": "Bear", "relation": "is_a" },
+    { "source": "Bear", "target": "diet:everything", "relation": "has", "metadata": {"note": "Omnivorous mostly"} },
+    { "source": "Bear", "target": "size:large", "relation": "has" },
+
+    { "source": "Herbivore", "target": "Elephant", "relation": "is_a" },
+    { "source": "Elephant", "target": "size:huge", "relation": "has" },
+    { "source": "Elephant", "target": "anatomical:trunk", "relation": "has" },
+    { "source": "Elephant", "target": "region:africa", "relation": "has" },
+    { "source": "Elephant", "target": "region:asia", "relation": "has" },
+
+    { "source": "Herbivore", "target": "Giraffe", "relation": "is_a" },
+    { "source": "Giraffe", "target": "size:large", "relation": "has", "metadata": {"feature": "tall"} },
+    { "source": "Giraffe", "target": "region:africa", "relation": "has" },
+
+    { "source": "Herbivore", "target": "Horse", "relation": "is_a" },
+    { "source": "Horse", "target": "ability:run_fast", "relation": "has" },
+    { "source": "Horse", "target": "social:herd", "relation": "has" },
+
+    { "source": "Mammal", "target": "Whale", "relation": "is_a" },
+    { "source": "Whale", "target": "habitat:ocean", "relation": "has" },
+    { "source": "Whale", "target": "size:massive", "relation": "has" },
+    { "source": "Whale", "target": "anatomical:fur", "relation": "lacks", "metadata": {"note": "Exception"} },
+    
+    { "source": "Mammal", "target": "Dolphin", "relation": "is_a" },
+    { "source": "Dolphin", "target": "habitat:ocean", "relation": "has" },
+    { "source": "Dolphin", "target": "ability:swim", "relation": "has" },
+    { "source": "Dolphin", "target": "social:pack", "relation": "has", "metadata": {"term": "pod"} },
+
+    { "source": "Mammal", "target": "Bat", "relation": "is_a" },
+    { "source": "Bat", "target": "ability:fly", "relation": "has", "metadata": {"note": "True flight"} },
+    { "source": "Bat", "target": "ability:echolocation", "relation": "has" },
+    { "source": "Bat", "target": "habitat:sky", "relation": "has" },
+
+    { "source": "Mammal", "target": "Platypus", "relation": "is_a" },
+    { "source": "Platypus", "target": "reproduction:eggs", "relation": "has", "metadata": {"note": "Monotreme exception"} },
+    { "source": "Platypus", "target": "reproduction:live_birth", "relation": "lacks" },
+    { "source": "Platypus", "target": "substance:venom", "relation": "has", "metadata": {"sex": "male"} },
+    { "source": "Platypus", "target": "region:australia", "relation": "has" },
+
+    { "source": "Mammal", "target": "Kangaroo", "relation": "is_a" },
+    { "source": "Kangaroo", "target": "anatomical:pouch", "relation": "has" },
+    { "source": "Kangaroo", "target": "ability:jump", "relation": "has" },
+    { "source": "Kangaroo", "target": "region:australia", "relation": "has" },
+
+    { "source": "Mammal", "target": "Koala", "relation": "is_a" },
+    { "source": "Koala", "target": "anatomical:pouch", "relation": "has" },
+    { "source": "Koala", "target": "diet:plants", "relation": "has", "metadata": {"specific": "Eucalyptus"} },
+    { "source": "Koala", "target": "ability:climb", "relation": "has" },
+
+    { "source": "Bird", "target": "Eagle", "relation": "is_a" },
+    { "source": "Eagle", "target": "diet:meat", "relation": "has" },
+    { "source": "Eagle", "target": "anatomical:claws", "relation": "has", "metadata": {"term": "talons"} },
+    
+    { "source": "Bird", "target": "Penguin", "relation": "is_a" },
+    { "source": "Penguin", "target": "ability:fly", "relation": "lacks" },
+    { "source": "Penguin", "target": "ability:swim", "relation": "has" },
+    { "source": "Penguin", "target": "habitat:ocean", "relation": "has" },
+    { "source": "Penguin", "target": "region:antarctica", "relation": "has" },
+
+    { "source": "Bird", "target": "Ostrich", "relation": "is_a" },
+    { "source": "Ostrich", "target": "ability:fly", "relation": "lacks" },
+    { "source": "Ostrich", "target": "ability:run_fast", "relation": "has" },
+    { "source": "Ostrich", "target": "size:large", "relation": "has" },
+
+    { "source": "Bird", "target": "Parrot", "relation": "is_a" },
+    { "source": "Parrot", "target": "ability:mimicry", "relation": "has" },
+    { "source": "Parrot", "target": "habitat:land", "relation": "has", "metadata": {"context": "jungle"} },
+
+    { "source": "Reptile", "target": "Snake", "relation": "is_a" },
+    { "source": "Snake", "target": "substance:venom", "relation": "has", "metadata": {"note": "Some species"} },
+    { "source": "Snake", "target": "ability:walk", "relation": "lacks" },
+    
+    { "source": "Reptile", "target": "Turtle", "relation": "is_a" },
+    { "source": "Turtle", "target": "anatomical:shell", "relation": "has" },
+    { "source": "Turtle", "target": "ability:swim", "relation": "has" },
+
+    { "source": "Reptile", "target": "Crocodile", "relation": "is_a" },
+    { "source": "Crocodile", "target": "diet:meat", "relation": "has" },
+    { "source": "Crocodile", "target": "habitat:water", "relation": "has" },
+
+    { "source": "Amphibian", "target": "Frog", "relation": "is_a" },
+    { "source": "Frog", "target": "ability:jump", "relation": "has" },
+    
+    { "source": "Amphibian", "target": "Salamander", "relation": "is_a" },
+    { "source": "Salamander", "target": "ability:climb", "relation": "has" },
+
+    { "source": "Fish", "target": "Shark", "relation": "is_a" },
+    { "source": "Shark", "target": "diet:meat", "relation": "has" },
+    { "source": "Shark", "target": "size:large", "relation": "has" },
+
+    { "source": "Fish", "target": "Salmon", "relation": "is_a" },
+    { "source": "Salmon", "target": "habitat:water", "relation": "has", "metadata": {"note": "Salt and Fresh"} },
+    
+    { "source": "Fish", "target": "Clownfish", "relation": "is_a" },
+
+    { "source": "Insect", "target": "Bee", "relation": "is_a" },
+    { "source": "Bee", "target": "ability:fly", "relation": "has" },
+    { "source": "Bee", "target": "ability:sting", "relation": "has" },
+    { "source": "Bee", "target": "substance:honey", "relation": "has", "metadata": {"verb": "produces"} },
+    { "source": "Bee", "target": "social:colony", "relation": "has" },
+
+    { "source": "Insect", "target": "Ant", "relation": "is_a" },
+    { "source": "Ant", "target": "ability:fly", "relation": "lacks", "metadata": {"note": "Workers"} },
+    { "source": "Ant", "target": "social:colony", "relation": "has" },
+
+    { "source": "Insect", "target": "Butterfly", "relation": "is_a" },
+    { "source": "Butterfly", "target": "ability:fly", "relation": "has" },
+
+    { "source": "Arachnid", "target": "Spider", "relation": "is_a" },
+    { "source": "Spider", "target": "ability:web_spinning", "relation": "has" },
+    { "source": "Spider", "target": "substance:venom", "relation": "has" },
+
+    { "source": "Arachnid", "target": "Scorpion", "relation": "is_a" },
+    { "source": "Scorpion", "target": "substance:venom", "relation": "has", "metadata": {"location": "tail"} },
+    
+    { "source": "Crustacean", "target": "Crab", "relation": "is_a" },
+    { "source": "Crab", "target": "anatomical:shell", "relation": "has" },
+    { "source": "Crab", "target": "habitat:ocean", "relation": "has" },
+    
+    { "source": "Crustacean", "target": "Lobster", "relation": "is_a" },
+    { "source": "Lobster", "target": "anatomical:claws", "relation": "has" }
+  ]
+}

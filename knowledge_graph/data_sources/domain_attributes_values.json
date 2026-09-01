@@ -1,0 +1,1235 @@
+{
+  "Animal": {
+    "behavior": {
+      "examples": [
+        "Solitary",
+        "Curious",
+        "Energetic",
+        "Friendly",
+        "Gentle",
+        "Playful",
+        "Obedient",
+        "Calm",
+        "Nimble",
+        "Wild",
+        "Slow",
+        "Fierce",
+        "Agile",
+        "Domesticated",
+        "Cuddly",
+        "Docile",
+        "Territorial",
+        "Active",
+        "Brave",
+        "Tame",
+        "Feral",
+        "Stray",
+        "Captive",
+        "Trained"
+      ],
+      "template": "are [value] by nature",
+      "object_template": "is [value] by nature"
+    },
+    "capability": {
+      "examples": [
+        "Fly",
+        "Swim",
+        "Echolocate",
+        "Camouflage",
+        "Regenerate",
+        "Hibernate",
+        "Produce Venom",
+        "Climb",
+        "Mimic Sounds",
+        "Glide",
+        "Sprint",
+        "Change Color",
+        "Spin Webs",
+        "Slither",
+        "Hover",
+        "breathe"
+      ],
+      "template": "can [value]",
+      "object_template": "can [value]"
+    },
+    "diet": {
+      "examples": [
+        "Carnivore",
+        "Herbivore",
+        "Omnivore",
+        "Insectivore",
+        "Scavenger",
+        "Frugivore",
+        "Piscivore",
+        "Detritivore",
+        "Nectarivore",
+        "Folivore"
+      ],
+      "template": "are [value] in diet",
+      "object_template": "is [value] in diet"
+    },
+    "domestication_status": {
+      "examples": [
+        "Domesticated",
+        "Wild",
+        "Feral",
+        "Stray",
+        "Captive",
+        "Trained",
+        "Exotic",
+        "Untamed"
+      ],
+      "template": "are [value] in nature",
+      "object_template": "is [value] in nature"
+    },
+    "habitat": {
+      "examples": [
+        "Marine",
+        "Freshwater",
+        "Desert",
+        "Tundra",
+        "Tropical",
+        "Savanna",
+        "Alpine",
+        "Subterranean",
+        "Urban",
+        "Wetland",
+        "Coastal",
+        "Boreal",
+        "Temperate",
+        "Estuarine"
+      ],
+      "template": "lives in [value] environments",
+      "object_template": "lives in a [value] environment"
+    },
+    "location": {
+      "examples": [
+        "the Wild",
+        "Captivity",
+        "the Northern Hemisphere",
+        "the Southern Hemisphere",
+        "the Tropics",
+        "the Arctic",
+        "the Antarctic",
+        "the Canopy",
+        "the Deep Sea",
+        "the Amazon Basin",
+        "the Indo-Pacific",
+        "the Sub-Saharan Africa"
+      ],
+      "template": "are found in [value]",
+      "object_template": "is found in [value]"
+    },
+    "physical_trait": {
+      "examples": [
+        "Striped skin",
+        "Fur",
+        "Feathers",
+        "Scale",
+        "Tail",
+        "Wing",
+        "Claw",
+        "Whiskers"
+      ],
+      "template": "have [value]",
+      "object_template": "has [value]"
+    },
+    "scarcity": {
+      "examples": [
+        "Abundant",
+        "Rare",
+        "Common",
+        "Scarce",
+        "Endangered",
+        "Extinct",
+        "Plentiful"
+      ],
+      "template": "are [value] in nature",
+      "object_template": "is [value] in nature"
+    }
+  },
+  "Mammal": {
+    "biology": {
+      "examples": [
+        "Endothermic",
+        "Viviparous",
+        "Placental",
+        "Monotreme",
+        "Warm-blooded",
+        "Lactating"
+      ],
+      "template": "are [value]",
+      "object_template": "is [value]"
+    },
+    "covering": {
+      "examples": [
+        "Furry",
+        "Hairless",
+        "Woolly",
+        "Bristly",
+        "Pelted",
+        "Quilled",
+        "Glandular"
+      ],
+      "template": "have a [value] covering",
+      "object_template": "has a [value] covering"
+    },
+    "diet": {
+      "examples": [
+        "Carnivorous",
+        "Herbivorous",
+        "Omnivorous",
+        "Insectivorous",
+        "Piscivorous",
+        "Sanguivorous"
+      ],
+      "template": "are [value] in diet",
+      "object_template": "is [value] in diet"
+    },
+    "locomotion": {
+      "examples": [
+        "Digitigrade",
+        "Plantigrade",
+        "Unguligrade",
+        "Bipedal",
+        "Quadrupedal",
+        "Arboreal",
+        "Fossorial",
+        "Volant",
+        "Marine"
+      ],
+      "template": "utilize [value] locomotion",
+      "object_template": "utilizes [value] locomotion"
+    }
+  },
+  "Vertebrate": {
+    "skeleton": {
+      "examples": [
+        "Bony",
+        "Cartilaginous",
+        "Endoskeletal",
+        "Ossified",
+        "Chondric"
+      ],
+      "template": "possess a [value] skeleton",
+      "object_template": "possesses a [value] skeleton"
+    },
+    "anatomy": {
+      "examples": [
+        "Spined",
+        "Cranial",
+        "Jawed",
+        "Jawless",
+        "Bilateral",
+        "Tetrapodal"
+      ],
+      "template": "exhibit [value] anatomical traits",
+      "object_template": "exhibits [value] anatomical traits"
+    },
+    "respiration": {
+      "examples": [
+        "Pulmonary",
+        "Branchial",
+        "Cutaneous",
+        "Bimodal"
+      ],
+      "template": "utilize [value] respiration",
+      "object_template": "utilizes [value] respiration"
+    },
+    "blood_circulation": {
+      "examples": [
+        "Single-loop",
+        "Double-loop",
+        "Closed"
+      ],
+      "template": "feature a [value] circulatory system",
+      "object_template": "features a [value] circulatory system"
+    }
+  },
+  "Insect": {
+    "development": {
+      "examples": [
+        "Holometabolous",
+        "Hemimetabolous",
+        "Ametabolous",
+        "Paurometabolous"
+      ],
+      "template": "undergo [value] development",
+      "object_template": "undergoes [value] development"
+    },
+    "mouthpart": {
+      "examples": [
+        "Chewing",
+        "Piercing-sucking",
+        "Siphoning",
+        "Sponging",
+        "Mandibulate",
+        "Haustellate"
+      ],
+      "template": "possess [value] mouthparts",
+      "object_template": "possesses [value] mouthparts"
+    },
+    "anatomy": {
+      "examples": [
+        "Six-legged",
+        "Antennaed",
+        "Segmented",
+        "Exoskeletal",
+        "Compound-eyed",
+        "Winged",
+        "Apterous"
+      ],
+      "template": "feature [value] anatomy",
+      "object_template": "features [value] anatomy"
+    },
+    "social_structure": {
+      "examples": [
+        "Eusocial",
+        "Solitary",
+        "Gregarious",
+        "Subsocial",
+        "Parasitic"
+      ],
+      "template": "exhibit [value] behaviors",
+      "object_template": "exhibits [value] behaviors"
+    }
+  },
+  "Microorganism": {
+    "cellular_structure": {
+      "examples": [
+        "Unicellular",
+        "Multicellular",
+        "Prokaryotic",
+        "Eukaryotic",
+        "Acellular"
+      ],
+      "template": "have a [value] cellular structure",
+      "object_template": "has a [value] cellular structure"
+    },
+    "morphology": {
+      "examples": [
+        "Coccus",
+        "Bacillus",
+        "Spirillum",
+        "Vibrio",
+        "Spirochete",
+        "Pleomorphic",
+        "Filamentous",
+        "Icosahedral"
+      ],
+      "template": "exhibit a [value] morphology",
+      "object_template": "exhibits a [value] morphology"
+    },
+    "metabolism": {
+      "examples": [
+        "Aerobic",
+        "Anaerobic",
+        "Facultative",
+        "Phototrophic",
+        "Chemotrophic",
+        "Autotrophic",
+        "Heterotrophic"
+      ],
+      "template": "rely on [value] metabolism",
+      "object_template": "relies on [value] metabolism"
+    },
+    "reproduction": {
+      "examples": [
+        "Binary Fission",
+        "Budding",
+        "Spore-forming",
+        "Conjugation",
+        "Viral Replication",
+        "Mitotic"
+      ],
+      "template": "utilize [value] for reproduction",
+      "object_template": "utilizes [value] for reproduction"
+    }
+  },
+  "Bird": {
+    "behavior": {
+      "examples": [
+        "Curious",
+        "Energetic",
+        "Friendly",
+        "Gentle",
+        "Playful",
+        "Obedient",
+        "Calm",
+        "Nimble",
+        "Fierce",
+        "Agile",
+        "Solitary",
+        "Domesticated",
+        "Cuddly",
+        "Docile",
+        "Territorial",
+        "Active",
+        "Tame",
+        "Feral",
+        "Stray",
+        "Captive"
+      ],
+      "template": "are [value] by nature",
+      "object_template": "is [value] by nature"
+    },
+    "diet": {
+      "examples": [
+        "Carnivore",
+        "Herbivore",
+        "Omnivore",
+        "Insectivore",
+        "Scavenger",
+        "Frugivore",
+        "Piscivore",
+        "Detritivore",
+        "Nectarivore",
+        "Folivore"
+      ],
+      "template": "are [value] in diet",
+      "object_template": "is [value] in diet"
+    },
+    "habitat": {
+      "examples": [
+        "Forest",
+        "Coastal",
+        "Marine",
+        "Urban",
+        "Desert",
+        "Tundra",
+        "Alpine",
+        "Tropical",
+        "Scrubland",
+        "Pelagic",
+        "Woodland",
+        "Estuarine"
+      ],
+      "template": "found in [value] environments",
+      "object_template": "found in a [value] environment"
+    },
+    "physical_trait": {
+      "examples": [
+        "Webbed",
+        "Crested",
+        "Taloned",
+        "Tufted",
+        "Long-legged",
+        "Hook-billed",
+        "Iridescent",
+        "Fork-tailed",
+        "Broad-winged",
+        "Plumed",
+        "Spurred",
+        "Short-billed",
+        "Straight-billed"
+      ],
+      "template": "have the feature of being [value]",
+      "object_template": "has the feature of being [value]"
+    },
+    "scarcity": {
+      "examples": [
+        "Extinct",
+        "Abundant",
+        "Rare",
+        "Common",
+        "Scarce",
+        "Endangered",
+        "Plentiful"
+      ],
+      "template": "are [value] in nature",
+      "object_template": "is [value] in nature"
+    }
+  },
+  "Plant": {
+    "habitat": {
+      "examples": [
+        "Forest",
+        "Wetland",
+        "Coastal",
+        "Marine",
+        "Grassland",
+        "Urban",
+        "Desert",
+        "Tundra",
+        "Alpine",
+        "Riparian",
+        "Tropical",
+        "Scrubland",
+        "Pelagic",
+        "Woodland",
+        "Estuarine"
+      ],
+      "template": "thrive in [value] environments",
+      "object_template": "thrives in a [value] environment"
+    },
+    "scarcity": {
+      "examples": [
+        "Abundant",
+        "Rare",
+        "Common",
+        "Scarce",
+        "Endangered",
+        "Extinct",
+        "Plentiful"
+      ],
+      "template": "are [value] in the wild",
+      "object_template": "is [value] in the wild"
+    },
+    "shape": {
+      "examples": [
+        "Branching",
+        "Oval",
+        "Jagged",
+        "Tapered"
+      ],
+      "template": "are [value] in shape",
+      "object_template": "is [value] in shape"
+    },
+    "size": {
+      "examples": [
+        "Tiny",
+        "Massive",
+        "Microscopic",
+        "Monumental"
+      ],
+      "template": "are [value] in size",
+      "object_template": "is [value] in size"
+    },
+    "weight": {
+      "examples": [
+        "Light",
+        "Heavy"
+      ],
+      "template": "are [value] in weight",
+      "object_template": "is [value] in weight"
+    },
+    "texture": {
+      "examples": [
+        "Smooth",
+        "Rough",
+        "Fuzzy",
+        "Spiky"
+      ],
+      "template": "have a [value] texture",
+      "object_template": "has a [value] texture"
+    },
+    "biology": {
+      "examples": [
+        "Vascular",
+        "Non-vascular"
+      ],
+      "template": "have [value] tissues",
+      "object_template": "has [value] tissues"
+    },
+    "affordance": {
+      "examples": [
+        "Edible",
+        "Medicinal",
+        "Toxic",
+        "Biodegradable"
+      ],
+      "template": "are considered [value]",
+      "object_template": "is considered [value]"
+    },
+    "capability": {
+      "examples": [
+        "Photosynthesize",
+        "Bloom",
+        "Climb",
+        "Regenerate"
+      ],
+      "template": "can [value]",
+      "object_template": "can [value]"
+    }
+  },
+  "Tool": {
+    "capability": {
+      "examples": [
+        "Cut",
+        "Drill",
+        "Fasten",
+        "Measure",
+        "Grip",
+        "Pierce",
+        "Weld",
+        "Solder",
+        "Turn",
+        "Strike",
+        "Grind",
+        "Polish",
+        "Pry",
+        "Illuminate",
+        "Magnify"
+      ],
+      "template": "can [value]",
+      "object_template": "can [value]"
+    },
+    "location": {
+      "examples": [
+        "Toolbox",
+        "Workbench",
+        "Garage",
+        "Shed",
+        "Hardware Store",
+        "Repair Shop",
+        "Kitchen",
+        "Office"
+      ],
+      "template": "are found in the [value]",
+      "object_template": "is located in the [value]"
+    },
+    "material": {
+      "examples": [
+        "Steel",
+        "Iron",
+        "Aluminum",
+        "Titanium",
+        "Tungsten",
+        "Wood",
+        "Plastic",
+        "Rubber",
+        "Carbon Fiber",
+        "Fiberglass",
+        "Bronze",
+        "Ceramic",
+        "Glass"
+      ],
+      "template": "are made of [value]",
+      "object_template": "is made of [value]"
+    },
+    "utility": {
+      "examples": [
+        "Cutting",
+        "Drilling",
+        "Fastening",
+        "Measuring",
+        "Building",
+        "Repairing",
+        "Digging",
+        "Assembling",
+        "Welding",
+        "Soldering",
+        "Grinding",
+        "Prying",
+        "Gripping",
+        "Illumination",
+        "Calibration"
+      ],
+      "template": "are designed for [value]",
+      "object_template": "is designed for [value]"
+    }
+  },
+  "Object": {
+    "acoustic_property": {
+      "examples": [
+        "Resonant",
+        "Sound-absorbing",
+        "Silent",
+        "Echoing"
+      ],
+      "template": "are acoustically [value]",
+      "object_template": "is acoustically [value]"
+    },
+    "acoustic_volume": {
+      "examples": [
+        "Loud",
+        "Muffled",
+        "Faint",
+        "Silent",
+        "Ultrasonic"
+      ],
+      "template": "are [value] in volume",
+      "object_template": "is [value] in volume"
+    },
+    "aesthetic": {
+      "examples": [
+        "Minimalist",
+        "Ornate",
+        "Utilitarian",
+        "Industrial",
+        "Rustic"
+      ],
+      "template": "have a [value] aesthetic",
+      "object_template": "has a [value] aesthetic"
+    },
+    "age": {
+      "examples": [
+        "Archaic",
+        "Brand-new",
+        "Contemporary",
+        "Futuristic",
+        "Historic",
+        "Modern",
+        "Old",
+        "Prehistoric",
+        "Retro",
+        "Timeless",
+        "Vintage"
+      ],
+      "template": "are [value] in age",
+      "object_template": "is [value] in age"
+    },
+    "authenticity": {
+      "examples": [
+        "Genuine",
+        "Counterfeit",
+        "Replica",
+        "Original",
+        "Restored"
+      ],
+      "template": "are considered [value]",
+      "object_template": "is considered [value]"
+    },
+    "capability": {
+      "examples": [
+        "Absorb",
+        "Bounce",
+        "Break",
+        "Conduct",
+        "Contract",
+        "Emit",
+        "Expand",
+        "Fly",
+        "Melt",
+        "Reflect",
+        "Roll",
+        "Rotate",
+        "Shatter",
+        "Transform",
+        "Vibrate"
+      ],
+      "template": "can [value]",
+      "object_template": "can [value]"
+    },
+    "chemical_stability": {
+      "examples": [
+        "Inert",
+        "Reactive",
+        "Volatile",
+        "Stable",
+        "Unstable"
+      ],
+      "template": "are chemically [value]",
+      "object_template": "is chemically [value]"
+    },
+    "color": {
+      "examples": [
+        "Black",
+        "Blue",
+        "Bright",
+        "Brown",
+        "Dull",
+        "Golden",
+        "Gray",
+        "Green",
+        "Monochromatic",
+        "Muted",
+        "Neon",
+        "Orange",
+        "Pale",
+        "Pastel Pink",
+        "Pink",
+        "Purple",
+        "Radiant",
+        "Red",
+        "Silver",
+        "Vibrant",
+        "Violet",
+        "Vivid",
+        "White",
+        "Yellow"
+      ],
+      "template": "are [value] in color",
+      "object_template": "is [value] in color"
+    },
+    "combustibility": {
+      "examples": [
+        "Flammable",
+        "Fire-retardant",
+        "Non-combustible",
+        "Explosive"
+      ],
+      "template": "are [value]",
+      "object_template": "is [value]"
+    },
+    "complexity": {
+      "examples": [
+        "Simple",
+        "Complex",
+        "Multipart",
+        "Modular",
+        "Singular"
+      ],
+      "template": "are structurally [value]",
+      "object_template": "is structurally [value]"
+    },
+    "conductivity": {
+      "examples": [
+        "Conductive",
+        "Insulating",
+        "Semi-conductive"
+      ],
+      "template": "act as a [value] material",
+      "object_template": "acts as a [value] material"
+    },
+    "corrosivity": {
+      "examples": [
+        "Corrosive",
+        "Caustic",
+        "Non-corrosive",
+        "Mild",
+        "Erosive"
+      ],
+      "template": "are considered [value]",
+      "object_template": "is considered [value]"
+    },
+    "durability": {
+      "examples": [
+        "Breakable",
+        "Brittle",
+        "Delicate",
+        "Durable",
+        "Flimsy",
+        "Fragile",
+        "Robust",
+        "Sturdy",
+        "Tough",
+        "Wear-resistant"
+      ],
+      "template": "are [value] in nature",
+      "object_template": "is [value] in nature"
+    },
+    "finish": {
+      "examples": [
+        "Anodized",
+        "Brushed",
+        "Dull",
+        "Enameled",
+        "Gleaming",
+        "Glossy",
+        "Matte",
+        "Metallic",
+        "Polished",
+        "Reflective",
+        "Rough",
+        "Rustic",
+        "Satin",
+        "Shiny",
+        "Textured",
+        "Worn"
+      ],
+      "template": "have a [value] finish",
+      "object_template": "has a [value] finish"
+    },
+    "flexibility": {
+      "examples": [
+        "Rigid",
+        "Flexible",
+        "Elastic",
+        "Malleable",
+        "Stiff"
+      ],
+      "template": "are physically [value]",
+      "object_template": "is physically [value]"
+    },
+    "harmonic_quality": {
+      "examples": [
+        "Melodic",
+        "Discordant",
+        "Dissonant",
+        "Harmonious"
+      ],
+      "template": "have a [value] tone",
+      "object_template": "has a [value] tone"
+    },
+    "location": {
+      "examples": [
+        "Attic",
+        "Backpack",
+        "Basement",
+        "Bed",
+        "Box",
+        "Briefcase",
+        "Classroom",
+        "Closet",
+        "Drawer",
+        "Garage",
+        "Kitchen",
+        "Laboratory",
+        "Library",
+        "Museum",
+        "Repair Shop",
+        "Shelf",
+        "Shop",
+        "Store",
+        "Suitcase",
+        "Table",
+        "Toolbox",
+        "Warehouse"
+      ],
+      "template": "are found in the [value]",
+      "object_template": "is located in the [value]"
+    },
+    "magnetic_property": {
+      "examples": [
+        "Magnetic",
+        "Non-magnetic",
+        "Ferromagnetic",
+        "Electromagnetic"
+      ],
+      "template": "are physically [value]",
+      "object_template": "is physically [value]"
+    },
+    "material": {
+      "examples": [
+        "Alloy",
+        "Bronze",
+        "Carbon Fiber",
+        "Ceramic",
+        "Composite",
+        "Concrete",
+        "Denim",
+        "Glass",
+        "Gold",
+        "Graphene",
+        "Leather",
+        "Metal",
+        "Obsidian",
+        "Paper",
+        "Plastic",
+        "Polymer",
+        "Resin",
+        "Rubber",
+        "Steel",
+        "Stone",
+        "Synthetic Polymer",
+        "Textile",
+        "Titanium",
+        "Wood"
+      ],
+      "template": "are made of [value]",
+      "object_template": "is made of [value]"
+    },
+    "opacity": {
+      "examples": [
+        "Cloudy",
+        "Frosted",
+        "Glassy",
+        "Hazy",
+        "Opaque",
+        "Smoky",
+        "Transparent"
+      ],
+      "template": "are [value]",
+      "object_template": "is [value]"
+    },
+    "origin": {
+      "examples": [
+        "Synthetic",
+        "Natural",
+        "Manufactured",
+        "Handcrafted",
+        "Industrial"
+      ],
+      "template": "are of [value] origin",
+      "object_template": "is of [value] origin"
+    },
+    "ownership_status": {
+      "examples": [
+        "Private",
+        "Public",
+        "Communal"
+      ],
+      "template": "are classified as [value] property",
+      "object_template": "is classified as [value] property"
+    },
+    "oxidation_profile": {
+      "examples": [
+        "Rust-resistant",
+        "Oxidizable",
+        "Stainless",
+        "Tarnish-proof",
+        "Galvanized"
+      ],
+      "template": "are naturally [value]",
+      "object_template": "is naturally [value]"
+    },
+    "ph_level": {
+      "examples": [
+        "Acidic",
+        "Alkaline",
+        "Basic",
+        "Neutral"
+      ],
+      "template": "are [value] in pH",
+      "object_template": "is [value] in pH"
+    },
+    "power_source": {
+      "examples": [
+        "Electricity",
+        "Manual labor",
+        "Battery",
+        "Solar power"
+      ],
+      "template": "require [value] to operate",
+      "object_template": "requires [value] to operate"
+    },
+    "radioactivity": {
+      "examples": [
+        "Radioactive",
+        "Stable",
+        "Fissile",
+        "Irradiated",
+        "Isotopic"
+      ],
+      "template": "are atomically [value]",
+      "object_template": "is atomically [value]"
+    },
+    "scarcity": {
+      "examples": [
+        "Abundant",
+        "Common",
+        "Limited-edition",
+        "Mass-produced",
+        "Plentiful",
+        "Rare",
+        "Scarce",
+        "Ubiquitous",
+        "Unique"
+      ],
+      "template": "are [value]",
+      "object_template": "is [value]"
+    },
+    "semiotic_role": {
+      "examples": [
+        "Talisman",
+        "Memento",
+        "Prop",
+        "Status Symbol"
+      ],
+      "template": "function socially as a [value]",
+      "object_template": "functions socially as a [value]"
+    },
+    "shape": {
+      "examples": [
+        "Aerodynamic",
+        "Amorphous",
+        "Asymmetrical",
+        "Concave",
+        "Conical",
+        "Convex",
+        "Cubic",
+        "Cylindrical",
+        "Flat",
+        "Helix-like",
+        "Hexagonal",
+        "Jagged",
+        "Modular",
+        "Oval",
+        "Pyramidal",
+        "Rectangular",
+        "Round",
+        "Spherical",
+        "Tapered"
+      ],
+      "template": "are [value] in shape",
+      "object_template": "is [value] in shape"
+    },
+    "size": {
+      "examples": [
+        "Big",
+        "Compact",
+        "Cosmic",
+        "Gargantuan",
+        "Handheld",
+        "Large",
+        "Macroscopic",
+        "Massive",
+        "Microscopic",
+        "Monumental",
+        "Nanoscopic",
+        "Portable",
+        "Small",
+        "Subatomic",
+        "Tiny"
+      ],
+      "template": "are [value] in size",
+      "object_template": "is [value] in size"
+    },
+    "sound_emission": {
+      "examples": [
+        "Whirring",
+        "Clinking",
+        "Thudding",
+        "Rattling",
+        "Humming",
+        "Squeaking",
+        "Cracking",
+        "Ringing"
+      ],
+      "template": "produce a [value] sound",
+      "object_template": "produces a [value] sound"
+    },
+    "state": {
+      "examples": [
+        "Amorphous",
+        "Crystalline",
+        "Frozen",
+        "Gas",
+        "Gaseous",
+        "Gelatinous",
+        "Liquid",
+        "Molten",
+        "Plasma",
+        "Solid",
+        "Vaporous",
+        "Viscous"
+      ],
+      "template": "are in a [value] state",
+      "object_template": "is in a [value] state"
+    },
+    "temperature": {
+      "examples": [
+        "Cold",
+        "Frigid",
+        "Hot",
+        "Lukewarm",
+        "Tepid"
+      ],
+      "template": "are [value] in temperature",
+      "object_template": "is [value] in temperature"
+    },
+    "temporal_relevance": {
+      "examples": [
+        "Trendy",
+        "Obsolete",
+        "Timeless",
+        "Classic",
+        "Forgotten"
+      ],
+      "template": "are [value] in current culture",
+      "object_template": "is [value] in current culture"
+    },
+    "surface_topography": {
+      "examples": [
+        "Bumpy",
+        "Corrugated",
+        "Grooved",
+        "Noduled",
+        "Pitted",
+        "Porous",
+        "Ribbed",
+        "Ridged",
+        "Spiky",
+        "Striated"
+      ],
+      "template": "have a [value] topography",
+      "object_template": "has a [value] topography"
+    },
+    "tactile_quality": {
+      "examples": [
+        "Abrasive",
+        "Coarse",
+        "Frictionless",
+        "Gritty",
+        "Silky",
+        "Slimy",
+        "Slippery",
+        "Smooth",
+        "Sticky",
+        "Velvety"
+      ],
+      "template": "feel [value] to the touch",
+      "object_template": "feels [value] to the touch"
+    },
+    "toxicity": {
+      "examples": [
+        "Toxic",
+        "Non-toxic",
+        "Poisonous",
+        "Non-toxic",
+        "Non-toxic",
+        "Non-toxic",
+        "safe",
+        "odorless",
+        "Carcinogenic"
+      ],
+      "template": "are classified as [value]",
+      "object_template": "is classified as [value]"
+    },
+    "utility": {
+      "examples": [
+        "Building",
+        "Cleaning",
+        "Communication",
+        "Construction",
+        "Cutting",
+        "Decoration",
+        "Entertainment",
+        "Fastening",
+        "Illumination",
+        "Measurement",
+        "Packaging",
+        "Protection",
+        "Storage",
+        "Transportation",
+        "Writing"
+      ],
+      "template": "are used for [value]",
+      "object_template": "is used for [value]"
+    },
+    "value": {
+      "examples": [
+        "Inexpensive",
+        "Priceless",
+        "Luxury",
+        "Commodity",
+        "Disposable"
+      ],
+      "template": "are considered [value]",
+      "object_template": "is considered [value]"
+    },
+    "water_solubility": {
+      "examples": [
+        "Soluble",
+        "Insoluble",
+        "Slightly Soluble",
+        "Hydrophobic",
+        "Hydrophilic"
+      ],
+      "template": "are chemically [value] in water",
+      "object_template": "is chemically [value] in water"
+    },
+    "weight": {
+      "examples": [
+        "Heavy",
+        "Hefty",
+        "Light",
+        "Negligible",
+        "Substantial",
+        "Weighty"
+      ],
+      "template": "are [value] in weight",
+      "object_template": "is [value] in weight"
+    },
+    "olfactory_profile": {
+      "examples": [
+        "Acrid",
+        "Aromatic",
+        "Chemical",
+        "Earthy",
+        "Floral",
+        "Metallic",
+        "Musky",
+        "Piney",
+        "Pungent",
+        "Putrid",
+        "Smoky",
+        "Stale",
+        "Sweet"
+      ],
+      "template": "have a [value] scent",
+      "object_template": "has a [value] scent"
+    }
+  }
+}

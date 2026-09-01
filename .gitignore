@@ -1,0 +1,16 @@
+lib/
+.env
+*.db
+*.html
+__pycache__/
+.venv
+*.DS_Store
+*.vscode/
+test.ipynb
+test_data/*
+evaluation/results/*
+evaluation/reverse/*
+evaluation/real_entity/*
+logs/*
+gemma_4_scripts
+evaluation/reseeding/*
