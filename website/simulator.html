@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeReLab &mdash; Dataset Simulator</title>
+<meta name="description" content="Step through DeReLab's tree-inheritance generation pipeline live in your browser: structure, population, verbalization, and staged skeptical reasoning.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%233D6B4A%22/><circle cx=%2216%22 cy=%2211%22 r=%224%22 fill=%22%23C9A227%22/><circle cx=%229%22 cy=%2222%22 r=%223%22 fill=%22%23fff%22/><circle cx=%2223%22 cy=%2222%22 r=%223%22 fill=%22%23fff%22/><line x1=%2216%22 y1=%2214%22 x2=%229%22 y2=%2220%22 stroke=%22%23fff%22 stroke-width=%221.5%22/><line x1=%2216%22 y1=%2214%22 x2=%2223%22 y2=%2220%22 stroke=%22%23fff%22 stroke-width=%221.5%22/></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="back-nav">
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Overview</a>
+  </div>
+</div>
+
+<header style="padding: 40px 0 0;">
+  <div class="container">
+    <span class="hero-eyebrow">Live, in-browser &middot; tree inheritance &middot; easy tier</span>
+    <h1 style="font-size: clamp(1.8rem, 3.4vw, 2.4rem); max-width: 40ch;">Watch one example get built, step by step</h1>
+    <p class="hero-lede" style="font-size: 1rem; max-width: 68ch; margin-bottom: 20px;">
+      This runs the same tree-inheritance generation logic used to build the
+      benchmark &mdash; graph structure, entity population, natural-language
+      templating, and the PMPM skeptical algorithm &mdash; ported to
+      JavaScript so it executes entirely client-side. Parameters are fixed
+      to the paper's easy-tier configuration.
+    </p>
+  </div>
+</header>
+
+<div class="sim-toolbar">
+  <div class="container">
+    <div class="sim-field">
+      <label for="root-concept-select">Root concept</label>
+      <select id="root-concept-select"></select>
+    </div>
+    <button id="generate-btn" class="btn btn-primary">Generate new tree</button>
+    <span id="answer-badge" hidden></span>
+
+    <div class="stage-stepper">
+      <span class="stage-step" data-stage="structure">1 &middot; Structure</span>
+      <span class="stage-step" data-stage="populate">2 &middot; Populate</span>
+      <span class="stage-step" data-stage="verbalize">3 &middot; Verbalize</span>
+      <span class="stage-step" data-stage="reason">4 &middot; Reason</span>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="container" style="padding: 0;">
+    <div class="card sim-layout" style="border-radius:0; border-left:none; border-right:none;">
+      <div class="sim-graph-pane">
+        <div id="graph-container"></div>
+        <div class="sim-graph-controls">
+          <button id="prev-stage-btn" class="btn btn-ghost">&larr; Previous</button>
+          <button id="next-stage-btn" class="btn btn-primary">Next stage &rarr;</button>
+          <button id="raw-toggle-btn" class="btn btn-ghost">Show raw sample (JSON)</button>
+        </div>
+        <pre class="raw-panel" id="raw-panel" hidden></pre>
+      </div>
+      <div class="sim-panel-pane" id="stage-panel"></div>
+    </div>
+  </div>
+</main>
+
+<div class="container">
+  <p class="sim-footer-note">
+    Legend: green node = root class &middot; sage node = descendant class
+    (labelled with an invented, phonotactically-plausible word so the model
+    can't rely on real-world priors) &middot; amber square = target
+    property &middot; ringed node = hypothesis subject. In stage 4, blue
+    edges/badges mean <strong>yes / strengthen</strong> and amber edges/badges
+    mean <strong>no / weaken</strong> &mdash; colors chosen to stay
+    distinguishable under common forms of color blindness.
+  </p>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>DeReLab &middot; Released under CC BY 4.0</span>
+    <span><a href="https://arxiv.org/abs/2608.30413" target="_blank" rel="noopener">arXiv</a> &middot; <a href="https://github.com/Jayanta47/DeReLab" target="_blank" rel="noopener">GitHub</a></span>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/pmpm.js"></script>
+<script src="js/generator.js"></script>
+<script src="js/graph-render.js"></script>
+<script src="js/simulator.js"></script>
+</body>
+</html>

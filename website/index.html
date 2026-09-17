@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeReLab</title>
+<meta name="description" content="A generative benchmark for probing defeasible reasoning and confirmation bias in large language models.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%233D6B4A%22/><circle cx=%2216%22 cy=%2211%22 r=%224%22 fill=%22%23C9A227%22/><circle cx=%229%22 cy=%2222%22 r=%223%22 fill=%22%23fff%22/><circle cx=%2223%22 cy=%2222%22 r=%223%22 fill=%22%23fff%22/><line x1=%2216%22 y1=%2214%22 x2=%229%22 y2=%2220%22 stroke=%22%23fff%22 stroke-width=%221.5%22/><line x1=%2216%22 y1=%2214%22 x2=%2223%22 y2=%2220%22 stroke=%22%23fff%22 stroke-width=%221.5%22/></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <span class="hero-eyebrow">Generative benchmark &middot; defeasible reasoning &middot; confirmation bias</span>
+    <h1>DeReLab: Probing Defeasible Reasoning and Confirmation Bias in LLMs with a Generative Benchmark</h1>
+    <p class="hero-lede">
+      DeReLab generates multi-turn conversations from formal reasoning graphs
+      whose ground truth is computed by a skeptical path-relation algorithm,
+      not a heuristic. That lets us measure, precisely, when and how language
+      models fail to revise their beliefs under incongruent evidence.
+    </p>
+    <div class="hero-links">
+      <a href="https://github.com/Jayanta47/DeReLab" target="_blank" rel="noopener" class="icon-link">
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        <span>GitHub</span>
+      </a>
+      <a href="https://arxiv.org/abs/2608.30413" target="_blank" rel="noopener" class="icon-link icon-link-arxiv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 2.5h8l4 4v14a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-17.5a.5.5 0 0 1 .5-.5z"/>
+          <path d="M14 2.5v4h4"/>
+          <path d="M8.5 12.8h7M8.5 15.8h7M8.5 18.8h4" stroke-width="1.3"/>
+        </svg>
+        <span>arXiv</span>
+      </a>
+    </div>
+    <p class="hero-authors">Jayanta Sadhu, Sayem Shahad, Kenneth Marino &middot; 2026</p>
+    <div class="hero-actions">
+      <a href="simulator.html" class="btn btn-primary">Try the simulator</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Why DeReLab</span>
+      <h2>Every ground-truth label is formally verified, not annotated</h2>
+      <p>
+        Static benchmarks can leak into training data and reward pattern
+        matching over genuine reasoning. DeReLab instead builds a fresh
+        directed reasoning graph for every example, marks some edges as
+        defeasible updates revealed one at a time, and asks a skeptical
+        path-relation algorithm (PMPM) to recompute the correct answer after
+        each reveal. The model is scored against that formal answer, not a
+        human label.
+      </p>
+    </div>
+    <div class="grid grid-4">
+      <div class="card stat-card">
+        <div class="stat-value">10</div>
+        <div class="stat-label">model &ndash; inference configurations evaluated</div>
+      </div>
+      <div class="card stat-card">
+        <div class="stat-value">17/19</div>
+        <div class="stat-label">model &times; reasoning-type cells show significant confirmation bias</div>
+      </div>
+      <div class="card stat-card">
+        <div class="stat-value">3</div>
+        <div class="stat-label">reasoning topologies: default, linear inheritance, tree inheritance</div>
+      </div>
+      <div class="card stat-card">
+        <div class="stat-value">0.949</div>
+        <div class="stat-label">ICC across 20 independently seeded draws &mdash; scores are reproducible</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Reasoning topologies</span>
+      <h2>Three ways to stage defeasible evidence</h2>
+      <p>Each topology is generated at easy and hard difficulty, producing six reasoning conditions per model.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card topology-card">
+        <span class="topology-tag">Default</span>
+        <h3>Property-chain reasoning</h3>
+        <p>A linear chain of properties with defeasible updates, distractor attributes, and source-priority conflicts between named sources.</p>
+      </div>
+      <div class="card topology-card">
+        <span class="topology-tag">Linear inheritance</span>
+        <h3>Single-lineage taxonomy</h3>
+        <p>A class hierarchy where properties propagate down one lineage &mdash; the simplest inheritance structure, used as a controlled baseline.</p>
+      </div>
+      <div class="card topology-card">
+        <span class="topology-tag">Tree inheritance</span>
+        <h3>Branching hierarchy</h3>
+        <p>A stochastically-grown taxonomy tree where updates on one branch can, or deliberately cannot, affect a sibling branch. Explore this one live in the simulator.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="findings">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Key findings</span>
+      <h2>What the benchmark reveals</h2>
+    </div>
+    <div class="findings-list">
+
+      <details class="card finding-item">
+        <summary>
+          <span class="finding-index">01</span>
+          <span class="finding-summary">
+            <strong>Confirmation bias is near-universal.</strong>
+            <p>17 of 19 model&ndash;reasoning-type cells show statistically significant bias after Holm&ndash;Bonferroni correction, ranging from BiasGap&nbsp;=&nbsp;0.08 (Gemma-4-12B) to 0.94 (GPT-5.1).</p>
+          </span>
+          <span class="finding-chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="finding-detail">
+          <p>
+            BiasGap measures how much less accurate a model is on
+            incongruent updates (which should overturn its current answer)
+            than on congruent ones (which confirm it). Gemma-4-12B shows a
+            small but reliable gap, while GPT-5.1 reaches near-total
+            incongruent failure &mdash; a congruent accuracy of just 3.5%
+            means the model almost never correctly revises from
+            <em>yes</em> to <em>no</em> when faced with a weakening update.
+            Only two cells are non-significant after correction:
+            Gemma-4-MoE on default reasoning and Qwen3-32B* on inheritance.
+          </p>
+          <img src="assets/figures/bias_gap_bars_grouped.png" alt="Bar chart of confirmation bias gap per model, split by default and inheritance reasoning" loading="lazy">
+          <p class="figure-caption">Confirmation bias gap (congruent accuracy &minus; incongruent accuracy) per model and reasoning type.</p>
+        </div>
+      </details>
+
+      <details class="card finding-item">
+        <summary>
+          <span class="finding-index">02</span>
+          <span class="finding-summary">
+            <strong>Models often know but don't say.</strong>
+            <p>Several models correctly label an update as weakening on the majority of incongruent turns yet almost never revise their entailment answer &mdash; e.g. GPT-5-mini: 95.4% effect accuracy vs. 20.3% entailment accuracy on the same turns.</p>
+          </span>
+          <span class="finding-chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="finding-detail">
+          <p>
+            Llama-3.1-70B shows the same pattern (85.1% effect accuracy vs.
+            14.9% entailment accuracy): both models correctly identify
+            weakening on the majority of incongruent turns yet almost never
+            revise their entailment answer accordingly. Gemma-4-31B
+            presents the subtler end of the same pattern &mdash; the
+            highest effect accuracy of any model (97.0%) alongside a high
+            entailment accuracy (90.7%), for a smaller but still reliable
+            dissociation. This <em>know-but-don't-output</em> pattern
+            suggests confirmation bias operates as a belief-revision
+            suppression effect: models correctly encode the evidential
+            direction of an update but fail to propagate it to their
+            entailment answer.
+          </p>
+          <img src="assets/figures/metacognitive_bars.png" alt="Grouped bar chart comparing effect-labelling accuracy on congruent vs incongruent turns, per model" loading="lazy">
+          <p class="figure-caption">Effect-labelling accuracy on congruent (strengthening) vs. incongruent (weakening) turns, per model, default reasoning only. A large gap &mdash; high effect accuracy but low entailment accuracy on the same turns &mdash; is the know-but-don't-output signature.</p>
+        </div>
+      </details>
+
+      <details class="card finding-item">
+        <summary>
+          <span class="finding-index">03</span>
+          <span class="finding-summary">
+            <strong>That effect-labelling accuracy is scaffolded, not independent.</strong>
+            <p>Reversing question order (effect question first) collapses effect-labelling accuracy across every tested model, showing it was primed by prior engagement with the entailment question rather than reflecting standalone understanding.</p>
+          </span>
+          <span class="finding-chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="finding-detail">
+          <p>
+            We re-ran six models with the question order reversed &mdash;
+            effect question before entailment. The confirmation-bias gap
+            itself is robust to order (unchanged or larger for all six
+            models), but C2-effect accuracy collapses everywhere it started
+            high, and Gemma-4-MoE's apparent absence of bias in the
+            standard order turns out to be a sequencing artefact: its
+            BiasGap rises from &minus;0.007 to 0.259 once the entailment
+            question no longer comes first.
+          </p>
+          <div class="mini-chart" role="img" aria-label="Bar chart comparing BiasGap in standard vs reversed question order across six models">
+            <div class="mini-chart-row">
+              <span class="mini-chart-label">Gemma-4-31B</span>
+              <div class="mini-chart-bars">
+                <div class="mini-bar-track"><div class="mini-bar-fill orig" style="width:10.4%"></div><span class="mini-bar-val">0.088</span></div>
+                <div class="mini-bar-track"><div class="mini-bar-fill rev" style="width:9.6%"></div><span class="mini-bar-val">0.082</span></div>
+              </div>
+            </div>
+            <div class="mini-chart-row">
+              <span class="mini-chart-label">Gemma-4-12B</span>
+              <div class="mini-chart-bars">
+                <div class="mini-bar-track"><div class="mini-bar-fill orig" style="width:9.6%"></div><span class="mini-bar-val">0.082</span></div>
+                <div class="mini-bar-track"><div class="mini-bar-fill rev" style="width:12.4%"></div><span class="mini-bar-val">0.105</span></div>
+              </div>
+            </div>
+            <div class="mini-chart-row">
+              <span class="mini-chart-label">Qwen3-32B</span>
+              <div class="mini-chart-bars">
+                <div class="mini-bar-track"><div class="mini-bar-fill orig" style="width:78.8%"></div><span class="mini-bar-val">0.670</span></div>
+                <div class="mini-bar-track"><div class="mini-bar-fill rev" style="width:96.0%"></div><span class="mini-bar-val">0.816</span></div>
+              </div>
+            </div>
+            <div class="mini-chart-row">
+              <span class="mini-chart-label">Llama-3.1-8B</span>
+              <div class="mini-chart-bars">
+                <div class="mini-bar-track"><div class="mini-bar-fill orig" style="width:26.4%"></div><span class="mini-bar-val">0.224</span></div>
+                <div class="mini-bar-track"><div class="mini-bar-fill rev" style="width:35.9%"></div><span class="mini-bar-val">0.305</span></div>
+              </div>
+            </div>
+            <div class="mini-chart-row">
+              <span class="mini-chart-label">Gemma-4-MoE</span>
+              <div class="mini-chart-bars">
+                <div class="mini-bar-track"><div class="mini-bar-fill orig" style="width:0.8%"></div><span class="mini-bar-val">&minus;0.007</span></div>
+                <div class="mini-bar-track"><div class="mini-bar-fill rev" style="width:30.5%"></div><span class="mini-bar-val">0.259</span></div>
+              </div>
+            </div>
+            <div class="mini-chart-row">
+              <span class="mini-chart-label">Gemma-4-E4B</span>
+              <div class="mini-chart-bars">
+                <div class="mini-bar-track"><div class="mini-bar-fill orig" style="width:70.2%"></div><span class="mini-bar-val">0.597</span></div>
+                <div class="mini-bar-track"><div class="mini-bar-fill rev" style="width:98.8%"></div><span class="mini-bar-val">0.840</span></div>
+              </div>
+            </div>
+            <div class="mini-chart-legend">
+              <span><i class="dot dot-orig"></i>Standard order</span>
+              <span><i class="dot dot-rev"></i>Reversed order</span>
+            </div>
+          </div>
+          <p class="figure-caption">BiasGap (C1&nbsp;acc &minus; C2&nbsp;acc) under the standard question order vs. the effect-question-first reversal, default reasoning, six models.</p>
+        </div>
+      </details>
+
+      <details class="card finding-item">
+        <summary>
+          <span class="finding-index">04</span>
+          <span class="finding-summary">
+            <strong>Extended thinking suppresses default-reasoning bias.</strong>
+            <p>Qwen3-32B with extended thinking reduces default BiasGap from 0.67 to 0.008, though the benefit is only partial on inheritance reasoning (Gap&nbsp;=&nbsp;0.065, not significant).</p>
+          </span>
+          <span class="finding-chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="finding-detail">
+          <p>
+            The standard (non-thinking) Qwen3-32B shows a default BiasGap
+            of 0.670 &mdash; one of the largest in the evaluation.
+            Qwen3-32B* (extended thinking) reduces this to 0.008, with the
+            lowest anchoring rates of any model on both topologies.
+            Gemma-4-MoE achieves near-zero default bias via a different
+            mechanism, but its inheritance bias remains substantial
+            (Gap&nbsp;=&nbsp;0.307), showing that suppression does not
+            automatically generalise across reasoning types. See the chart
+            in finding&nbsp;01 above for the full model-by-model picture.
+          </p>
+        </div>
+      </details>
+
+      <details class="card finding-item">
+        <summary>
+          <span class="finding-index">05</span>
+          <span class="finding-summary">
+            <strong>Confidence decays with inference depth.</strong>
+            <p>On-path correct-answer confidence declines significantly with distance for most models under hard tree-inheritance conditions (Gemma-4-31B &rho;&nbsp;=&nbsp;&minus;0.298, Llama-3.1-8B &rho;&nbsp;=&nbsp;&minus;0.255).</p>
+          </span>
+          <span class="finding-chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="finding-detail">
+          <p>
+            When an update sits many reasoning hops away from the question
+            being asked, most models become steadily less confident in the
+            correct answer, even when that answer hasn't actually changed
+            &mdash; the connection just gets harder to track the further
+            away it is. This effect is strongest for Gemma-4-31B and
+            Llama-3.1-8B, whose confidence erodes the most over long
+            chains. GPT-5.1 is the one clear exception: its confidence in
+            the correct answer actually <em>grows</em> with distance,
+            suggesting it accumulates supporting evidence across a chain
+            rather than losing track of it.
+          </p>
+        </div>
+      </details>
+
+      <details class="card finding-item">
+        <summary>
+          <span class="finding-index">06</span>
+          <span class="finding-summary">
+            <strong>Benchmark scores are stable across resamples.</strong>
+            <p>ICC&nbsp;=&nbsp;0.949 across 20 independently seeded draws; coefficient of variation stays under 4% for five of eight models on both default and linear-inheritance conditions.</p>
+          </span>
+          <span class="finding-chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="finding-detail">
+          <p>
+            Kruskal&ndash;Wallis tests find no significant differences
+            across the 20 seeds for any model&ndash;condition pair (all
+            p&nbsp;&gt;&nbsp;0.06 after correction). The two models with
+            higher relative variance &mdash; Gemma-4-E4B and Llama-3.1-8B
+            &mdash; are also the lowest-accuracy models, where more room to
+            fluctuate is expected; their absolute standard deviation is
+            still small (&asymp;0.05). A different seed would not change
+            any model's accuracy category.
+          </p>
+          <img src="assets/figures/model_accuracy_default.png" alt="Chart of accuracy variance by property chain length across 20 seeds, per model, default reasoning" loading="lazy">
+          <p class="figure-caption">Accuracy variance across 20 independently seeded draws, by property-chain length, default reasoning. Overlapping bands across seeds indicate stable model behaviour rather than draw-specific artefacts.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Models evaluated</span>
+      <h2>Nine base models, ten configurations</h2>
+    </div>
+    <div class="model-chips">
+      <span class="model-chip">GPT-5.1</span>
+      <span class="model-chip">GPT-5-mini</span>
+      <span class="model-chip">Qwen3-32B</span>
+      <span class="model-chip">Qwen3-32B (extended thinking)</span>
+      <span class="model-chip">Gemma-4-31B</span>
+      <span class="model-chip">Gemma-4-12B</span>
+      <span class="model-chip">Gemma-4-MoE (26B-A4B)</span>
+      <span class="model-chip">Gemma-4-E4B</span>
+      <span class="model-chip">Llama-3.1-70B</span>
+      <span class="model-chip">Llama-3.1-8B</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="card" style="padding: 44px; display:flex; flex-wrap:wrap; align-items:center; gap:28px; justify-content:space-between;">
+      <div style="max-width:50ch;">
+        <h2 style="margin-bottom:10px;">See how one example is built, end to end</h2>
+        <p style="color:var(--color-text-muted); margin:0;">
+          Step through structure generation, population, natural-language
+          verbalization, and staged skeptical reasoning &mdash; the exact
+          pipeline used to produce the benchmark, running live in your
+          browser.
+        </p>
+      </div>
+      <a href="simulator.html" class="btn btn-primary">Open the simulator &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section id="citation" class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Cite this work</span>
+      <h2>Citation</h2>
+    </div>
+    <pre class="citation-block" id="citation-text">@misc{sadhu2026derelabprobingdefeasiblereasoning,
+      title={DERELAB: Probing Defeasible Reasoning and Confirmation Bias in LLMs with a Generative Benchmark},
+      author={Jayanta Sadhu and Sayem Shahad and Kenneth Marino},
+      year={2026},
+      eprint={2608.30413},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2608.30413},
+}</pre>
+    <button class="btn btn-secondary copy-btn" id="copy-citation-btn">Copy BibTeX</button>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>DeReLab &middot; Released under CC BY 4.0</span>
+    <span>
+      <a href="https://arxiv.org/abs/2608.30413" target="_blank" rel="noopener">arXiv</a>
+      &middot;
+      <a href="https://github.com/Jayanta47/DeReLab" target="_blank" rel="noopener">GitHub</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("copy-citation-btn").addEventListener("click", function () {
+    const text = document.getElementById("citation-text").textContent;
+    navigator.clipboard.writeText(text).then(function () {
+      const btn = document.getElementById("copy-citation-btn");
+      const original = btn.textContent;
+      btn.textContent = "Copied!";
+      setTimeout(function () { btn.textContent = original; }, 1500);
+    });
+  });
+</script>
+
+</body>
+</html>

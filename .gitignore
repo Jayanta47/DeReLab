@@ -1,7 +1,7 @@
 lib/
 .env
 *.db
-*.html
+graph_generation/graph_outputs/*.html
 __pycache__/
 .venv
 *.DS_Store
