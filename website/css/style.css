@@ -96,6 +96,15 @@ h1, h2, h3, h4 {
   padding: 0 24px;
 }
 
+/* Wider variant for the simulator's toolbar/graph grid, which needs more
+   horizontal room than marketing-page prose does -- especially with the
+   params sidebar open (3 columns). */
+.container-wide {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 /* ---------------------------------------------------------------- nav */
 
 .site-nav {
@@ -173,10 +182,52 @@ h1, h2, h3, h4 {
   margin-bottom: 22px;
 }
 .hero h1 {
-  font-size: clamp(2.1rem, 4.4vw, 3.4rem);
-  max-width: 26ch;
+  max-width: 60ch;
   margin-left: auto;
   margin-right: auto;
+}
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.hero-title-main {
+  font-size: clamp(3rem, 8vw, 5.2rem);
+  line-height: 1;
+}
+.hero-title-expansion {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-green-dark);
+  margin-top: -4px;
+}
+.hero-title-sub {
+  font-family: var(--font-ui);
+  font-weight: 500;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  line-height: 1.3;
+  color: var(--color-text-muted);
+  max-width: 60ch;
+}
+.hero-media {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  margin: 30px 0 22px;
+}
+.hero-venue-announce {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+  font-weight: 600;
+  color: var(--color-green-dark);
+  margin: 18px 0 0;
 }
 .hero-lede {
   font-size: 1.15rem;
@@ -219,6 +270,12 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
+}
+.hero-sim-caption {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin: 10px 0 0;
 }
 
 .btn {
@@ -267,6 +324,28 @@ section.alt { background: var(--color-surface-alt); }
   display: block;
 }
 .section-head p { color: var(--color-text-muted); }
+
+/* split-column intro block (e.g. "What is defeasible reasoning?") */
+.split-block {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.split-label h2 { margin-bottom: 0; }
+.split-body p {
+  color: var(--color-text-muted);
+  font-size: 0.98rem;
+  max-width: 74ch;
+}
+.split-body .pretext-block { max-width: 74ch; }
+.split-note {
+  margin-top: 16px !important;
+  font-size: 0.93rem !important;
+}
+@media (max-width: 760px) {
+  .split-block { grid-template-columns: 1fr; gap: 16px; }
+}
 
 .card {
   background: var(--color-surface);
@@ -491,7 +570,7 @@ section.alt { background: var(--color-surface-alt); }
   background: var(--color-surface-alt);
   padding: 20px 0;
 }
-.sim-toolbar .container {
+.sim-toolbar .container, .sim-toolbar .container-wide {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -507,7 +586,7 @@ section.alt { background: var(--color-surface-alt); }
 }
 .sim-field select {
   font-family: var(--font-ui);
-  font-size: 0.92rem;
+  font-size: 1rem;
   padding: 8px 12px;
   border-radius: 8px;
   border: 1px solid var(--color-border);
@@ -522,7 +601,7 @@ section.alt { background: var(--color-surface-alt); }
   margin-left: auto;
 }
 .stage-step {
-  font-size: 0.85rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: var(--color-text-muted);
   padding: 8px 14px;
@@ -539,12 +618,73 @@ section.alt { background: var(--color-surface-alt); }
 
 .sim-layout {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 2.6fr 1fr;
   gap: 0;
-  min-height: 560px;
+  min-height: 880px;
+}
+.sim-layout.params-open {
+  grid-template-columns: 240px 2.6fr 1fr;
 }
 @media (max-width: 960px) {
-  .sim-layout { grid-template-columns: 1fr; }
+  .sim-layout, .sim-layout.params-open { grid-template-columns: 1fr; }
+}
+
+/* params sidebar: collapsed (hidden) by default, opened via the
+   "Customize parameters" toggle in the toolbar */
+.sim-params-pane {
+  padding: 24px 22px;
+  border-right: 1px solid var(--color-border);
+  background: var(--color-surface-alt);
+}
+.sim-params-pane h3 { font-size: 1.05rem; margin-bottom: 6px; }
+.sim-params-pane .hint { font-size: 0.85rem; font-style: italic; margin-bottom: 18px; }
+
+.params-toggle {
+  position: relative;
+}
+.params-toggle svg { width: 16px; height: 16px; }
+.params-toggle[aria-expanded="true"] {
+  background: var(--color-green-dark);
+  color: #fff;
+  border-color: var(--color-green-dark);
+}
+.params-toggle::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-amber);
+  border: 1.5px solid var(--color-surface-alt);
+}
+.params-toggle[aria-expanded="true"]::after { display: none; }
+
+.param-row { margin-bottom: 20px; }
+.param-row label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 6px;
+}
+.param-row .param-val {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--color-green-dark);
+  font-size: 0.82rem;
+}
+.param-row input[type="range"] {
+  width: 100%;
+  accent-color: var(--color-green);
+}
+.param-row .param-desc {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  margin-top: 4px;
 }
 
 .sim-graph-pane {
@@ -558,8 +698,12 @@ section.alt { background: var(--color-surface-alt); }
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
-  padding: 12px;
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
+#graph-container svg { width: 100%; height: auto; }
 .sim-graph-controls {
   display: flex;
   align-items: center;
@@ -570,12 +714,12 @@ section.alt { background: var(--color-surface-alt); }
 .answer-badge {
   display: inline-flex;
   align-items: center;
-  padding: 6px 14px;
+  padding: 7px 16px;
   border-radius: 999px;
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
 }
-.answer-badge.small { padding: 3px 10px; font-size: 0.78rem; }
+.answer-badge.small { padding: 3px 11px; font-size: 0.85rem; }
 .badge-yes { background: color-mix(in srgb, var(--color-blue-accent) 16%, var(--color-surface)); color: var(--color-blue-accent); }
 .badge-no { background: color-mix(in srgb, var(--color-orange-accent) 18%, var(--color-surface)); color: color-mix(in srgb, var(--color-orange-accent) 70%, black); }
 .badge-unknown { background: var(--color-badge-unknown-bg); color: var(--color-badge-unknown-text); }
@@ -583,55 +727,117 @@ section.alt { background: var(--color-surface-alt); }
 .sim-panel-pane {
   padding: 28px;
   overflow-y: auto;
-  max-height: 720px;
+  max-height: 1020px;
 }
-.sim-panel-pane h3 { font-size: 1.1rem; margin-bottom: 10px; }
-.sim-panel-pane p { font-size: 0.94rem; color: var(--color-text-muted); }
-.sim-panel-pane .hint { font-size: 0.85rem; font-style: italic; }
+.sim-panel-pane h3 { font-size: 1.2rem; margin-bottom: 10px; }
+.sim-panel-pane p { font-size: 1rem; color: var(--color-text-muted); }
+.sim-panel-pane .hint { font-size: 0.9rem; font-style: italic; }
 
 .stat-list {
   display: grid;
   grid-template-columns: max-content 1fr;
-  gap: 6px 14px;
+  gap: 7px 14px;
   margin: 16px 0;
-  font-size: 0.92rem;
+  font-size: 1rem;
 }
 .stat-list dt { color: var(--color-text-muted); }
 .stat-list dd { margin: 0; }
 
 .pretext-block {
   margin: 14px 0;
-  padding: 14px 16px;
+  padding: 16px 20px;
   background: var(--color-surface-alt);
   border-left: 3px solid var(--color-green);
   border-radius: 0 8px 8px 0;
   font-size: 0.93rem;
+  max-width: 62ch;
+}
+
+/* "penguin moment" animation: a looping, self-contained illustration of
+   defeasible belief revision. Opacity-only transitions (no layout
+   shift), so the block's height stays constant throughout. */
+.penguin-anim .pa-line {
+  display: block;
+  opacity: 0;
+}
+.penguin-anim .pa-line + .pa-line { margin-top: 10px; }
+.penguin-anim .pa-l1 { animation: pa-line1 9s ease infinite; }
+.penguin-anim .pa-l2 { animation: pa-line2 9s ease infinite; color: var(--color-blue-accent); }
+.penguin-anim .pa-l3 { animation: pa-line3 9s ease infinite; }
+.penguin-anim .pa-l4 { animation: pa-line4 9s ease infinite; color: var(--color-orange-accent); }
+
+.pa-strike-wrap { position: relative; display: inline-block; }
+.pa-strike-wrap::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  top: 50%;
+  height: 2px;
+  background: var(--color-orange-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: pa-strike 9s ease infinite;
+}
+
+@keyframes pa-line1 {
+  0%, 4.4%     { opacity: 0; }
+  8.9%, 88.9%  { opacity: 1; }
+  95.6%, 100%  { opacity: 0; }
+}
+@keyframes pa-line2 {
+  0%, 13.3%    { opacity: 0; }
+  17.8%, 88.9% { opacity: 1; }
+  95.6%, 100%  { opacity: 0; }
+}
+@keyframes pa-line3 {
+  0%, 35.6%    { opacity: 0; }
+  40%, 88.9%   { opacity: 1; }
+  95.6%, 100%  { opacity: 0; }
+}
+@keyframes pa-line4 {
+  0%, 53.3%    { opacity: 0; }
+  58.9%, 88.9% { opacity: 1; }
+  95.6%, 100%  { opacity: 0; }
+}
+@keyframes pa-strike {
+  0%, 42.2%    { transform: scaleX(0); opacity: 0; }
+  47.8%, 88.9% { transform: scaleX(1); opacity: 1; }
+  95.6%, 100%  { transform: scaleX(1); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .penguin-anim .pa-line, .pa-strike-wrap::after {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+  .pa-strike-wrap::after { transform: scaleX(1) !important; }
 }
 
 .transcript {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  max-height: 340px;
+  max-height: 400px;
   overflow-y: auto;
   padding-right: 4px;
   margin: 14px 0;
 }
 .turn-block {
-  padding: 12px 14px;
+  padding: 14px 16px;
   background: var(--color-surface-alt);
   border: 1px solid var(--color-border);
   border-radius: 8px;
 }
 .turn-label {
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--color-amber);
   margin-bottom: 6px;
 }
-.turn-content { font-size: 0.88rem; white-space: pre-wrap; }
+.turn-content { font-size: 0.96rem; white-space: pre-wrap; }
 .turn-footer { margin-top: 8px; }
 
 .reveal-controls {

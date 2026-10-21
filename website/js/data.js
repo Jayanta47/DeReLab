@@ -112,11 +112,48 @@ window.DeReLabData = (function () {
   ];
   const EASY_SPARSITY_RANGE = [0.5, 0.8];
 
+  // Linear inheritance is a tree-inheritance graph forced into a single
+  // unbranching chain: root_breadth=1, min/max_branching=1, survival=1.0.
+  const LINEAR_PRESET = {
+    name: "linear",
+    maxDepth: 4,
+    rootBreadth: 1,
+    minBranching: 1,
+    maxBranching: 1,
+    survivalProb: 1.0,
+    branchingDecay: 1.0,
+  };
+
+  // Default (property-chain) reasoning easy-tier preset, sized for a small,
+  // legible demo graph. See graphConfig.DefaultGraphConfig for the full
+  // field set; only these are used by the simplified single-subject
+  // simulator port.
+  //
+  // branchProbability defaults to 0 (unlike the real pipeline's 0.3), and
+  // numObjects to 1, so the baseline demo is a strictly linear chain with
+  // one object -- matching how the landing page describes default
+  // reasoning ("a linear chain of properties"). Both are exposed as
+  // tunable parameters in the simulator's params panel, since the
+  // renderer's object-hub-and-spoke layout stays visually distinct from
+  // the inheritance topologies' branching trees even when branching is
+  // turned on.
+  const DEFAULT_EASY_PRESET = {
+    name: "default",
+    chainLength: 5,
+    maxBranchingFactor: 2,
+    branchProbability: 0,
+    numObjects: 1,
+    numIrrelevantAttributes: 1,
+    sparsityFactor: 0.65,
+  };
+
   return {
     ROOT_CONCEPT_WEIGHTS,
     DOMAIN_ATTRIBUTES,
     NONCE_ENTITIES,
     EASY_PRESETS,
     EASY_SPARSITY_RANGE,
+    LINEAR_PRESET,
+    DEFAULT_EASY_PRESET,
   };
 })();
